@@ -20,13 +20,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// Shared Instance for using InApp module features
 +(instancetype)sharedInstance;
 
-/// Making the init method private as this Class has Singleton implementation
--(instancetype _Nonnull)init NS_UNAVAILABLE;
-
-/// Method to initialize the module on App Launch(Internally called by the SDK)
-/// @param instanceID MoEngage Account Identifier.
--(void)initializeInAppsForInstanceID:(NSString*)instanceID;
-
 #pragma mark- InApp Delegate Handling
 /// Method to set delegate for the inApp Callbacks
 /// @param delegate MOInAppNativDelegate which will all the callbacks
