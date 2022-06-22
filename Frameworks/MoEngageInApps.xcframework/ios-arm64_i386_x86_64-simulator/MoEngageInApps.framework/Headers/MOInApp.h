@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <MoEngageInApps/MOInAppCampaign.h>
 #import <MoEngageInApps/MOInAppNativeProtocol.h>
-#import <MoEngageCore/MoEngageCore-Swift.h>
+#import <MOCore/MOCore-Swift.h>
 
 NS_ASSUME_NONNULL_BEGIN
 

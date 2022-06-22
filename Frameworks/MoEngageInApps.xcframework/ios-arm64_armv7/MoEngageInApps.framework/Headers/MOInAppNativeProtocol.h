@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 #import <MoEngageInApps/MOInAppCampaign.h>
-#import <MoEngageCore/MoEngageCore-Swift.h>
+#import <MOCore/MOCore-Swift.h>
 
 #ifndef MOInAppNativeProtocol_h
 #define MOInAppNativeProtocol_h

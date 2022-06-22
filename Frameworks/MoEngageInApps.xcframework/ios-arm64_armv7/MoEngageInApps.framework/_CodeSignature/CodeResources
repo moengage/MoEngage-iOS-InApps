@@ -6,11 +6,11 @@
 	<dict>
 		<key>CHANGELOG.md</key>
 		<data>
-		OrY/ud9dfOp+UYyvwcESUzLyaeo=
+		AC0jox4HZevWanVAtbhF+RFqJxQ=
 		</data>
 		<key>Headers/MOInApp.h</key>
 		<data>
-		L7Ik25X7OId5r4k4LVDVAnu3XGM=
+		yApY5b47VLnAeSOIvN3vRdCe3EI=
 		</data>
 		<key>Headers/MOInAppCampaign.h</key>
 		<data>
@@ -22,7 +22,7 @@
 		</data>
 		<key>Headers/MOInAppNativeProtocol.h</key>
 		<data>
-		2RPYkadRVK18BTjIqL6kI1cu7H8=
+		jYbTpExSALGg6OzxfO0yqz57fok=
 		</data>
 		<key>Headers/MOModelObject.h</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		YA4PxzYKepOrMOllcY/4yt342aw=
+		8/elN4UgsoOz/iI9bS6tte8rn7Y=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -55,22 +55,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			OrY/ud9dfOp+UYyvwcESUzLyaeo=
+			AC0jox4HZevWanVAtbhF+RFqJxQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			3DcZN/jb1XZ3x0L7XjMwyLuFkMQQ9NJmwg4wyUIZCdU=
+			nGeSZQcw0gKWjMN2jNk441ETwvONRe4sQQ+33n9EKGI=
 			</data>
 		</dict>
 		<key>Headers/MOInApp.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			L7Ik25X7OId5r4k4LVDVAnu3XGM=
+			yApY5b47VLnAeSOIvN3vRdCe3EI=
 			</data>
 			<key>hash2</key>
 			<data>
-			ZF6kfu/TYH3JAAwFqvCJ+F3UCcHzKewai1K+Ip+nxhY=
+			+mfEnxmRgUMKhPH+G8zANYtBRd1r3hQlc+C696frF0o=
 			</data>
 		</dict>
 		<key>Headers/MOInAppCampaign.h</key>
@@ -99,11 +99,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2RPYkadRVK18BTjIqL6kI1cu7H8=
+			jYbTpExSALGg6OzxfO0yqz57fok=
 			</data>
 			<key>hash2</key>
 			<data>
-			wPQPlcGODEcRp8BJgAVrY0e97vI5bs1x/lqa3zJx9Qs=
+			hIBWQahciupzy8snhahreEj9hZyCxiY9d769Kvoub1Q=
 			</data>
 		</dict>
 		<key>Headers/MOModelObject.h</key>
