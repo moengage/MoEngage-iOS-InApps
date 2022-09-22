@@ -2,6 +2,10 @@
 =============================
 
 ## Change Log:
+### Version 3.3.1 *(22nd September, 2022)*
+-------------------------------------------
+* Handled dataType mismatch in `trackDismiss` of HTML InApp.
+
 ### Version 3.3.0 *(20th July, 2022)*
 -------------------------------------------
 * Updated the dependency to MoEngage-iOS-SDK 8.3.0
