@@ -2,6 +2,10 @@
 =============================
 
 ## Change Log:
+### Version 3.4.0 *(18th October, 2022)*
+-------------------------------------------
+* Added support to take the custom inset for inapp nudge in `MOSDKConfig` using `MoEngageInAppConfig` class.
+
 ### Version 3.3.1 *(22nd September, 2022)*
 -------------------------------------------
 * Handled dataType mismatch in `trackDismiss` of HTML InApp.
