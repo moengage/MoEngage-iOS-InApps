@@ -1,6 +1,10 @@
 # MoEngageInApps
 =====================
 ## Change Log:
+### Version 3.4.1 *(21st October, 2022)*
+-------------------------------------------
+* Added support to take safeArea inset for Applications with SceneDelegate.
+
 ### Version 3.4.0 *(18th October, 2022)*
 -------------------------------------------
 * Added support to take the custom inset for inapp nudge in `MOSDKConfig` using `MoEngageInAppConfig` class.
