@@ -2,6 +2,14 @@
 =============================
 
 ## Change Log:
+
+### Version 4.0.0 *(7th December, 2022)*
+-------------------------------------------
+* Migrated `MoEngageInApp`, `MoEngageInAppCampaign`,`MoEngageInAppSelfHandledCampaign`,`MoEngageInAppAction`,`MoEngageInAppNativeDelegate`  from Objective-C to Swift
+* Added API documentation.
+* All the classes and modules are prefixed with `MoEngage`.
+* BugFix - Fixed Inapp getting auto dismissed before the auto dismiss interval expires.
+
 ### Version 3.4.1 *(21st October, 2022)*
 -------------------------------------------
 * Added support to take safeArea inset for Applications with SceneDelegate.
