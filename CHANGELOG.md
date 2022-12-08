@@ -1,6 +1,10 @@
 # MoEngageInApps
 =====================
 ## Change Log:
+### Version 3.4.2 *(8th December, 2022)*
+-------------------------------------------
+* BugFix: Fixed duplicate events being tracked for inapps.
+
 ### Version 3.4.1 *(21st October, 2022)*
 -------------------------------------------
 * Added support to take safeArea inset for Applications with SceneDelegate.
