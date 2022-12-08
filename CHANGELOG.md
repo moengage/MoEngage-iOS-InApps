@@ -1,6 +1,10 @@
 # MoEngageInApps
 =====================
 ## Change Log:
+### Version 4.0.1 *(8th December, 2022)*
+-------------------------------------------
+* BugFix - Fixed duplicate events being tracked for inapps.
+
 ### Version 4.0.0 *(7th December, 2022)*
 -------------------------------------------
 * Migrated `MoEngageInApp`, `MoEngageInAppCampaign`,`MoEngageInAppSelfHandledCampaign`,`MoEngageInAppAction`,`MoEngageInAppNativeDelegate`  from Objective-C to Swift
