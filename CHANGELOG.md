@@ -1,6 +1,10 @@
 # MoEngageInApps
 =====================
 ## Change Log:
+### Version 3.5.0 *(12th December, 2022)*
+-------------------------------------------
+* Updated the dependency to MoEngage-iOS-SDK 8.5.0.
+
 ### Version 3.4.2 *(8th December, 2022)*
 -------------------------------------------
 * BugFix: Fixed duplicate events being tracked for inapps.
