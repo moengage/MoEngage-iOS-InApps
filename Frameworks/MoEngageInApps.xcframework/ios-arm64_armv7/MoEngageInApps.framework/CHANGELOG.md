@@ -2,6 +2,10 @@
 =============================
 
 ## Change Log:
+### Version 4.1.0 *(13th December, 2022)*
+-------------------------------------------
+* Added dSYM file support for debugging.
+
 ### Version 4.0.1 *(8th December, 2022)*
 -------------------------------------------
 * BugFix - Fixed duplicate events being tracked for inapps.
