@@ -2,8 +2,8 @@ BCSymbolMap Version: 2.0
 Apple clang version 13.1.6 (clang-1316.0.21.2.5)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
 iPhoneOS15.5.sdk
-/Users/deepa/Library/Developer/Xcode/DerivedData/MoEngage-ddoehuamaaipxyddvinbjltvhjaz/Build/Intermediates.noindex/ArchiveIntermediates/MoEngageInApps/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MoEngageInApps.build/DerivedSources/MoEngageInApps_vers.c
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage
+/Users/rakshitha/Library/Developer/Xcode/DerivedData/MoEngage-cmmkomvfnirhvydwlmcpvafliotx/Build/Intermediates.noindex/ArchiveIntermediates/MoEngageInApps/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MoEngageInApps.build/DerivedSources/MoEngageInApps_vers.c
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage
 -[MOInAppButtonWidget initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]
 ___87-[MOInAppButtonWidget initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]_block_invoke
 ___87-[MOInAppButtonWidget initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]_block_invoke_2
@@ -155,7 +155,7 @@ __OBJC_$_INSTANCE_METHODS_MOInAppCloseButtonWidget
 __OBJC_$_INSTANCE_VARIABLES_MOInAppCloseButtonWidget
 __OBJC_$_PROP_LIST_MOInAppCloseButtonWidget
 __OBJC_CLASS_RO_$_MOInAppCloseButtonWidget
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MOInAppButtonWidget.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MOInAppButtonWidget.m
 MoEngageInApps/InAppView/MOInAppButtonWidget.m
 MoEngageInApps/InAppView/MOInAppButtonWidget.h
 __destroy_helper_block_e4_20w
@@ -336,7 +336,7 @@ _OBJC_IVAR_$_MOInAppDataManager._configController
 __OBJC_$_INSTANCE_VARIABLES_MOInAppDataManager
 __OBJC_$_PROP_LIST_MOInAppDataManager
 __OBJC_CLASS_RO_$_MOInAppDataManager
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppDataManager.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppDataManager.m
 MoEngageInApps/MOInAppDataManager.m
 MoEngageInApps/MOInAppDataManager.h
 +[MOInAppUtils checkIfCurrentOrientationIsSupported:]
@@ -424,7 +424,7 @@ _OBJC_SELECTOR_REFERENCES_.210
 __OBJC_$_CLASS_METHODS_MOInAppUtils
 __OBJC_METACLASS_RO_$_MOInAppUtils
 __OBJC_CLASS_RO_$_MOInAppUtils
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppUtils.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppUtils.m
 MoEngageInApps/MOInAppUtils.m
 llvm.loop.mustprogress
 __49+[MOInAppUtils openShareSheetWithContentToShare:]_block_invoke
@@ -539,7 +539,7 @@ __OBJC_$_INSTANCE_METHODS_MOStarRatingView
 __OBJC_$_INSTANCE_VARIABLES_MOStarRatingView
 __OBJC_$_PROP_LIST_MOStarRatingView
 __OBJC_CLASS_RO_$_MOStarRatingView
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/CustomViews/MOStarRatingView.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/CustomViews/MOStarRatingView.m
 MoEngageInApps/InAppView/CustomViews/MOStarRatingView.m
 MoEngageInApps/InAppView/CustomViews/MOStarRatingView.h
 CGSizeMake
@@ -582,7 +582,7 @@ _OBJC_IVAR_$_MOInAppContainer._style
 __OBJC_$_INSTANCE_VARIABLES_MOInAppContainer
 __OBJC_$_PROP_LIST_MOInAppContainer
 __OBJC_CLASS_RO_$_MOInAppContainer
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MOInAppContainer.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MOInAppContainer.m
 MoEngageInApps/ModelObjects/InAppPayload/MOInAppContainer.m
 MoEngageInApps/ModelObjects/InAppPayload/MOInAppContainer.h
 +[MOInAppCoordinator sharedInstance]
@@ -626,7 +626,7 @@ _OBJC_IVAR_$_MOInAppCoordinator._inAppControllersDict
 __OBJC_$_INSTANCE_VARIABLES_MOInAppCoordinator
 __OBJC_$_PROP_LIST_MOInAppCoordinator
 __OBJC_CLASS_RO_$_MOInAppCoordinator
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppCoordinator.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppCoordinator.m
 MoEngageInApps/MOInAppCoordinator.m
 MoEngageInApps/MOInAppCoordinator.h
 __destroy_helper_block_e4_20s24s28s
@@ -689,7 +689,7 @@ _OBJC_IVAR_$_MOInAppCampaignsData._inAppLastShownTime
 __OBJC_$_INSTANCE_VARIABLES_MOInAppCampaignsData
 __OBJC_$_PROP_LIST_MOInAppCampaignsData
 __OBJC_CLASS_RO_$_MOInAppCampaignsData
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/MOInAppCampaignsData.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/MOInAppCampaignsData.m
 MoEngageInApps/ModelObjects/MOInAppCampaignsData.m
 MoEngageInApps/ModelObjects/MOInAppCampaignsData.h
 -[MOInAppRatingView initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]
@@ -723,7 +723,7 @@ __OBJC_$_INSTANCE_METHODS_MOInAppRatingView
 __OBJC_$_INSTANCE_VARIABLES_MOInAppRatingView
 __OBJC_$_PROP_LIST_MOInAppRatingView
 __OBJC_CLASS_RO_$_MOInAppRatingView
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MOInAppRatingView.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MOInAppRatingView.m
 MoEngageInApps/InAppView/MOInAppRatingView.m
 MoEngageInApps/InAppView/MOInAppRatingView.h
 __85-[MOInAppRatingView initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]_block_invoke_2
@@ -788,7 +788,7 @@ _OBJC_IVAR_$_MOInAppViewPayload._htmlAssetsDict
 __OBJC_$_INSTANCE_VARIABLES_MOInAppViewPayload
 __OBJC_$_PROP_LIST_MOInAppViewPayload
 __OBJC_CLASS_RO_$_MOInAppViewPayload
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MOInAppViewPayload.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MOInAppViewPayload.m
 MoEngageInApps/ModelObjects/InAppPayload/MOInAppViewPayload.m
 MoEngageInApps/ModelObjects/InAppPayload/MOInAppViewPayload.h
 -[MOInAppWebView initWithInAppPayload:]
@@ -884,7 +884,7 @@ __OBJC_$_INSTANCE_METHODS_MOInAppWebView
 __OBJC_$_INSTANCE_VARIABLES_MOInAppWebView
 __OBJC_$_PROP_LIST_MOInAppWebView
 __OBJC_CLASS_RO_$_MOInAppWebView
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MOInAppWebView.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MOInAppWebView.m
 MoEngageInApps/InAppView/MOInAppWebView.m
 MoEngageInApps/InAppView/MOInAppWebView.h
 __111-[MOInAppWebView webView:runJavaScriptTextInputPanelWithPrompt:defaultText:initiatedByFrame:completionHandler:]_block_invoke_2
@@ -952,7 +952,7 @@ __OBJC_$_CLASS_METHODS_MOInAppDebuggingService
 __OBJC_METACLASS_RO_$_MOInAppDebuggingService
 __OBJC_$_INSTANCE_METHODS_MOInAppDebuggingService
 __OBJC_CLASS_RO_$_MOInAppDebuggingService
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppDebuggingService.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppDebuggingService.m
 __78-[MOInAppDebuggingService getInAppStateListForInstanceID:withCompletionBlock:]_block_invoke
 MoEngageInApps/MOInAppDebuggingService.m
 __84-[MOInAppDebuggingService getSelfHandledInAppListForInstanceID:withCompletionBlock:]_block_invoke
@@ -996,7 +996,7 @@ __OBJC_$_INSTANCE_METHODS_MOInAppTriggerCondition
 __OBJC_$_INSTANCE_VARIABLES_MOInAppTriggerCondition
 __OBJC_$_PROP_LIST_MOInAppTriggerCondition
 __OBJC_CLASS_RO_$_MOInAppTriggerCondition
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MOInAppTriggerCondition.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MOInAppTriggerCondition.m
 MoEngageInApps/ModelObjects/InAppMeta/MOInAppTriggerCondition.m
 MoEngageInApps/ModelObjects/InAppMeta/MOInAppTriggerCondition.h
 -[MOInAppDisplayRules initWithDictionary:]
@@ -1028,7 +1028,7 @@ __OBJC_$_INSTANCE_METHODS_MOInAppDisplay
 __OBJC_$_INSTANCE_VARIABLES_MOInAppDisplay
 __OBJC_$_PROP_LIST_MOInAppDisplay
 __OBJC_CLASS_RO_$_MOInAppDisplay
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MOInAppDisplay.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MOInAppDisplay.m
 MoEngageInApps/ModelObjects/InAppMeta/MOInAppDisplay.m
 MoEngageInApps/ModelObjects/InAppMeta/MOInAppDisplay.h
 +[MOInAppAssetsManager sharedAssetsManager]
@@ -1076,7 +1076,7 @@ __OBJC_$_CLASS_METHODS_MOInAppAssetsManager
 __OBJC_METACLASS_RO_$_MOInAppAssetsManager
 __OBJC_$_INSTANCE_METHODS_MOInAppAssetsManager
 __OBJC_CLASS_RO_$_MOInAppAssetsManager
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppAssetsManager.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppAssetsManager.m
 MoEngageInApps/MOInAppAssetsManager.m
 __destroy_helper_block_e4_20r24r28r
 __copy_helper_block_e4_20r24r28r
@@ -1131,7 +1131,7 @@ _OBJC_IVAR_$_MOInAppStatsManager._statData
 __OBJC_$_INSTANCE_VARIABLES_MOInAppStatsManager
 __OBJC_$_PROP_LIST_MOInAppStatsManager
 __OBJC_CLASS_RO_$_MOInAppStatsManager
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppStatsManager.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppStatsManager.m
 MoEngageInApps/MOInAppStatsManager.m
 __48-[MOInAppStatsManager syncBatch:WithCompletion:]_block_invoke
 __destroy_helper_block_e4_20s24s28r32r36r
@@ -1347,7 +1347,7 @@ _OBJC_IVAR_$_MOInAppWidgetStyle._closeButtonFloat
 __OBJC_$_INSTANCE_VARIABLES_MOInAppWidgetStyle
 __OBJC_$_PROP_LIST_MOInAppWidgetStyle
 __OBJC_CLASS_RO_$_MOInAppWidgetStyle
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MOInAppWidgetStyle.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MOInAppWidgetStyle.m
 MoEngageInApps/ModelObjects/InAppPayload/MOInAppWidgetStyle.m
 MoEngageInApps/ModelObjects/InAppPayload/MOInAppWidgetStyle.h
 -[MOModelObject initWithDictionary:]
@@ -1356,7 +1356,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.17
 __OBJC_METACLASS_RO_$_MOModelObject
 __OBJC_$_INSTANCE_METHODS_MOModelObject
 __OBJC_CLASS_RO_$_MOModelObject
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/MOModelObject.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/MOModelObject.m
 MoEngageInApps/ModelObjects/MOModelObject.m
 -[MOInAppFCMeta initWithDictionary:]
 -[MOInAppFCMeta initWithCoder:]
@@ -1395,7 +1395,7 @@ __OBJC_$_INSTANCE_METHODS_MOInAppDeliveryControl
 __OBJC_$_INSTANCE_VARIABLES_MOInAppDeliveryControl
 __OBJC_$_PROP_LIST_MOInAppDeliveryControl
 __OBJC_CLASS_RO_$_MOInAppDeliveryControl
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MOInAppDeliveryControl.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MOInAppDeliveryControl.m
 MoEngageInApps/ModelObjects/InAppMeta/MOInAppDeliveryControl.m
 MoEngageInApps/ModelObjects/InAppMeta/MOInAppDeliveryControl.h
 -[InAppDelegateHandler init]
@@ -1431,7 +1431,7 @@ _OBJC_SELECTOR_REFERENCES_.45
 __OBJC_METACLASS_RO_$_InAppDelegateHandler
 __OBJC_$_INSTANCE_METHODS_InAppDelegateHandler
 __OBJC_CLASS_RO_$_InAppDelegateHandler
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppDelegateHandler.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppDelegateHandler.m
 MoEngageInApps/InAppDelegateHandler.m
 __41-[InAppDelegateHandler showInAppViaPush:]_block_invoke
 __52-[InAppDelegateHandler StatusBarOrientationChanged:]_block_invoke
@@ -1509,7 +1509,7 @@ __OBJC_$_INSTANCE_METHODS_MOInAppCampaignMeta
 __OBJC_$_INSTANCE_VARIABLES_MOInAppCampaignMeta
 __OBJC_$_PROP_LIST_MOInAppCampaignMeta
 __OBJC_CLASS_RO_$_MOInAppCampaignMeta
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MOInAppCampaignMeta.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MOInAppCampaignMeta.m
 MoEngageInApps/ModelObjects/InAppMeta/MOInAppCampaignMeta.m
 MoEngageInApps/ModelObjects/InAppMeta/MOInAppCampaignMeta.h
 -[MOInAppStatInstance initWithStatType:]
@@ -1587,7 +1587,7 @@ _OBJC_IVAR_$_MOInAppStatData._batches_array
 __OBJC_$_INSTANCE_VARIABLES_MOInAppStatData
 __OBJC_$_PROP_LIST_MOInAppStatData
 __OBJC_CLASS_RO_$_MOInAppStatData
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppStatsTracking.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppStatsTracking.m
 MoEngageInApps/MOInAppStatsTracking.m
 MoEngageInApps/MOInAppStatsTracking.h
 -[MOInAppLabelWidget initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]
@@ -1619,7 +1619,7 @@ __OBJC_$_INSTANCE_METHODS_MOInAppLabelWidget
 __OBJC_$_INSTANCE_VARIABLES_MOInAppLabelWidget
 __OBJC_$_PROP_LIST_MOInAppLabelWidget
 __OBJC_CLASS_RO_$_MOInAppLabelWidget
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MOInAppLabelWidget.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MOInAppLabelWidget.m
 MoEngageInApps/InAppView/MOInAppLabelWidget.m
 MoEngageInApps/InAppView/MOInAppLabelWidget.h
 UIEdgeInsetsInsetRect
@@ -1649,7 +1649,7 @@ __OBJC_$_INSTANCE_METHODS_MOInAppWidget
 __OBJC_$_INSTANCE_VARIABLES_MOInAppWidget
 __OBJC_$_PROP_LIST_MOInAppWidget
 __OBJC_CLASS_RO_$_MOInAppWidget
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MOInAppWidget.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MOInAppWidget.m
 MoEngageInApps/ModelObjects/InAppPayload/MOInAppWidget.m
 MoEngageInApps/ModelObjects/InAppPayload/MOInAppWidget.h
 +[UIImage(animatedGIF) animatedImageWithAnimatedGIFData:]
@@ -1659,7 +1659,7 @@ _animatedImageWithAnimatedGIFImageSource
 _frameArray
 __OBJC_$_CATEGORY_CLASS_METHODS_UIImage_$_animatedGIF
 __OBJC_$_CATEGORY_UIImage_$_animatedGIF
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/CustomViews/UIImage+animatedGIF.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/CustomViews/UIImage+animatedGIF.m
 frameArray
 MoEngageInApps/InAppView/CustomViews/UIImage+animatedGIF.m
 vectorGCD
@@ -1670,7 +1670,7 @@ sum
 createImagesAndDelays
 delayCentisecondsForImageAtIndex
 animatedImageWithAnimatedGIFReleasingImageSource
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppStatConstants.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppStatConstants.m
 -[MOInAppContainerView initWithContainerInfo:andCampaignID:]
 -[MOInAppContainerView updateContainerFrameinContainerView:WithStartPos:andtemplateType:]
 ___89-[MOInAppContainerView updateContainerFrameinContainerView:WithStartPos:andtemplateType:]_block_invoke
@@ -1785,7 +1785,7 @@ __OBJC_$_INSTANCE_METHODS_MOInAppPrimaryContainerView
 __OBJC_$_INSTANCE_VARIABLES_MOInAppPrimaryContainerView
 __OBJC_$_PROP_LIST_MOInAppPrimaryContainerView
 __OBJC_CLASS_RO_$_MOInAppPrimaryContainerView
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MOInAppContainerView.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MOInAppContainerView.m
 MoEngageInApps/InAppView/MOInAppContainerView.m
 MoEngageInApps/InAppView/MOInAppContainerView.h
 __82-[MOInAppPrimaryContainerView slideAnimationWithType:forEntry:andCompletionBlock:]_block_invoke.307
@@ -1857,7 +1857,7 @@ __OBJC_$_CLASS_METHODS_MOInApp
 __OBJC_METACLASS_RO_$_MOInApp
 __OBJC_$_INSTANCE_METHODS_MOInApp
 __OBJC_CLASS_RO_$_MOInApp
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInApp.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInApp.m
 MoEngageInApps/MOInApp.m
 __33-[MOInApp disableInAppsForAppID:]_block_invoke
 __57-[MOInApp selfHandledDismissedWithCampaignInfo:forAppID:]_block_invoke
@@ -1879,7 +1879,7 @@ __44-[MOInApp setCurrentInAppContexts:forAppID:]_block_invoke
 __38-[MOInApp resetInAppDelegateForAppID:]_block_invoke
 __37-[MOInApp setInAppDelegate:forAppID:]_block_invoke
 __25+[MOInApp sharedInstance]_block_invoke
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/Constants/JS/MOInAppJSBridge.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/Constants/JS/MOInAppJSBridge.m
 -[MOInAppController initWithSDKConfig:withSDKInstance:]
 -[MOInAppController initializeInAppController]
 -[MOInAppController setInAppDelegate:]
@@ -2285,7 +2285,7 @@ _OBJC_IVAR_$_MOInAppController._inAppsDisabledScreens
 __OBJC_$_INSTANCE_VARIABLES_MOInAppController
 __OBJC_$_PROP_LIST_MOInAppController
 __OBJC_CLASS_RO_$_MOInAppController
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppController.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppController.m
 MoEngageInApps/MOInAppController.m
 MoEngageInApps/MOInAppController.h
 __73-[MOInAppController informDelegateActionPerformedWithInfo:forCampaignID:]_block_invoke
@@ -2393,7 +2393,7 @@ _OBJC_IVAR_$_MOInAppActionHandler._actionHandlerDelegate
 __OBJC_$_INSTANCE_VARIABLES_MOInAppActionHandler
 __OBJC_$_PROP_LIST_MOInAppActionHandler
 __OBJC_CLASS_RO_$_MOInAppActionHandler
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppActionHandler.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MOInAppActionHandler.m
 MoEngageInApps/MOInAppActionHandler.m
 __41-[MOInAppActionHandler performSMSAction:]_block_invoke
 __42-[MOInAppActionHandler performCallAction:]_block_invoke
@@ -2432,7 +2432,7 @@ __OBJC_$_INSTANCE_METHODS_MOInAppImageWidget
 __OBJC_$_INSTANCE_VARIABLES_MOInAppImageWidget
 __OBJC_$_PROP_LIST_MOInAppImageWidget
 __OBJC_CLASS_RO_$_MOInAppImageWidget
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MOInAppImageWidget.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MOInAppImageWidget.m
 MoEngageInApps/InAppView/MOInAppImageWidget.m
 MoEngageInApps/InAppView/MOInAppImageWidget.h
 __86-[MOInAppImageWidget initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]_block_invoke_2
@@ -2488,7 +2488,7 @@ __OBJC_$_INSTANCE_METHODS_MOInAppAction
 __OBJC_$_INSTANCE_VARIABLES_MOInAppAction
 __OBJC_$_PROP_LIST_MOInAppAction
 __OBJC_CLASS_RO_$_MOInAppAction
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/MOInAppCampaign.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/MOInAppCampaign.m
 MoEngageInApps/ModelObjects/MOInAppCampaign.m
 MoEngageInApps/ModelObjects/MOInAppCampaign.h
 -[MOInAppWidgetAction initWithPayloadDict:andActionDict:]
@@ -2584,10 +2584,10 @@ _OBJC_IVAR_$_MOInAppActionCondition._attributesFilter
 __OBJC_$_INSTANCE_VARIABLES_MOInAppActionCondition
 __OBJC_$_PROP_LIST_MOInAppActionCondition
 __OBJC_CLASS_RO_$_MOInAppActionCondition
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MOInAppWidgetAction.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MOInAppWidgetAction.m
 MoEngageInApps/ModelObjects/InAppPayload/MOInAppWidgetAction.m
 MoEngageInApps/ModelObjects/InAppPayload/MOInAppWidgetAction.h
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/Constants/MOInAppConstants.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/Constants/MOInAppConstants.m
 -[MOInAppState initWithDictionary:]
 -[MOInAppState initWithCoder:]
 -[MOInAppState encodeWithCoder:]
@@ -2616,6 +2616,6 @@ __OBJC_$_INSTANCE_METHODS_MOInAppState
 __OBJC_$_INSTANCE_VARIABLES_MOInAppState
 __OBJC_$_PROP_LIST_MOInAppState
 __OBJC_CLASS_RO_$_MOInAppState
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppState/MOInAppState.m
+/Users/rakshitha/MoEngage/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppState/MOInAppState.m
 MoEngageInApps/ModelObjects/InAppState/MOInAppState.m
 MoEngageInApps/ModelObjects/InAppState/MOInAppState.h

@@ -2,6 +2,10 @@
 =============================
 
 ## Change Log:
+### Version 3.7.0 *(23rd December, 2022)*
+-------------------------------------------
+* Updated the dependency to MoEngage-iOS-SDK 8.7.0
+
 ### Version 3.6.0 *(12th December, 2022)*
 -------------------------------------------
 * Added dSYMs files for debugging.
