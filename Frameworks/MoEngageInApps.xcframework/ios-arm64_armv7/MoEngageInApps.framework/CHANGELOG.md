@@ -2,6 +2,10 @@
 =============================
 
 ## Change Log:
+### Version 4.2.1 *(20th January, 2023)*
+-------------------------------------------
+* CrashFix: Fixed the migration crash for inapp stats.
+
 ### Version 4.2.0 *(28th December, 2022)*
 -------------------------------------------
 * Updated the dependency to MoEngage-iOS-SDK 9.2.0.
