@@ -1,6 +1,10 @@
 # MoEngageInApps
 =====================
 ## Change Log:
+### Version 4.2.2 *(24th January, 2023)*
+-------------------------------------------
+* CrashFix: Fixed the crash by handling `NULL` in inapp timestamp.
+
 ### Version 4.2.1 *(20th January, 2023)*
 -------------------------------------------
 * CrashFix: Fixed the migration crash for inapp stats.
