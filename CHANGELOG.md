@@ -1,6 +1,10 @@
 # MoEngageInApps
 =====================
 ## Change Log:
+### Version 4.3.0 *(25th January 2023)*
+-------------------------------------------
+* Updated the dependency to MoEngage-iOS-SDK 9.3.0.
+
 ### Version 4.2.2 *(24th January, 2023)*
 -------------------------------------------
 * CrashFix: Fixed the crash by handling `NULL` in inapp timestamp.
