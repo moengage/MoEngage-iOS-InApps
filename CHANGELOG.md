@@ -1,6 +1,10 @@
 # MoEngageInApps
 =====================
 ## Change Log:
+### Version 4.3.1 *(1st February 2023)*
+-------------------------------------------
+* Fixed the validation condition to consider non-expired campaigns for displaying.
+
 ### Version 4.3.0 *(25th January 2023)*
 -------------------------------------------
 * Updated the dependency to MoEngage-iOS-SDK 9.3.0.
