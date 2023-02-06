@@ -2,8 +2,8 @@ BCSymbolMap Version: 2.0
 Apple clang version 13.1.6 (clang-1316.0.21.2.5)
 /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.5.sdk
 iPhoneOS15.5.sdk
-/Users/deepa/Library/Developer/Xcode/DerivedData/MoEngage-ddoehuamaaipxyddvinbjltvhjaz/Build/Intermediates.noindex/ArchiveIntermediates/MoEngageInApps/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MoEngageInApps.build/DerivedSources/MoEngageInApps_vers.c
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage
+/Users/rakshitha/Library/Developer/Xcode/DerivedData/MoEngage-cnobpkmsqmaefpeplvsvpecxdigk/Build/Intermediates.noindex/ArchiveIntermediates/MoEngageInApps/IntermediateBuildFilesPath/MoEngage.build/Release-iphoneos/MoEngageInApps.build/DerivedSources/MoEngageInApps_vers.c
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage
 -[MoEngageInAppButtonWidget initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]
 ___93-[MoEngageInAppButtonWidget initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]_block_invoke
 ___93-[MoEngageInAppButtonWidget initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]_block_invoke_2
@@ -155,7 +155,7 @@ __OBJC_$_INSTANCE_METHODS_MoEngageInAppCloseButtonWidget
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppCloseButtonWidget
 __OBJC_$_PROP_LIST_MoEngageInAppCloseButtonWidget
 __OBJC_CLASS_RO_$_MoEngageInAppCloseButtonWidget
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MoEngageInAppButtonWidget.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MoEngageInAppButtonWidget.m
 MoEngageInApps/InAppView/MoEngageInAppButtonWidget.m
 MoEngageInApps/InAppView/MoEngageInAppButtonWidget.h
 __destroy_helper_block_e4_20w
@@ -242,71 +242,87 @@ _OBJC_SELECTOR_REFERENCES_.79
 _OBJC_SELECTOR_REFERENCES_.81
 _OBJC_CLASSLIST_REFERENCES_$_.82
 _OBJC_SELECTOR_REFERENCES_.88
-_OBJC_SELECTOR_REFERENCES_.90
-_OBJC_SELECTOR_REFERENCES_.92
-_OBJC_CLASSLIST_REFERENCES_$_.93
-_OBJC_SELECTOR_REFERENCES_.123
-_OBJC_SELECTOR_REFERENCES_.125
-_OBJC_SELECTOR_REFERENCES_.127
-_OBJC_SELECTOR_REFERENCES_.129
-_OBJC_SELECTOR_REFERENCES_.131
-_OBJC_SELECTOR_REFERENCES_.133
-_OBJC_SELECTOR_REFERENCES_.135
-_OBJC_CLASSLIST_REFERENCES_$_.136
-_OBJC_SELECTOR_REFERENCES_.138
-_OBJC_SELECTOR_REFERENCES_.140
-_OBJC_CLASSLIST_REFERENCES_$_.141
+_OBJC_CLASSLIST_REFERENCES_$_.89
+_OBJC_CLASSLIST_REFERENCES_$_.94
+_OBJC_SELECTOR_REFERENCES_.98
+_OBJC_SELECTOR_REFERENCES_.100
+_OBJC_SELECTOR_REFERENCES_.102
+_OBJC_SELECTOR_REFERENCES_.104
+_OBJC_SELECTOR_REFERENCES_.106
+_OBJC_SELECTOR_REFERENCES_.108
+_OBJC_SELECTOR_REFERENCES_.112
+_OBJC_SELECTOR_REFERENCES_.114
+_OBJC_SELECTOR_REFERENCES_.118
+_OBJC_SELECTOR_REFERENCES_.120
+_OBJC_SELECTOR_REFERENCES_.124
+_OBJC_SELECTOR_REFERENCES_.126
+_OBJC_SELECTOR_REFERENCES_.128
+_OBJC_SELECTOR_REFERENCES_.130
+_OBJC_SELECTOR_REFERENCES_.132
+_OBJC_SELECTOR_REFERENCES_.134
+_OBJC_SELECTOR_REFERENCES_.136
+_OBJC_CLASSLIST_REFERENCES_$_.137
+_OBJC_SELECTOR_REFERENCES_.139
+_OBJC_SELECTOR_REFERENCES_.141
 _OBJC_CLASSLIST_REFERENCES_$_.142
-_OBJC_SELECTOR_REFERENCES_.144
-_OBJC_SELECTOR_REFERENCES_.168
-_OBJC_SELECTOR_REFERENCES_.184
-_OBJC_CLASSLIST_REFERENCES_$_.193
-_OBJC_SELECTOR_REFERENCES_.195
-_OBJC_SELECTOR_REFERENCES_.197
-_OBJC_SELECTOR_REFERENCES_.203
-_OBJC_SELECTOR_REFERENCES_.205
-_OBJC_SELECTOR_REFERENCES_.207
-_OBJC_SELECTOR_REFERENCES_.209
-_OBJC_SELECTOR_REFERENCES_.211
-_OBJC_SELECTOR_REFERENCES_.213
-_OBJC_SELECTOR_REFERENCES_.215
-_OBJC_SELECTOR_REFERENCES_.217
-_OBJC_SELECTOR_REFERENCES_.219
-_OBJC_SELECTOR_REFERENCES_.221
-_OBJC_SELECTOR_REFERENCES_.223
-_OBJC_SELECTOR_REFERENCES_.225
-_OBJC_SELECTOR_REFERENCES_.227
-_OBJC_SELECTOR_REFERENCES_.229
-_OBJC_SELECTOR_REFERENCES_.235
-_OBJC_SELECTOR_REFERENCES_.239
-_OBJC_SELECTOR_REFERENCES_.243
-_OBJC_SELECTOR_REFERENCES_.247
-_OBJC_SELECTOR_REFERENCES_.251
-_OBJC_SELECTOR_REFERENCES_.255
-_OBJC_SELECTOR_REFERENCES_.257
-_OBJC_SELECTOR_REFERENCES_.261
-_OBJC_SELECTOR_REFERENCES_.265
-_OBJC_SELECTOR_REFERENCES_.271
-_OBJC_CLASSLIST_REFERENCES_$_.274
-_OBJC_SELECTOR_REFERENCES_.276
-_OBJC_SELECTOR_REFERENCES_.280
-_OBJC_SELECTOR_REFERENCES_.282
-_OBJC_SELECTOR_REFERENCES_.294
-_OBJC_SELECTOR_REFERENCES_.296
-_OBJC_SELECTOR_REFERENCES_.298
-_OBJC_SELECTOR_REFERENCES_.300
-_OBJC_SELECTOR_REFERENCES_.302
-_OBJC_SELECTOR_REFERENCES_.304
-_OBJC_SELECTOR_REFERENCES_.306
-_OBJC_SELECTOR_REFERENCES_.308
-_OBJC_SELECTOR_REFERENCES_.310
-_OBJC_SELECTOR_REFERENCES_.312
-_OBJC_CLASSLIST_REFERENCES_$_.313
-_OBJC_SELECTOR_REFERENCES_.317
-_OBJC_SELECTOR_REFERENCES_.319
-_OBJC_SELECTOR_REFERENCES_.321
-_OBJC_SELECTOR_REFERENCES_.323
-_OBJC_CLASSLIST_REFERENCES_$_.324
+_OBJC_CLASSLIST_REFERENCES_$_.143
+_OBJC_SELECTOR_REFERENCES_.145
+_OBJC_SELECTOR_REFERENCES_.147
+_OBJC_SELECTOR_REFERENCES_.149
+_OBJC_SELECTOR_REFERENCES_.153
+_OBJC_SELECTOR_REFERENCES_.159
+_OBJC_SELECTOR_REFERENCES_.163
+_OBJC_SELECTOR_REFERENCES_.165
+_OBJC_SELECTOR_REFERENCES_.169
+_OBJC_SELECTOR_REFERENCES_.173
+_OBJC_SELECTOR_REFERENCES_.191
+_OBJC_CLASSLIST_REFERENCES_$_.194
+_OBJC_SELECTOR_REFERENCES_.198
+_OBJC_SELECTOR_REFERENCES_.200
+_OBJC_SELECTOR_REFERENCES_.202
+_OBJC_SELECTOR_REFERENCES_.204
+_OBJC_SELECTOR_REFERENCES_.206
+_OBJC_SELECTOR_REFERENCES_.208
+_OBJC_SELECTOR_REFERENCES_.210
+_OBJC_SELECTOR_REFERENCES_.212
+_OBJC_SELECTOR_REFERENCES_.214
+_OBJC_SELECTOR_REFERENCES_.216
+_OBJC_SELECTOR_REFERENCES_.218
+_OBJC_SELECTOR_REFERENCES_.220
+_OBJC_SELECTOR_REFERENCES_.222
+_OBJC_SELECTOR_REFERENCES_.224
+_OBJC_SELECTOR_REFERENCES_.226
+_OBJC_SELECTOR_REFERENCES_.228
+_OBJC_SELECTOR_REFERENCES_.230
+_OBJC_SELECTOR_REFERENCES_.236
+_OBJC_SELECTOR_REFERENCES_.240
+_OBJC_SELECTOR_REFERENCES_.244
+_OBJC_SELECTOR_REFERENCES_.248
+_OBJC_SELECTOR_REFERENCES_.252
+_OBJC_SELECTOR_REFERENCES_.256
+_OBJC_SELECTOR_REFERENCES_.258
+_OBJC_SELECTOR_REFERENCES_.262
+_OBJC_SELECTOR_REFERENCES_.266
+_OBJC_SELECTOR_REFERENCES_.272
+_OBJC_CLASSLIST_REFERENCES_$_.275
+_OBJC_SELECTOR_REFERENCES_.277
+_OBJC_SELECTOR_REFERENCES_.281
+_OBJC_SELECTOR_REFERENCES_.283
+_OBJC_SELECTOR_REFERENCES_.295
+_OBJC_SELECTOR_REFERENCES_.297
+_OBJC_SELECTOR_REFERENCES_.299
+_OBJC_SELECTOR_REFERENCES_.301
+_OBJC_SELECTOR_REFERENCES_.303
+_OBJC_SELECTOR_REFERENCES_.305
+_OBJC_SELECTOR_REFERENCES_.307
+_OBJC_SELECTOR_REFERENCES_.309
+_OBJC_SELECTOR_REFERENCES_.311
+_OBJC_SELECTOR_REFERENCES_.313
+_OBJC_CLASSLIST_REFERENCES_$_.314
+_OBJC_SELECTOR_REFERENCES_.318
+_OBJC_SELECTOR_REFERENCES_.320
+_OBJC_SELECTOR_REFERENCES_.322
+_OBJC_SELECTOR_REFERENCES_.324
 _OBJC_SELECTOR_REFERENCES_.326
 _OBJC_SELECTOR_REFERENCES_.328
 _OBJC_SELECTOR_REFERENCES_.332
@@ -348,7 +364,7 @@ _OBJC_IVAR_$_MoEngageInAppDataManager._configController
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppDataManager
 __OBJC_$_PROP_LIST_MoEngageInAppDataManager
 __OBJC_CLASS_RO_$_MoEngageInAppDataManager
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppDataManager.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppDataManager.m
 MoEngageInApps/MoEngageInAppDataManager.m
 MoEngageInApps/MoEngageInAppDataManager.h
 +[MoEngageInAppUtils checkIfCurrentOrientationIsSupported:]
@@ -386,6 +402,12 @@ ___55+[MoEngageInAppUtils openShareSheetWithContentToShare:]_block_invoke
 +[MoEngageInAppUtils dateLater:date2:]
 +[MoEngageInAppUtils dateEarlier:date2:]
 +[MoEngageInAppUtils isDateLaterToCurrentTime:]
++[MoEngageInAppUtils validObjectForKey:dict:]
++[MoEngageInAppUtils validObjectForKeyPath:dict:]
++[MoEngageInAppUtils getBooleanForKey:dict:]
++[MoEngageInAppUtils stringForkey:dict:]
++[MoEngageInAppUtils checkIfKeyExists:dict:]
++[MoEngageInAppUtils validDictionaryFromKey:dict:]
 _OBJC_CLASSLIST_REFERENCES_$_.3
 _OBJC_SELECTOR_REFERENCES_.5
 _OBJC_CLASSLIST_REFERENCES_$_.8
@@ -395,57 +417,51 @@ _OBJC_SELECTOR_REFERENCES_.37
 _OBJC_SELECTOR_REFERENCES_.39
 _OBJC_SELECTOR_REFERENCES_.41
 _OBJC_CLASSLIST_REFERENCES_$_.42
-_OBJC_CLASSLIST_REFERENCES_$_.59
-_OBJC_SELECTOR_REFERENCES_.65
-_OBJC_CLASSLIST_REFERENCES_$_.66
-_OBJC_CLASSLIST_REFERENCES_$_.75
-_OBJC_SELECTOR_REFERENCES_.83
-_OBJC_SELECTOR_REFERENCES_.85
-_OBJC_SELECTOR_REFERENCES_.87
-_OBJC_CLASSLIST_REFERENCES_$_.88
+_OBJC_CLASSLIST_REFERENCES_$_.45
+_OBJC_CLASSLIST_REFERENCES_$_.60
+_OBJC_CLASSLIST_REFERENCES_$_.67
+_OBJC_SELECTOR_REFERENCES_.69
+_OBJC_SELECTOR_REFERENCES_.71
+_OBJC_CLASSLIST_REFERENCES_$_.76
 _OBJC_CLASSLIST_REFERENCES_$_.108
 _OBJC_SELECTOR_REFERENCES_.110
-_OBJC_SELECTOR_REFERENCES_.112
-_OBJC_SELECTOR_REFERENCES_.114
 _OBJC_SELECTOR_REFERENCES_.116
-_OBJC_SELECTOR_REFERENCES_.118
-_OBJC_SELECTOR_REFERENCES_.120
 _OBJC_SELECTOR_REFERENCES_.122
 _OBJC_CLASSLIST_REFERENCES_$_.123
+_OBJC_SELECTOR_REFERENCES_.125
+_OBJC_SELECTOR_REFERENCES_.127
 _OBJC_CLASSLIST_REFERENCES_$_.128
-_OBJC_SELECTOR_REFERENCES_.130
 _OBJC_CLASSLIST_REFERENCES_$_.131
+_OBJC_SELECTOR_REFERENCES_.133
+_OBJC_SELECTOR_REFERENCES_.135
 _OBJC_SELECTOR_REFERENCES_.137
-_OBJC_SELECTOR_REFERENCES_.139
 ___block_descriptor_24_e4_20s_e5_v4?0l
 _OBJC_SELECTOR_REFERENCES_.142
-_OBJC_SELECTOR_REFERENCES_.149
 _OBJC_SELECTOR_REFERENCES_.151
-_OBJC_SELECTOR_REFERENCES_.153
 _OBJC_SELECTOR_REFERENCES_.155
 _OBJC_SELECTOR_REFERENCES_.157
-_OBJC_SELECTOR_REFERENCES_.159
 _OBJC_SELECTOR_REFERENCES_.161
-_OBJC_SELECTOR_REFERENCES_.163
-_OBJC_SELECTOR_REFERENCES_.165
 _OBJC_SELECTOR_REFERENCES_.167
 _OBJC_CLASSLIST_REFERENCES_$_.168
 _OBJC_CLASSLIST_REFERENCES_$_.171
 _OBJC_CLASSLIST_REFERENCES_$_.172
 _OBJC_CLASSLIST_REFERENCES_$_.181
 _OBJC_CLASSLIST_REFERENCES_$_.187
-_OBJC_SELECTOR_REFERENCES_.191
 _OBJC_SELECTOR_REFERENCES_.193
 _OBJC_CLASSLIST_REFERENCES_$_.202
-_OBJC_SELECTOR_REFERENCES_.204
-_OBJC_SELECTOR_REFERENCES_.206
-_OBJC_SELECTOR_REFERENCES_.208
-_OBJC_SELECTOR_REFERENCES_.210
 _OBJC_CLASSLIST_REFERENCES_$_.211
+_OBJC_SELECTOR_REFERENCES_.213
+_OBJC_SELECTOR_REFERENCES_.215
+_OBJC_SELECTOR_REFERENCES_.217
+_OBJC_SELECTOR_REFERENCES_.219
+_OBJC_SELECTOR_REFERENCES_.221
+_OBJC_SELECTOR_REFERENCES_.223
+_OBJC_CLASSLIST_REFERENCES_$_.224
+_OBJC_SELECTOR_REFERENCES_.232
 __OBJC_$_CLASS_METHODS_MoEngageInAppUtils
 __OBJC_METACLASS_RO_$_MoEngageInAppUtils
 __OBJC_CLASS_RO_$_MoEngageInAppUtils
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppUtils.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppUtils.m
 MoEngageInApps/MoEngageInAppUtils.m
 llvm.loop.mustprogress
 __55+[MoEngageInAppUtils openShareSheetWithContentToShare:]_block_invoke
@@ -534,25 +550,18 @@ _OBJC_IVAR_$_MoEngageStarRatingView._emptyStarImage
 _OBJC_IVAR_$_MoEngageStarRatingView._halfStarImage
 _OBJC_IVAR_$_MoEngageStarRatingView._filledStarImage
 _OBJC_IVAR_$_MoEngageStarRatingView._starBorderColor
+_OBJC_CLASSLIST_REFERENCES_$_.59
+_OBJC_SELECTOR_REFERENCES_.65
 _OBJC_SELECTOR_REFERENCES_.67
-_OBJC_SELECTOR_REFERENCES_.69
-_OBJC_SELECTOR_REFERENCES_.71
 _OBJC_CLASSLIST_REFERENCES_$_.74
+_OBJC_SELECTOR_REFERENCES_.90
+_OBJC_SELECTOR_REFERENCES_.92
 _OBJC_SELECTOR_REFERENCES_.94
 _OBJC_SELECTOR_REFERENCES_.96
-_OBJC_SELECTOR_REFERENCES_.98
-_OBJC_SELECTOR_REFERENCES_.100
-_OBJC_SELECTOR_REFERENCES_.102
-_OBJC_SELECTOR_REFERENCES_.104
-_OBJC_SELECTOR_REFERENCES_.106
-_OBJC_SELECTOR_REFERENCES_.108
 _OBJC_IVAR_$_MoEngageStarRatingView._shouldBecomeFirstResponder
-_OBJC_SELECTOR_REFERENCES_.124
-_OBJC_SELECTOR_REFERENCES_.126
-_OBJC_SELECTOR_REFERENCES_.128
-_OBJC_SELECTOR_REFERENCES_.132
-_OBJC_SELECTOR_REFERENCES_.134
-_OBJC_SELECTOR_REFERENCES_.136
+_OBJC_SELECTOR_REFERENCES_.138
+_OBJC_SELECTOR_REFERENCES_.140
+_OBJC_SELECTOR_REFERENCES_.144
 _OBJC_CLASSLIST_REFERENCES_$_.149
 _OBJC_CLASSLIST_REFERENCES_$_.158
 _OBJC_IVAR_$_MoEngageStarRatingView._shouldBeginGestureRecognizerBlock
@@ -561,7 +570,7 @@ __OBJC_$_INSTANCE_METHODS_MoEngageStarRatingView
 __OBJC_$_INSTANCE_VARIABLES_MoEngageStarRatingView
 __OBJC_$_PROP_LIST_MoEngageStarRatingView
 __OBJC_CLASS_RO_$_MoEngageStarRatingView
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/CustomViews/MoEngageStarRatingView.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/CustomViews/MoEngageStarRatingView.m
 MoEngageInApps/InAppView/CustomViews/MoEngageStarRatingView.m
 MoEngageInApps/InAppView/CustomViews/MoEngageStarRatingView.h
 CGSizeMake
@@ -604,7 +613,7 @@ _OBJC_IVAR_$_MoEngageInAppContainer._style
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppContainer
 __OBJC_$_PROP_LIST_MoEngageInAppContainer
 __OBJC_CLASS_RO_$_MoEngageInAppContainer
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppContainer.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppContainer.m
 MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppContainer.m
 MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppContainer.h
 +[MoEngageInAppCoordinator sharedInstance]
@@ -614,7 +623,7 @@ ___42+[MoEngageInAppCoordinator sharedInstance]_block_invoke
 ___82-[MoEngageInAppCoordinator getInAppControllerForInstanceID:withCompletionHandler:]_block_invoke
 ___82-[MoEngageInAppCoordinator getInAppControllerForInstanceID:withCompletionHandler:]_block_invoke_2
 ___copy_helper_block_e4_20b24s
-___82-[MoEngageInAppCoordinator getInAppControllerForInstanceID:withCompletionHandler:]_block_invoke.28
+___82-[MoEngageInAppCoordinator getInAppControllerForInstanceID:withCompletionHandler:]_block_invoke.29
 ___copy_helper_block_e4_20s24b
 -[MoEngageInAppCoordinator getInAppControllerForSDKInstance:withCompletionHandler:]
 ___83-[MoEngageInAppCoordinator getInAppControllerForSDKInstance:withCompletionHandler:]_block_invoke
@@ -631,13 +640,14 @@ _sharedInstance.onceToken
 _sharedInstance.instance
 ___block_descriptor_20_e5_v4?0l
 ___block_literal_global
+_OBJC_SELECTOR_REFERENCES_.15
+_OBJC_SELECTOR_REFERENCES_.17
+_OBJC_SELECTOR_REFERENCES_.19
+_OBJC_SELECTOR_REFERENCES_.21
+_OBJC_SELECTOR_REFERENCES_.23
 ___block_descriptor_28_e4_20bs24s_e5_v4?0l
-_OBJC_CLASSLIST_REFERENCES_$_.23
-_OBJC_SELECTOR_REFERENCES_.25
-_OBJC_SELECTOR_REFERENCES_.27
+_OBJC_CLASSLIST_REFERENCES_$_.24
 ___block_descriptor_28_e4_20s24bs_e48_v8?0"_TtC12MoEngageCore19MoEngageSDKInstance"4l
-_OBJC_SELECTOR_REFERENCES_.31
-_OBJC_CLASSLIST_REFERENCES_$_.32
 ___block_descriptor_32_e4_20s24s28bs_e5_v4?0l
 __OBJC_$_CLASS_METHODS_MoEngageInAppCoordinator
 __OBJC_METACLASS_RO_$_MoEngageInAppCoordinator
@@ -647,7 +657,7 @@ _OBJC_IVAR_$_MoEngageInAppCoordinator._inAppControllersDict
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppCoordinator
 __OBJC_$_PROP_LIST_MoEngageInAppCoordinator
 __OBJC_CLASS_RO_$_MoEngageInAppCoordinator
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppCoordinator.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppCoordinator.m
 MoEngageInApps/MoEngageInAppCoordinator.m
 MoEngageInApps/MoEngageInAppCoordinator.h
 __destroy_helper_block_e4_20s24s28s
@@ -656,7 +666,7 @@ __83-[MoEngageInAppCoordinator getInAppControllerForSDKInstance:withCompletionHa
 __83-[MoEngageInAppCoordinator getInAppControllerForSDKInstance:withCompletionHandler:]_block_invoke_2
 __83-[MoEngageInAppCoordinator getInAppControllerForSDKInstance:withCompletionHandler:]_block_invoke
 __copy_helper_block_e4_20s24b
-__82-[MoEngageInAppCoordinator getInAppControllerForInstanceID:withCompletionHandler:]_block_invoke.28
+__82-[MoEngageInAppCoordinator getInAppControllerForInstanceID:withCompletionHandler:]_block_invoke.29
 __copy_helper_block_e4_20b24s
 __82-[MoEngageInAppCoordinator getInAppControllerForInstanceID:withCompletionHandler:]_block_invoke_2
 __82-[MoEngageInAppCoordinator getInAppControllerForInstanceID:withCompletionHandler:]_block_invoke
@@ -686,9 +696,6 @@ __42+[MoEngageInAppCoordinator sharedInstance]_block_invoke
 -[MoEngageInAppCampaignsData inAppLastShownTime]
 -[MoEngageInAppCampaignsData setInAppLastShownTime:]
 -[MoEngageInAppCampaignsData .cxx_destruct]
-_OBJC_SELECTOR_REFERENCES_.17
-_OBJC_SELECTOR_REFERENCES_.19
-_OBJC_SELECTOR_REFERENCES_.21
 __OBJC_$_PROTOCOL_INSTANCE_METHODS_NSCoding
 __OBJC_$_PROTOCOL_METHOD_TYPES_NSCoding
 __OBJC_PROTOCOL_$_NSCoding
@@ -709,7 +716,7 @@ _OBJC_IVAR_$_MoEngageInAppCampaignsData._inAppLastShownTime
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppCampaignsData
 __OBJC_$_PROP_LIST_MoEngageInAppCampaignsData
 __OBJC_CLASS_RO_$_MoEngageInAppCampaignsData
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/MoEngageInAppCampaignsData.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/MoEngageInAppCampaignsData.m
 MoEngageInApps/ModelObjects/MoEngageInAppCampaignsData.m
 MoEngageInApps/ModelObjects/MoEngageInAppCampaignsData.h
 -[MoEngageInAppRatingView initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]
@@ -732,7 +739,6 @@ ___91-[MoEngageInAppRatingView initWithInAppWidget:inContainer:withStartPosition
 -[MoEngageInAppRatingView .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.36
 _OBJC_CLASSLIST_REFERENCES_$_.65
-_OBJC_CLASSLIST_REFERENCES_$_.76
 _OBJC_IVAR_$_MoEngageInAppRatingView._ratingView
 _OBJC_IVAR_$_MoEngageInAppRatingView._widgetModelObj
 _OBJC_IVAR_$_MoEngageInAppRatingView._campaignID
@@ -743,7 +749,7 @@ __OBJC_$_INSTANCE_METHODS_MoEngageInAppRatingView
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppRatingView
 __OBJC_$_PROP_LIST_MoEngageInAppRatingView
 __OBJC_CLASS_RO_$_MoEngageInAppRatingView
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MoEngageInAppRatingView.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MoEngageInAppRatingView.m
 MoEngageInApps/InAppView/MoEngageInAppRatingView.m
 MoEngageInApps/InAppView/MoEngageInAppRatingView.h
 __91-[MoEngageInAppRatingView initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]_block_invoke_2
@@ -786,6 +792,7 @@ __91-[MoEngageInAppRatingView initWithInAppWidget:inContainer:withStartPosition:
 -[MoEngageInAppViewPayload .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.43
 _OBJC_CLASSLIST_REFERENCES_$_.44
+_OBJC_SELECTOR_REFERENCES_.83
 _OBJC_CLASSLIST_REFERENCES_$_.84
 __OBJC_METACLASS_RO_$_MoEngageInAppViewPayload
 __OBJC_$_INSTANCE_METHODS_MoEngageInAppViewPayload
@@ -809,7 +816,7 @@ _OBJC_IVAR_$_MoEngageInAppViewPayload._htmlAssetsDict
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppViewPayload
 __OBJC_$_PROP_LIST_MoEngageInAppViewPayload
 __OBJC_CLASS_RO_$_MoEngageInAppViewPayload
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppViewPayload.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppViewPayload.m
 MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppViewPayload.m
 MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppViewPayload.h
 -[MoEngageInAppWebView initWithInAppPayload:]
@@ -847,32 +854,30 @@ ___117-[MoEngageInAppWebView webView:runJavaScriptTextInputPanelWithPrompt:defau
 -[MoEngageInAppWebView .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.9
 _OBJC_CLASSLIST_REFERENCES_$_.29
-_OBJC_CLASSLIST_REFERENCES_$_.45
+_OBJC_SELECTOR_REFERENCES_.31
 _OBJC_CLASSLIST_REFERENCES_$_.64
+_OBJC_CLASSLIST_REFERENCES_$_.75
 _OBJC_IVAR_$_MoEngageInAppWebView._inAppPayload
+_OBJC_SELECTOR_REFERENCES_.85
+_OBJC_SELECTOR_REFERENCES_.87
 _OBJC_CLASSLIST_REFERENCES_$_.90
 _OBJC_CLASSLIST_REFERENCES_$_.107
 _OBJC_CLASSLIST_REFERENCES_$_.118
 _OBJC_CLASSLIST_REFERENCES_$_.121
 _OBJC_CLASSLIST_REFERENCES_$_.122
 ___block_descriptor_28_e4_20s24s_e32_v8?0"MoEngageInAppController"4l
+_OBJC_SELECTOR_REFERENCES_.131
 _OBJC_CLASSLIST_REFERENCES_$_.132
-_OBJC_CLASSLIST_REFERENCES_$_.145
-_OBJC_SELECTOR_REFERENCES_.147
-_OBJC_CLASSLIST_REFERENCES_$_.152
-_OBJC_CLASSLIST_REFERENCES_$_.155
-_OBJC_SELECTOR_REFERENCES_.169
-_OBJC_SELECTOR_REFERENCES_.171
-_OBJC_SELECTOR_REFERENCES_.173
-_OBJC_SELECTOR_REFERENCES_.175
-_OBJC_CLASSLIST_REFERENCES_$_.176
-_OBJC_SELECTOR_REFERENCES_.178
-_OBJC_CLASSLIST_REFERENCES_$_.179
+_OBJC_CLASSLIST_REFERENCES_$_.135
+_OBJC_SELECTOR_REFERENCES_.143
+_OBJC_CLASSLIST_REFERENCES_$_.146
+_OBJC_CLASSLIST_REFERENCES_$_.153
+_OBJC_CLASSLIST_REFERENCES_$_.156
+_OBJC_SELECTOR_REFERENCES_.168
 ___block_descriptor_24_e4_20bs_e22_v8?0"UIAlertAction"4l
-_OBJC_SELECTOR_REFERENCES_.186
+_OBJC_SELECTOR_REFERENCES_.187
 _OBJC_SELECTOR_REFERENCES_.189
 ___block_literal_global.196
-_OBJC_SELECTOR_REFERENCES_.198
 ___block_descriptor_24_e4_20s_e20_v8?0"UITextField"4l
 ___block_descriptor_28_e4_20s24bs_e22_v8?0"UIAlertAction"4l
 ___block_literal_global.210
@@ -905,7 +910,7 @@ __OBJC_$_INSTANCE_METHODS_MoEngageInAppWebView
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppWebView
 __OBJC_$_PROP_LIST_MoEngageInAppWebView
 __OBJC_CLASS_RO_$_MoEngageInAppWebView
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MoEngageInAppWebView.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MoEngageInAppWebView.m
 MoEngageInApps/InAppView/MoEngageInAppWebView.m
 MoEngageInApps/InAppView/MoEngageInAppWebView.h
 __117-[MoEngageInAppWebView webView:runJavaScriptTextInputPanelWithPrompt:defaultText:initiatedByFrame:completionHandler:]_block_invoke_2
@@ -966,13 +971,13 @@ _OBJC_CLASSLIST_REFERENCES_$_.52
 ___block_descriptor_24_e4_20s_e71_v12?0"MoEngageInAppPrimaryContainerView"4"MoEngageInAppViewPayload"8l
 ___block_descriptor_28_e4_20s24bs_e16_v8?0"NSArray"4l
 ___block_descriptor_36_e4_20s24bs28s32s_e32_v8?0"MoEngageInAppController"4l
-_OBJC_CLASSLIST_REFERENCES_$_.72
+_OBJC_CLASSLIST_REFERENCES_$_.73
 ___block_descriptor_24_e4_20bs_e32_v8?0"MoEngageInAppController"4l
 __OBJC_$_CLASS_METHODS_MoEngageInAppDebuggingService
 __OBJC_METACLASS_RO_$_MoEngageInAppDebuggingService
 __OBJC_$_INSTANCE_METHODS_MoEngageInAppDebuggingService
 __OBJC_CLASS_RO_$_MoEngageInAppDebuggingService
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppDebuggingService.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppDebuggingService.m
 __84-[MoEngageInAppDebuggingService getInAppStateListForInstanceID:withCompletionBlock:]_block_invoke
 MoEngageInApps/MoEngageInAppDebuggingService.m
 __90-[MoEngageInAppDebuggingService getSelfHandledInAppListForInstanceID:withCompletionBlock:]_block_invoke
@@ -1016,7 +1021,7 @@ __OBJC_$_INSTANCE_METHODS_MoEngageInAppTriggerCondition
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppTriggerCondition
 __OBJC_$_PROP_LIST_MoEngageInAppTriggerCondition
 __OBJC_CLASS_RO_$_MoEngageInAppTriggerCondition
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppTriggerCondition.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppTriggerCondition.m
 MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppTriggerCondition.m
 MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppTriggerCondition.h
 -[MoEngageInAppDisplayRules initWithDictionary:]
@@ -1048,7 +1053,7 @@ __OBJC_$_INSTANCE_METHODS_MoEngageInAppDisplay
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppDisplay
 __OBJC_$_PROP_LIST_MoEngageInAppDisplay
 __OBJC_CLASS_RO_$_MoEngageInAppDisplay
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppDisplay.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppDisplay.m
 MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppDisplay.m
 MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppDisplay.h
 +[MoEngageInAppAssetsManager sharedAssetsManager]
@@ -1085,19 +1090,19 @@ ___destroy_helper_block_e4_20r24r28r
 _sharedAssetsManager.onceToken
 _sharedAssetsManager.instance
 _OBJC_SELECTOR_REFERENCES_.13
-_OBJC_SELECTOR_REFERENCES_.15
 _OBJC_CLASSLIST_REFERENCES_$_.20
 _OBJC_CLASSLIST_REFERENCES_$_.37
 ___block_descriptor_36_e4_20r24r28r32r_e7_v8?0c4l
 _OBJC_CLASSLIST_REFERENCES_$_.49
 ___block_descriptor_32_e4_20r24r28r_e18_v12?0c4"NSData"8l
-_OBJC_CLASSLIST_REFERENCES_$_.67
 _OBJC_CLASSLIST_REFERENCES_$_.113
+_OBJC_SELECTOR_REFERENCES_.123
+_OBJC_SELECTOR_REFERENCES_.129
 __OBJC_$_CLASS_METHODS_MoEngageInAppAssetsManager
 __OBJC_METACLASS_RO_$_MoEngageInAppAssetsManager
 __OBJC_$_INSTANCE_METHODS_MoEngageInAppAssetsManager
 __OBJC_CLASS_RO_$_MoEngageInAppAssetsManager
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppAssetsManager.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppAssetsManager.m
 MoEngageInApps/MoEngageInAppAssetsManager.m
 __destroy_helper_block_e4_20r24r28r
 __copy_helper_block_e4_20r24r28r
@@ -1142,7 +1147,9 @@ _OBJC_CLASSLIST_REFERENCES_$_.91
 _OBJC_CLASSLIST_REFERENCES_$_.96
 _OBJC_CLASSLIST_REFERENCES_$_.111
 ___block_descriptor_32_e4_20s24bs_e24_v12?0c4"NSDictionary"8l
+_OBJC_CLASSLIST_REFERENCES_$_.136
 _OBJC_CLASSLIST_REFERENCES_$_.147
+_OBJC_CLASSLIST_REFERENCES_$_.152
 __OBJC_METACLASS_RO_$_MoEngageInAppStatsManager
 __OBJC_$_INSTANCE_METHODS_MoEngageInAppStatsManager
 _OBJC_IVAR_$_MoEngageInAppStatsManager._configController
@@ -1151,7 +1158,7 @@ _OBJC_IVAR_$_MoEngageInAppStatsManager._statData
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppStatsManager
 __OBJC_$_PROP_LIST_MoEngageInAppStatsManager
 __OBJC_CLASS_RO_$_MoEngageInAppStatsManager
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppStatsManager.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppStatsManager.m
 MoEngageInApps/MoEngageInAppStatsManager.m
 __54-[MoEngageInAppStatsManager syncBatch:WithCompletion:]_block_invoke
 __destroy_helper_block_e4_20s24s28r32r36r
@@ -1299,9 +1306,6 @@ _OBJC_IVAR_$_MoEngageWidgetBackground._alpha
 __OBJC_$_INSTANCE_VARIABLES_MoEngageWidgetBackground
 __OBJC_$_PROP_LIST_MoEngageWidgetBackground
 __OBJC_CLASS_RO_$_MoEngageWidgetBackground
-_OBJC_SELECTOR_REFERENCES_.143
-_OBJC_SELECTOR_REFERENCES_.145
-_OBJC_CLASSLIST_REFERENCES_$_.156
 __OBJC_METACLASS_RO_$_MoEngageWidgetFont
 __OBJC_$_INSTANCE_METHODS_MoEngageWidgetFont
 _OBJC_IVAR_$_MoEngageWidgetFont._fontSize
@@ -1310,7 +1314,9 @@ _OBJC_IVAR_$_MoEngageWidgetFont._textColor
 __OBJC_$_INSTANCE_VARIABLES_MoEngageWidgetFont
 __OBJC_$_PROP_LIST_MoEngageWidgetFont
 __OBJC_CLASS_RO_$_MoEngageWidgetFont
+_OBJC_SELECTOR_REFERENCES_.178
 _OBJC_SELECTOR_REFERENCES_.180
+_OBJC_SELECTOR_REFERENCES_.184
 __OBJC_METACLASS_RO_$_MoEngageInAppAnimation
 __OBJC_$_INSTANCE_METHODS_MoEngageInAppAnimation
 _OBJC_IVAR_$_MoEngageInAppAnimation._entry_animation
@@ -1318,6 +1324,10 @@ _OBJC_IVAR_$_MoEngageInAppAnimation._exit_animation
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppAnimation
 __OBJC_$_PROP_LIST_MoEngageInAppAnimation
 __OBJC_CLASS_RO_$_MoEngageInAppAnimation
+_OBJC_SELECTOR_REFERENCES_.197
+_OBJC_SELECTOR_REFERENCES_.203
+_OBJC_SELECTOR_REFERENCES_.205
+_OBJC_SELECTOR_REFERENCES_.207
 __OBJC_METACLASS_RO_$_MoEngageRatingWidgetStyle
 __OBJC_$_INSTANCE_METHODS_MoEngageRatingWidgetStyle
 _OBJC_IVAR_$_MoEngageRatingWidgetStyle._isHalfStepAllowed
@@ -1326,23 +1336,27 @@ _OBJC_IVAR_$_MoEngageRatingWidgetStyle._starColor
 __OBJC_$_INSTANCE_VARIABLES_MoEngageRatingWidgetStyle
 __OBJC_$_PROP_LIST_MoEngageRatingWidgetStyle
 __OBJC_CLASS_RO_$_MoEngageRatingWidgetStyle
+_OBJC_SELECTOR_REFERENCES_.225
+_OBJC_SELECTOR_REFERENCES_.227
+_OBJC_SELECTOR_REFERENCES_.229
 _OBJC_CLASSLIST_REFERENCES_$_.230
 _OBJC_SELECTOR_REFERENCES_.231
 _OBJC_SELECTOR_REFERENCES_.233
 _OBJC_CLASSLIST_REFERENCES_$_.234
-_OBJC_SELECTOR_REFERENCES_.236
 _OBJC_CLASSLIST_REFERENCES_$_.237
+_OBJC_SELECTOR_REFERENCES_.239
 _OBJC_CLASSLIST_REFERENCES_$_.240
 _OBJC_SELECTOR_REFERENCES_.242
-_OBJC_SELECTOR_REFERENCES_.244
-_OBJC_SELECTOR_REFERENCES_.248
 _OBJC_CLASSLIST_REFERENCES_$_.249
+_OBJC_SELECTOR_REFERENCES_.251
 _OBJC_CLASSLIST_REFERENCES_$_.252
 _OBJC_SELECTOR_REFERENCES_.253
+_OBJC_SELECTOR_REFERENCES_.255
 _OBJC_CLASSLIST_REFERENCES_$_.256
-_OBJC_SELECTOR_REFERENCES_.258
 _OBJC_CLASSLIST_REFERENCES_$_.259
+_OBJC_SELECTOR_REFERENCES_.261
 _OBJC_SELECTOR_REFERENCES_.263
+_OBJC_SELECTOR_REFERENCES_.265
 _OBJC_SELECTOR_REFERENCES_.269
 _OBJC_SELECTOR_REFERENCES_.273
 __OBJC_METACLASS_RO_$_MoEngageInAppWidgetStyle
@@ -1361,7 +1375,7 @@ _OBJC_IVAR_$_MoEngageInAppWidgetStyle._closeButtonFloat
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppWidgetStyle
 __OBJC_$_PROP_LIST_MoEngageInAppWidgetStyle
 __OBJC_CLASS_RO_$_MoEngageInAppWidgetStyle
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppWidgetStyle.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppWidgetStyle.m
 MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppWidgetStyle.m
 MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppWidgetStyle.h
 -[MoEngageModelObject initWithDictionary:]
@@ -1370,7 +1384,7 @@ _OBJC_CLASSLIST_REFERENCES_$_.17
 __OBJC_METACLASS_RO_$_MoEngageModelObject
 __OBJC_$_INSTANCE_METHODS_MoEngageModelObject
 __OBJC_CLASS_RO_$_MoEngageModelObject
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/MoEngageModelObject.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/MoEngageModelObject.m
 MoEngageInApps/ModelObjects/MoEngageModelObject.m
 -[MoEngageInAppFCMeta initWithDictionary:]
 -[MoEngageInAppFCMeta initWithCoder:]
@@ -1409,7 +1423,7 @@ __OBJC_$_INSTANCE_METHODS_MoEngageInAppDeliveryControl
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppDeliveryControl
 __OBJC_$_PROP_LIST_MoEngageInAppDeliveryControl
 __OBJC_CLASS_RO_$_MoEngageInAppDeliveryControl
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppDeliveryControl.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppDeliveryControl.m
 MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppDeliveryControl.m
 MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppDeliveryControl.h
 -[MoEngageInAppDelegateHandler init]
@@ -1438,14 +1452,15 @@ ___block_descriptor_20_e32_v8?0"MoEngageInAppController"4l
 ___block_literal_global.19
 ___block_literal_global.22
 ___block_literal_global.25
+_OBJC_SELECTOR_REFERENCES_.27
 ___block_literal_global.28
 ___block_literal_global.31
 ___block_literal_global.34
-_OBJC_SELECTOR_REFERENCES_.45
+_OBJC_CLASSLIST_REFERENCES_$_.39
 __OBJC_METACLASS_RO_$_MoEngageInAppDelegateHandler
 __OBJC_$_INSTANCE_METHODS_MoEngageInAppDelegateHandler
 __OBJC_CLASS_RO_$_MoEngageInAppDelegateHandler
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppDelegateHandler.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppDelegateHandler.m
 MoEngageInApps/MoEngageInAppDelegateHandler.m
 __49-[MoEngageInAppDelegateHandler showInAppViaPush:]_block_invoke
 __60-[MoEngageInAppDelegateHandler StatusBarOrientationChanged:]_block_invoke
@@ -1522,7 +1537,7 @@ __OBJC_$_INSTANCE_METHODS_MoEngageInAppCampaignMeta
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppCampaignMeta
 __OBJC_$_PROP_LIST_MoEngageInAppCampaignMeta
 __OBJC_CLASS_RO_$_MoEngageInAppCampaignMeta
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppCampaignMeta.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppCampaignMeta.m
 MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppCampaignMeta.m
 MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppCampaignMeta.h
 -[MoEngageInAppStatInstance initWithStatType:]
@@ -1563,7 +1578,7 @@ MoEngageInApps/ModelObjects/InAppMeta/MoEngageInAppCampaignMeta.h
 -[MoEngageInAppStatData batches_array]
 -[MoEngageInAppStatData setBatches_array:]
 -[MoEngageInAppStatData .cxx_destruct]
-_OBJC_SELECTOR_REFERENCES_.23
+_OBJC_SELECTOR_REFERENCES_.25
 __OBJC_CLASS_PROTOCOLS_$_MoEngageInAppStatInstance
 __OBJC_METACLASS_RO_$_MoEngageInAppStatInstance
 __OBJC_$_INSTANCE_METHODS_MoEngageInAppStatInstance
@@ -1572,7 +1587,6 @@ _OBJC_IVAR_$_MoEngageInAppStatInstance._timestamp_array
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppStatInstance
 __OBJC_$_PROP_LIST_MoEngageInAppStatInstance
 __OBJC_CLASS_RO_$_MoEngageInAppStatInstance
-_OBJC_CLASSLIST_REFERENCES_$_.60
 _OBJC_CLASSLIST_REFERENCES_$_.62
 __OBJC_CLASS_PROTOCOLS_$_MoEngageInAppCampaignStat
 __OBJC_METACLASS_RO_$_MoEngageInAppCampaignStat
@@ -1601,7 +1615,7 @@ _OBJC_IVAR_$_MoEngageInAppStatData._batches_array
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppStatData
 __OBJC_$_PROP_LIST_MoEngageInAppStatData
 __OBJC_CLASS_RO_$_MoEngageInAppStatData
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppStatsTracking.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppStatsTracking.m
 MoEngageInApps/MoEngageInAppStatsTracking.m
 MoEngageInApps/MoEngageInAppStatsTracking.h
 -[MoEngageInAppLabelWidget initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]
@@ -1623,6 +1637,7 @@ ___92-[MoEngageInAppLabelWidget initWithInAppWidget:inContainer:withStartPositio
 -[MoEngageInAppLabelWidget contentInsets]
 -[MoEngageInAppLabelWidget setContentInsets:]
 -[MoEngageInAppLabelWidget .cxx_destruct]
+_OBJC_SELECTOR_REFERENCES_.45
 _OBJC_IVAR_$_MoEngageInAppLabelWidget._widgetModelObj
 _OBJC_IVAR_$_MoEngageInAppLabelWidget._campaignID
 _OBJC_IVAR_$_MoEngageInAppLabelWidget._startPosition
@@ -1633,7 +1648,7 @@ __OBJC_$_INSTANCE_METHODS_MoEngageInAppLabelWidget
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppLabelWidget
 __OBJC_$_PROP_LIST_MoEngageInAppLabelWidget
 __OBJC_CLASS_RO_$_MoEngageInAppLabelWidget
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MoEngageInAppLabelWidget.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MoEngageInAppLabelWidget.m
 MoEngageInApps/InAppView/MoEngageInAppLabelWidget.m
 MoEngageInApps/InAppView/MoEngageInAppLabelWidget.h
 UIEdgeInsetsInsetRect
@@ -1663,7 +1678,7 @@ __OBJC_$_INSTANCE_METHODS_MoEngageInAppWidget
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppWidget
 __OBJC_$_PROP_LIST_MoEngageInAppWidget
 __OBJC_CLASS_RO_$_MoEngageInAppWidget
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppWidget.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppWidget.m
 MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppWidget.m
 MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppWidget.h
 +[UIImage(animatedGIF) animatedImageWithAnimatedGIFData:]
@@ -1673,7 +1688,7 @@ _animatedImageWithAnimatedGIFImageSource
 _frameArray
 __OBJC_$_CATEGORY_CLASS_METHODS_UIImage_$_animatedGIF
 __OBJC_$_CATEGORY_UIImage_$_animatedGIF
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/CustomViews/UIImage+animatedGIF.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/CustomViews/UIImage+animatedGIF.m
 frameArray
 MoEngageInApps/InAppView/CustomViews/UIImage+animatedGIF.m
 vectorGCD
@@ -1684,7 +1699,7 @@ sum
 createImagesAndDelays
 delayCentisecondsForImageAtIndex
 animatedImageWithAnimatedGIFReleasingImageSource
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppStatConstants.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppStatConstants.m
 -[MoEngageInAppContainerView initWithContainerInfo:andCampaignID:]
 -[MoEngageInAppContainerView updateContainerFrameinContainerView:WithStartPos:andtemplateType:]
 ___95-[MoEngageInAppContainerView updateContainerFrameinContainerView:WithStartPos:andtemplateType:]_block_invoke
@@ -1738,9 +1753,7 @@ ___88-[MoEngageInAppPrimaryContainerView slideAnimationWithType:forEntry:andComp
 -[MoEngageInAppPrimaryContainerView .cxx_destruct]
 ___block_descriptor_24_e4_20w_e7_v8?0c4l
 _OBJC_CLASSLIST_REFERENCES_$_.78
-_OBJC_CLASSLIST_REFERENCES_$_.89
 _OBJC_CLASSLIST_REFERENCES_$_.105
-_OBJC_SELECTOR_REFERENCES_.141
 _OBJC_CLASSLIST_REFERENCES_$_.154
 _OBJC_CLASSLIST_REFERENCES_$_.163
 _OBJC_CLASSLIST_REFERENCES_$_.166
@@ -1757,36 +1770,34 @@ __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppContainerView
 __OBJC_$_PROP_LIST_MoEngageInAppContainerView
 __OBJC_CLASS_RO_$_MoEngageInAppContainerView
 _OBJC_CLASSLIST_REFERENCES_$_.216
-_OBJC_SELECTOR_REFERENCES_.218
 _OBJC_CLASSLIST_REFERENCES_$_.221
 _OBJC_CLASSLIST_REFERENCES_$_.226
-_OBJC_SELECTOR_REFERENCES_.230
 _OBJC_SELECTOR_REFERENCES_.234
 _OBJC_CLASSLIST_REFERENCES_$_.235
 _OBJC_SELECTOR_REFERENCES_.237
 _OBJC_SELECTOR_REFERENCES_.245
+_OBJC_SELECTOR_REFERENCES_.247
 _OBJC_SELECTOR_REFERENCES_.249
+_OBJC_SELECTOR_REFERENCES_.257
 _OBJC_SELECTOR_REFERENCES_.259
 ___block_descriptor_24_e4_20bs_e7_v8?0c4l
 ___block_descriptor_28_e4_20s24bs_e7_v8?0c4l
 _OBJC_SELECTOR_REFERENCES_.267
+_OBJC_SELECTOR_REFERENCES_.271
 _OBJC_CLASSLIST_REFERENCES_$_.272
 _OBJC_CLASSLIST_REFERENCES_$_.273
-_OBJC_SELECTOR_REFERENCES_.277
 _OBJC_SELECTOR_REFERENCES_.279
+_OBJC_SELECTOR_REFERENCES_.282
 _OBJC_SELECTOR_REFERENCES_.284
 _OBJC_SELECTOR_REFERENCES_.286
 ___block_descriptor_28_e4_20bs_e7_v8?0c4l
 _OBJC_SELECTOR_REFERENCES_.288
 _OBJC_SELECTOR_REFERENCES_.293
-_OBJC_SELECTOR_REFERENCES_.295
-_OBJC_SELECTOR_REFERENCES_.297
-_OBJC_SELECTOR_REFERENCES_.299
 _OBJC_CLASSLIST_REFERENCES_$_.300
 ___block_descriptor_28_e4_20s_e5_v4?0l
+_OBJC_SELECTOR_REFERENCES_.304
+_OBJC_SELECTOR_REFERENCES_.306
 ___block_descriptor_40_e4_20s_e5_v4?0l
-_OBJC_SELECTOR_REFERENCES_.309
-_OBJC_SELECTOR_REFERENCES_.311
 _OBJC_IVAR_$_MoEngageInAppPrimaryContainerView._inAppPayload
 _OBJC_IVAR_$_MoEngageInAppPrimaryContainerView._isEmbeddedNudge
 _OBJC_IVAR_$_MoEngageInAppPrimaryContainerView._nudgePosition
@@ -1795,7 +1806,7 @@ __OBJC_$_INSTANCE_METHODS_MoEngageInAppPrimaryContainerView
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppPrimaryContainerView
 __OBJC_$_PROP_LIST_MoEngageInAppPrimaryContainerView
 __OBJC_CLASS_RO_$_MoEngageInAppPrimaryContainerView
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MoEngageInAppContainerView.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MoEngageInAppContainerView.m
 MoEngageInApps/InAppView/MoEngageInAppContainerView.m
 MoEngageInApps/InAppView/MoEngageInAppContainerView.h
 __88-[MoEngageInAppPrimaryContainerView slideAnimationWithType:forEntry:andCompletionBlock:]_block_invoke.307
@@ -1862,7 +1873,7 @@ __OBJC_$_CLASS_METHODS_MoEngageInAppHandler
 __OBJC_METACLASS_RO_$_MoEngageInAppHandler
 __OBJC_$_INSTANCE_METHODS_MoEngageInAppHandler
 __OBJC_CLASS_RO_$_MoEngageInAppHandler
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppHandler.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppHandler.m
 __46-[MoEngageInAppHandler disableInAppsForAppID:]_block_invoke
 MoEngageInApps/MoEngageInAppHandler.m
 __70-[MoEngageInAppHandler selfHandledDismissedWithCampaignInfo:forAppID:]_block_invoke
@@ -1884,7 +1895,7 @@ __57-[MoEngageInAppHandler setCurrentInAppContexts:forAppID:]_block_invoke
 __51-[MoEngageInAppHandler resetInAppDelegateForAppID:]_block_invoke
 __50-[MoEngageInAppHandler setInAppDelegate:forAppID:]_block_invoke
 __38+[MoEngageInAppHandler sharedInstance]_block_invoke
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/Constants/JS/MoEngageInAppJSBridge.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/Constants/JS/MoEngageInAppJSBridge.m
 -[MoEngageInAppController initWithSDKConfig:withSDKInstance:]
 -[MoEngageInAppController initializeInAppController]
 -[MoEngageInAppController setInAppDelegate:]
@@ -2060,34 +2071,33 @@ ___79-[MoEngageInAppController informDelegateActionPerformedWithInfo:forCampaign
 -[MoEngageInAppController .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.51
 ___block_descriptor_24_e4_20s_e7_v8?0c4l
+_OBJC_CLASSLIST_REFERENCES_$_.87
+_OBJC_CLASSLIST_REFERENCES_$_.141
 _OBJC_CLASSLIST_REFERENCES_$_.185
-_OBJC_SELECTOR_REFERENCES_.187
 _OBJC_CLASSLIST_REFERENCES_$_.196
-_OBJC_SELECTOR_REFERENCES_.200
-_OBJC_SELECTOR_REFERENCES_.202
 _OBJC_CLASSLIST_REFERENCES_$_.203
+_OBJC_SELECTOR_REFERENCES_.209
 _OBJC_CLASSLIST_REFERENCES_$_.212
-_OBJC_SELECTOR_REFERENCES_.214
 _OBJC_CLASSLIST_REFERENCES_$_.215
 _OBJC_CLASSLIST_REFERENCES_$_.236
 _OBJC_SELECTOR_REFERENCES_.238
-_OBJC_SELECTOR_REFERENCES_.240
 _OBJC_SELECTOR_REFERENCES_.250
-_OBJC_SELECTOR_REFERENCES_.252
 _OBJC_SELECTOR_REFERENCES_.254
-_OBJC_SELECTOR_REFERENCES_.256
 _OBJC_SELECTOR_REFERENCES_.260
 _OBJC_SELECTOR_REFERENCES_.264
-_OBJC_SELECTOR_REFERENCES_.266
 _OBJC_SELECTOR_REFERENCES_.268
 _OBJC_SELECTOR_REFERENCES_.270
 _OBJC_SELECTOR_REFERENCES_.274
+_OBJC_SELECTOR_REFERENCES_.276
 _OBJC_SELECTOR_REFERENCES_.278
+_OBJC_SELECTOR_REFERENCES_.280
 _OBJC_SELECTOR_REFERENCES_.292
+_OBJC_SELECTOR_REFERENCES_.294
+_OBJC_SELECTOR_REFERENCES_.298
+_OBJC_SELECTOR_REFERENCES_.302
+_OBJC_SELECTOR_REFERENCES_.308
 _OBJC_SELECTOR_REFERENCES_.314
 _OBJC_SELECTOR_REFERENCES_.316
-_OBJC_SELECTOR_REFERENCES_.318
-_OBJC_SELECTOR_REFERENCES_.320
 _OBJC_SELECTOR_REFERENCES_.330
 _OBJC_CLASSLIST_REFERENCES_$_.335
 _OBJC_SELECTOR_REFERENCES_.337
@@ -2302,7 +2312,7 @@ _OBJC_IVAR_$_MoEngageInAppController._inAppsDisabledScreens
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppController
 __OBJC_$_PROP_LIST_MoEngageInAppController
 __OBJC_CLASS_RO_$_MoEngageInAppController
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppController.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppController.m
 MoEngageInApps/MoEngageInAppController.m
 MoEngageInApps/MoEngageInAppController.h
 __79-[MoEngageInAppController informDelegateActionPerformedWithInfo:forCampaignID:]_block_invoke
@@ -2368,7 +2378,7 @@ __39-[MoEngageInAppController updateModule]_block_invoke
 -[MoEngageInAppActionHandler performNavigationAction:forCampaignID:]
 -[MoEngageInAppActionHandler performNavigationToAppSettingsAction:]
 ___67-[MoEngageInAppActionHandler performNavigationToAppSettingsAction:]_block_invoke
-___67-[MoEngageInAppActionHandler performNavigationToAppSettingsAction:]_block_invoke.154
+___67-[MoEngageInAppActionHandler performNavigationToAppSettingsAction:]_block_invoke.155
 ___67-[MoEngageInAppActionHandler performNavigationToAppSettingsAction:]_block_invoke_2
 -[MoEngageInAppActionHandler performShareAction:]
 -[MoEngageInAppActionHandler performCopyAction:]
@@ -2389,19 +2399,21 @@ ___47-[MoEngageInAppActionHandler performSMSAction:]_block_invoke
 -[MoEngageInAppActionHandler setActionHandlerDelegate:]
 -[MoEngageInAppActionHandler .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.112
-_OBJC_CLASSLIST_REFERENCES_$_.117
-_OBJC_CLASSLIST_REFERENCES_$_.135
-_OBJC_CLASSLIST_REFERENCES_$_.138
-_OBJC_CLASSLIST_REFERENCES_$_.144
+_OBJC_CLASSLIST_REFERENCES_$_.125
+_OBJC_CLASSLIST_REFERENCES_$_.139
+_OBJC_CLASSLIST_REFERENCES_$_.145
 _OBJC_CLASSLIST_REFERENCES_$_.159
+_OBJC_SELECTOR_REFERENCES_.171
+_OBJC_CLASSLIST_REFERENCES_$_.179
 _OBJC_SELECTOR_REFERENCES_.181
 ___block_descriptor_28_e4_20s24s_e31_v8?0"UNNotificationSettings"4l
 _OBJC_CLASSLIST_REFERENCES_$_.189
-_OBJC_CLASSLIST_REFERENCES_$_.208
-_OBJC_SELECTOR_REFERENCES_.212
-_OBJC_CLASSLIST_REFERENCES_$_.213
-_OBJC_CLASSLIST_REFERENCES_$_.232
-_OBJC_CLASSLIST_REFERENCES_$_.241
+_OBJC_SELECTOR_REFERENCES_.195
+_OBJC_CLASSLIST_REFERENCES_$_.198
+_OBJC_CLASSLIST_REFERENCES_$_.220
+_OBJC_CLASSLIST_REFERENCES_$_.239
+_OBJC_SELECTOR_REFERENCES_.241
+_OBJC_CLASSLIST_REFERENCES_$_.248
 __OBJC_METACLASS_RO_$_MoEngageInAppActionHandler
 __OBJC_$_INSTANCE_METHODS_MoEngageInAppActionHandler
 _OBJC_IVAR_$_MoEngageInAppActionHandler._configController
@@ -2409,13 +2421,13 @@ _OBJC_IVAR_$_MoEngageInAppActionHandler._actionHandlerDelegate
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppActionHandler
 __OBJC_$_PROP_LIST_MoEngageInAppActionHandler
 __OBJC_CLASS_RO_$_MoEngageInAppActionHandler
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppActionHandler.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageInAppActionHandler.m
 MoEngageInApps/MoEngageInAppActionHandler.m
 __47-[MoEngageInAppActionHandler performSMSAction:]_block_invoke
 __48-[MoEngageInAppActionHandler performCallAction:]_block_invoke
 __66-[MoEngageInAppActionHandler performNotificationPermissionAction:]_block_invoke
 __67-[MoEngageInAppActionHandler performNavigationToAppSettingsAction:]_block_invoke_2
-__67-[MoEngageInAppActionHandler performNavigationToAppSettingsAction:]_block_invoke.154
+__67-[MoEngageInAppActionHandler performNavigationToAppSettingsAction:]_block_invoke.155
 __67-[MoEngageInAppActionHandler performNavigationToAppSettingsAction:]_block_invoke
 -[MoEngageInAppImageWidget initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]
 ___92-[MoEngageInAppImageWidget initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]_block_invoke
@@ -2437,6 +2449,7 @@ ___92-[MoEngageInAppImageWidget initWithInAppWidget:inContainer:withStartPositio
 -[MoEngageInAppImageWidget .cxx_destruct]
 _OBJC_CLASSLIST_REFERENCES_$_.31
 _OBJC_CLASSLIST_REFERENCES_$_.86
+_OBJC_CLASSLIST_REFERENCES_$_.93
 _OBJC_IVAR_$_MoEngageInAppImageWidget._widgetModelObj
 _OBJC_IVAR_$_MoEngageInAppImageWidget._imageView
 _OBJC_IVAR_$_MoEngageInAppImageWidget._campaignID
@@ -2447,7 +2460,7 @@ __OBJC_$_INSTANCE_METHODS_MoEngageInAppImageWidget
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppImageWidget
 __OBJC_$_PROP_LIST_MoEngageInAppImageWidget
 __OBJC_CLASS_RO_$_MoEngageInAppImageWidget
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MoEngageInAppImageWidget.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/InAppView/MoEngageInAppImageWidget.m
 MoEngageInApps/InAppView/MoEngageInAppImageWidget.m
 MoEngageInApps/InAppView/MoEngageInAppImageWidget.h
 __92-[MoEngageInAppImageWidget initWithInAppWidget:inContainer:withStartPosition:andCampaignID:]_block_invoke_2
@@ -2531,7 +2544,6 @@ __OBJC_$_INSTANCE_METHODS_MoEngageInAppWidgetUserInputAction
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppWidgetUserInputAction
 __OBJC_$_PROP_LIST_MoEngageInAppWidgetUserInputAction
 __OBJC_CLASS_RO_$_MoEngageInAppWidgetUserInputAction
-_OBJC_CLASSLIST_REFERENCES_$_.137
 _OBJC_IVAR_$_MoEngageInAppWidgetConditionalAction._widgetID
 _OBJC_IVAR_$_MoEngageInAppWidgetConditionalAction._conditions
 __OBJC_METACLASS_RO_$_MoEngageInAppWidgetConditionalAction
@@ -2546,10 +2558,10 @@ _OBJC_IVAR_$_MoEngageInAppActionCondition._attributesFilter
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppActionCondition
 __OBJC_$_PROP_LIST_MoEngageInAppActionCondition
 __OBJC_CLASS_RO_$_MoEngageInAppActionCondition
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppWidgetAction.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppWidgetAction.m
 MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppWidgetAction.m
 MoEngageInApps/ModelObjects/InAppPayload/MoEngageInAppWidgetAction.h
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/Constants/MoEngageInAppConstants.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/Constants/MoEngageInAppConstants.m
 -[MoEngageInAppState initWithDictionary:]
 -[MoEngageInAppState initWithCoder:]
 -[MoEngageInAppState encodeWithCoder:]
@@ -2578,7 +2590,7 @@ __OBJC_$_INSTANCE_METHODS_MoEngageInAppState
 __OBJC_$_INSTANCE_VARIABLES_MoEngageInAppState
 __OBJC_$_PROP_LIST_MoEngageInAppState
 __OBJC_CLASS_RO_$_MoEngageInAppState
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppState/MoEngageInAppState.m
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/InAppState/MoEngageInAppState.m
 MoEngageInApps/ModelObjects/InAppState/MoEngageInAppState.m
 MoEngageInApps/ModelObjects/InAppState/MoEngageInAppState.h
 _$s14MoEngageInApps0abC22AppSelfHandledCampaignC15campaignContentSSvgTo
@@ -2630,7 +2642,7 @@ _objc_classes_$s14MoEngageInApps0abC22AppSelfHandledCampaignCN
 Apple clang version 13.1.6 (clang-1316.0.20.12)
 <swift-imported-modules>
 Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/Public/MoEngageInAppSelfHandledCampaign.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/Public/MoEngageInAppSelfHandledCampaign.swift
 $s14MoEngageInApps0abC22AppSelfHandledCampaignCfETo
 $s14MoEngageInApps0abC22AppSelfHandledCampaignCMa
 <compiler-generated>
@@ -2656,7 +2668,7 @@ __PROTOCOL_INSTANCE_METHODS_NSObject
 __PROTOCOL_INSTANCE_METHODS_OPT_NSObject
 __PROTOCOL_PROPERTIES_NSObject
 __PROTOCOL_METHOD_TYPES_NSObject
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/Protocols/MoEngageInAppNativeDelegate.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/Protocols/MoEngageInAppNativeDelegate.swift
 _$s14MoEngageInApps0abC9AppActionC10actionTypeSo0abcefH0avgTo
 _$s14MoEngageInApps0abC9AppActionC10screenNameSSSgvgTo
 _$sSSSgWOe
@@ -2691,7 +2703,7 @@ _$sSo23MoEngageInAppActionTypeaMB
 _symbolic Su
 _$sSo23MoEngageInAppActionTypeaMF
 _objc_classes_$s14MoEngageInApps0abC9AppActionCN
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/Public/MoEngageInAppAction.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/Public/MoEngageInAppAction.swift
 $sSo23MoEngageInAppActionTypeaMa
 $s14MoEngageInApps0abC9AppActionCfETo
 $s14MoEngageInApps0abC9AppActionCMa
@@ -2724,7 +2736,7 @@ _symbolic So6NSDateC
 _symbolic Sb
 _$s14MoEngageInApps0abC11AppCampaignCMF
 _objc_classes_$s14MoEngageInApps0abC11AppCampaignCN
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/Public/MoEngageInAppCampaign.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/ModelObjects/Public/MoEngageInAppCampaign.swift
 $s14MoEngageInApps0abC11AppCampaignCfETo
 $s14MoEngageInApps0abC11AppCampaignCMa
 campaignContext.get
@@ -2839,7 +2851,7 @@ _block_descriptor
 _block_descriptor.14
 _objc_classes_$s14MoEngageInApps0aB8SDKInAppCN
 -private-discriminator _A0B23E2988AAD02A643167CDBCEAE3C1
-/Users/deepa/Documents/SDK-iphone/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageSDKInApp.swift
+/Users/rakshitha/Desktop/MoEngage-iPhone-SDK/MoEFramework/MoEngage/MoEngageInApps/MoEngageSDKInApp.swift
 block_destroy_helper
 block_copy_helper
 _swift_stdlib_malloc_size

@@ -1,6 +1,11 @@
 # MoEngageInApps
 =====================
 ## Change Log:
+### Version 4.4.0 *(6th February 2023)*
+-------------------------------------------
+* BugFix - Handled sms action when message contains space
+* Code optimization.
+
 ### Version 4.3.1 *(1st February 2023)*
 -------------------------------------------
 * Fixed the validation condition to consider non-expired campaigns for displaying.
