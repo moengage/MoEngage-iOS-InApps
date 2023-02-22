@@ -1,6 +1,10 @@
 # MoEngageInApps
 =====================
 ## Change Log:
+### Version 4.5.0 *(22nd February 2023)*
+-------------------------------------------
+* Updated the dependency to MoEngage-iOS-SDK 9.5.0.
+
 ### Version 4.4.0 *(6th February 2023)*
 -------------------------------------------
 * BugFix - Handled sms action when message contains space
