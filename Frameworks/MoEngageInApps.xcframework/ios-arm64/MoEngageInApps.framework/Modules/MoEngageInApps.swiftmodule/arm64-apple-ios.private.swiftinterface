@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)
-// swift-module-flags: -target arm64-apple-ios10.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageInApps
+// swift-module-flags: -target arm64-apple-ios11.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageInApps
 // swift-module-flags-ignorable: -enable-bare-slash-regex
 import Foundation
 import MoEngageCore
@@ -8,6 +8,13 @@ import MoEngageCore
 import Swift
 import _Concurrency
 import _StringProcessing
+@_inheritsConvenienceInitializers @objc public class MoEngageInAppMigration : ObjectiveC.NSObject {
+  @objc public static func migrateDataFromPreviousVersions(sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  @objc public static func migrateDataFromNoNEncryptionToEncryption(sdkInstance: MoEngageCore.MoEngageSDKInstance, currentSDKInstance: MoEngageCore.MoEngageSDKInstance)
+  @objc public static func removeEncryptedFolder(sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public class MoEngageInAppSelfHandledCampaign : MoEngageInApps.MoEngageInAppCampaign {
   @objc final public let campaignContent: Swift.String
   @objc final public let autoDismissInterval: Swift.Int
@@ -16,6 +23,7 @@ import _StringProcessing
 }
 @_inheritsConvenienceInitializers @objc public class MoEngageInAppFileStorageHandler : ObjectiveC.NSObject {
   @objc public func migrateInAppsData(sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  @objc public func saveNoNEncryptedInAppData(data: MoEngageInApps.MoEngageInAppCampaignsData, sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc public func fetchInAppData(sdkInstance: MoEngageCore.MoEngageSDKInstance) -> MoEngageInApps.MoEngageInAppCampaignsData
   @objc public func saveInAppData(data: MoEngageInApps.MoEngageInAppCampaignsData, sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc public func migrateInAppStatData(sdkInstance: MoEngageCore.MoEngageSDKInstance)

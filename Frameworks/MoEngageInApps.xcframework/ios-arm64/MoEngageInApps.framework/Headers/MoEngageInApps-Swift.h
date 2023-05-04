@@ -328,11 +328,21 @@ SWIFT_CLASS("_TtC14MoEngageInApps21MoEngageInAppCampaign")
 SWIFT_CLASS("_TtC14MoEngageInApps31MoEngageInAppFileStorageHandler")
 @interface MoEngageInAppFileStorageHandler : NSObject
 - (void)migrateInAppsDataWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
+- (void)saveNoNEncryptedInAppDataWithData:(MoEngageInAppCampaignsData * _Nonnull)data sdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 - (MoEngageInAppCampaignsData * _Nonnull)fetchInAppDataWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance SWIFT_WARN_UNUSED_RESULT;
 - (void)saveInAppDataWithData:(MoEngageInAppCampaignsData * _Nonnull)data sdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 - (void)migrateInAppStatDataWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 - (MoEngageInAppStatData * _Nonnull)fetchInAppStatDataWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance SWIFT_WARN_UNUSED_RESULT;
 - (void)saveInAppStatDataWithData:(MoEngageInAppStatData * _Nonnull)data sdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC14MoEngageInApps22MoEngageInAppMigration")
+@interface MoEngageInAppMigration : NSObject
++ (void)migrateDataFromPreviousVersionsWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
++ (void)migrateDataFromNoNEncryptionToEncryptionWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance currentSDKInstance:(MoEngageSDKInstance * _Nonnull)currentSDKInstance;
++ (void)removeEncryptedFolderWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

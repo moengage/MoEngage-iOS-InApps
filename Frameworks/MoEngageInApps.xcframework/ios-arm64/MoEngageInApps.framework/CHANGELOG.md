@@ -2,6 +2,11 @@
 =============================
 
 ## Change Log:
+### Version 4.8.0 *(4th May 2023)*
+-------------------------------------------
+* Updated the deployment target to 11.0.
+* Added support for API and Storage Encryption.
+
 ### Version 4.7.0 *(17th April 2023)*
 -------------------------------------------
 * Updated the dependency to MoEngage-iOS-SDK 9.7.0.
