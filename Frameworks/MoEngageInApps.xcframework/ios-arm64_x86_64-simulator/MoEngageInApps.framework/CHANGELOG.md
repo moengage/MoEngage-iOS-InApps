@@ -2,6 +2,10 @@
 =============================
 
 ## Change Log:
+### Version 4.8.1 *(12th May 2023)*
+-------------------------------------------
+* Fixed crash caused by completion handler
+
 ### Version 4.8.0 *(4th May 2023)*
 -------------------------------------------
 * Updated the deployment target to 11.0.
