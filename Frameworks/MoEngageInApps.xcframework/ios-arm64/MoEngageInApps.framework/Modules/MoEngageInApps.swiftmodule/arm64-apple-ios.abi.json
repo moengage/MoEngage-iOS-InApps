@@ -3422,413 +3422,413 @@
   },
   "ConstValues": [
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/ModelObjects\/Public\/MoEngageInAppSelfHandledCampaign.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/ModelObjects\/Public\/MoEngageInAppSelfHandledCampaign.swift",
       "kind": "StringLiteral",
       "offset": 308,
       "length": 32,
       "value": "\"MoEngageInApps.MoEngageInAppSelfHandledCampaign\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppFileStorage.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 250,
       "length": 10,
       "value": "\"MOInApps\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppFileStorage.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 300,
       "length": 51,
       "value": "\"MOInApps\/\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppFileStorage.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 350,
       "length": 1,
       "value": "\"\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppFileStorage.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 388,
       "length": 16,
       "value": "\"InAppCampaigns\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppFileStorage.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppFileStorage.swift",
       "kind": "StringLiteral",
       "offset": 436,
       "length": 16,
       "value": "\"InAppStatsInfo\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/ModelObjects\/Public\/MoEngageInAppAction.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/ModelObjects\/Public\/MoEngageInAppAction.swift",
       "kind": "StringLiteral",
       "offset": 261,
       "length": 19,
       "value": "\"MoEngageInApps.MoEngageInAppAction\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/ModelObjects\/Public\/MoEngageInAppAction.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/ModelObjects\/Public\/MoEngageInAppAction.swift",
       "kind": "StringLiteral",
       "offset": 261,
       "length": 19,
       "value": "\"MoEngageInApps.MoEngageInAppAction\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 247,
       "length": 15,
       "value": "\"generalInApps\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 295,
       "length": 16,
       "value": "\"embeddedInApps\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 347,
       "length": 19,
       "value": "\"selfHandledInApps\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 398,
       "length": 15,
       "value": "\"triggerInApps\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 445,
       "length": 15,
       "value": "\"triggerEvents\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 490,
       "length": 19,
       "value": "\"inAppsGlobalDelay\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 537,
       "length": 17,
       "value": "\"inAppsSyncDelay\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 588,
       "length": 22,
       "value": "\"inAppLastUpdatedTime\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 642,
       "length": 20,
       "value": "\"inAppLastShownTime\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 691,
       "length": 12,
       "value": "\"inappState\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 765,
       "length": 12,
       "value": "\"campaignId\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 810,
       "length": 12,
       "value": "\"expiryTime\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 858,
       "length": 15,
       "value": "\"lastShownTime\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 918,
       "length": 24,
       "value": "\"delTimebasedOnLastSync\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 983,
       "length": 20,
       "value": "\"numberOfTimesShown\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1048,
       "length": 24,
       "value": "\"primaryActionCompleted\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1133,
       "length": 9,
       "value": "\"batches\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1213,
       "length": 9,
       "value": "\"batchId\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1259,
       "length": 12,
       "value": "\"batchArray\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1364,
       "length": 14,
       "value": "\"formattedCid\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1417,
       "length": 14,
       "value": "\"campaignStat\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1520,
       "length": 10,
       "value": "\"statType\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1567,
       "length": 12,
       "value": "\"timeStamps\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1651,
       "length": 12,
       "value": "\"instanceId\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1696,
       "length": 12,
       "value": "\"campaignId\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1743,
       "length": 14,
       "value": "\"campaignName\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1792,
       "length": 14,
       "value": "\"campaignType\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1841,
       "length": 14,
       "value": "\"templateType\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1893,
       "length": 17,
       "value": "\"sdkCampaignType\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1944,
       "length": 13,
       "value": "\"updatedTime\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 1990,
       "length": 12,
       "value": "\"expiryTime\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 2033,
       "length": 10,
       "value": "\"triggers\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 2077,
       "length": 13,
       "value": "\"displayMeta\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 2132,
       "length": 21,
       "value": "\"deliveryControlMeta\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 2185,
       "length": 11,
       "value": "\"inappType\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 2230,
       "length": 13,
       "value": "\"orientation\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 2281,
       "length": 17,
       "value": "\"campaignContext\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 2340,
       "length": 21,
       "value": "\"formattedCampaignId\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 2447,
       "length": 12,
       "value": "\"actionName\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 2496,
       "length": 12,
       "value": "\"eventsDict\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 2597,
       "length": 14,
       "value": "\"displayRules\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 2704,
       "length": 12,
       "value": "\"screenName\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 2754,
       "length": 9,
       "value": "\"context\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 2869,
       "length": 10,
       "value": "\"priority\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 2918,
       "length": 14,
       "value": "\"isPersistent\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 2965,
       "length": 8,
       "value": "\"fcMeta\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 3054,
       "length": 19,
       "value": "\"ignoreGlobalDelay\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 3112,
       "length": 10,
       "value": "\"maxCount\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
       "kind": "StringLiteral",
       "offset": 3161,
       "length": 10,
       "value": "\"minDelay\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/ModelObjects\/Public\/MoEngageInAppCampaign.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/ModelObjects\/Public\/MoEngageInAppCampaign.swift",
       "kind": "StringLiteral",
       "offset": 267,
       "length": 21,
       "value": "\"MoEngageInApps.MoEngageInAppCampaign\""
     },
     {
-      "filePath": "\/Users\/rakshitha\/MoEngage\/MoEngage-iPhone-SDK\/MoEFramework\/MoEngage\/MoEngageInApps\/ModelObjects\/Public\/MoEngageInAppCampaign.swift",
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/ModelObjects\/Public\/MoEngageInAppCampaign.swift",
       "kind": "StringLiteral",
       "offset": 267,
       "length": 21,
