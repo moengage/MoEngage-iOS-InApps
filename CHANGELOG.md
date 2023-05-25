@@ -1,6 +1,10 @@
 # MoEngageInApps
 =====================
 ## Change Log:
+### Version 4.8.2 *(25th May 2023)*
+-------------------------------------------
+* Additional null check for fetching general in-apps
+
 ### Version 4.8.1 *(12th May 2023)*
 -------------------------------------------
 * Fixed crash caused by completion handler
