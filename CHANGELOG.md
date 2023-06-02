@@ -1,6 +1,11 @@
 # MoEngageInApps
 =====================
 ## Change Log:
+
+### Version 4.8.3 *(02th June 2023)*
+-------------------------------------------
+* Bugfix: Handled the callback for selfHandled InApp when called before sync API.
+
 ### Version 4.8.2 *(25th May 2023)*
 -------------------------------------------
 * Additional null check for fetching general in-apps
