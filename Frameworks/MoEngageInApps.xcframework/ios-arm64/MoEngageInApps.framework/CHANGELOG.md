@@ -3,6 +3,12 @@
 
 ## Change Log:
 
+### Version 4.11.0 *(30th August 2023)*
+-------------------------------------------
+* BugFix: Fixed the boolean value tracked as 0/1 in HTML InApp
+* BugFix: Fixed API failure tracked when campaign is paused.
+* Updated the dependency to MoEngage-iOS-SDK 9.11.0. 
+
 ### Version 4.10.0 *(18th July 2023)*
 -------------------------------------------
 * iOS breakpoint issue fix by changing the config settings.
