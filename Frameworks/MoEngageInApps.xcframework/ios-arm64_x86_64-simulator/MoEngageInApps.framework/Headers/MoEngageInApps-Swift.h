@@ -298,6 +298,7 @@ SWIFT_CLASS("_TtC14MoEngageInApps19MoEngageInAppAction")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull keyValuePairs;
 /// Method to create an instance of MoEngageInAppAction
 /// This method is for internal purpose. Do not call it explicitly.
+/// :nodoc:
 /// \param actionType Gives the action type Navigation/Custom Action
 ///
 /// \param screenName Incase the action type is Navigation then the screenName to which the navigation has to be performed
@@ -308,6 +309,7 @@ SWIFT_CLASS("_TtC14MoEngageInApps19MoEngageInAppAction")
 /// Method to create an instance of MoEngageInAppAction
 /// note:
 /// This method is for internal purpose. Do not call it explicitly.
+/// :nodoc:
 /// \param actionType Gives the action type Navigation/Custom Action
 ///
 /// \param keyValuePairs Custom key-value pairs entered while creating the campaign for the action.
@@ -327,24 +329,34 @@ SWIFT_CLASS("_TtC14MoEngageInApps21MoEngageInAppCampaign")
 @property (nonatomic, readonly, copy) NSString * _Nonnull campaignId;
 /// Campaign name provided while creating the campaign
 @property (nonatomic, readonly, copy) NSString * _Nonnull campaignName;
-/// Date instance of the expiry time of the campaign
+/// Expiry time of the campaign
 @property (nonatomic, readonly, strong) NSDate * _Nonnull expiryTime;
-/// isDraft is a flag which provides info if the campaign is a draft being shown for testing purpose
+/// Boolean flag if true then,  campaign is shown for testing purpose only.
 @property (nonatomic, readonly) BOOL isDraft;
-/// Dictionary containing formatted campaign id, and other campaign meta information
+/// Additional  meta data of campaign
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull campaignContext;
 /// Method to create an instance of MoEngageInAppCampaign
-/// This method is for internal purpose. Do not call it explicitly.
-/// \param campaignId A unique Id to identify the campaign
-///
-/// \param campaignName Campaign name provided while creating the campaign
-///
-/// \param expiryTime Date instance of the expiry time of the campaign
-///
-/// \param isDraft isDraft is a flag which provides info if the campaign is a draft being shown for testing purpose
-///
-/// \param campaignContext Dictionary containing formatted campaign id, and other campaign meta information
-///
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     campaignId: A unique Id to identify the campaign
+///   </li>
+///   <li>
+///     campaignName: Campaign name provided while creating the campaign
+///   </li>
+///   <li>
+///     expiryTime: Date instance of the expiry time of the campaign
+///   </li>
+///   <li>
+///     isDraft: isDraft is a flag which provides info if the campaign is a draft being shown for testing purpose
+///   </li>
+///   <li>
+///     campaignContext: Dictionary containing formatted campaign id, and other campaign meta information
+///     :nodoc:
+///   </li>
+/// </ul>
 - (nonnull instancetype)initWithCampaignId:(NSString * _Nonnull)campaignId campaignName:(NSString * _Nonnull)campaignName expiryTime:(NSDate * _Nonnull)expiryTime isDraft:(BOOL)isDraft campaignContext:(NSDictionary<NSString *, id> * _Nonnull)campaignContext OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithDictionary:(NSDictionary * _Nullable)dict SWIFT_UNAVAILABLE;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -355,6 +367,7 @@ SWIFT_CLASS("_TtC14MoEngageInApps21MoEngageInAppCampaign")
 @class MoEngageInAppCampaignsData;
 @class MoEngageInAppStatData;
 
+/// :nodoc:
 SWIFT_CLASS("_TtC14MoEngageInApps31MoEngageInAppFileStorageHandler")
 @interface MoEngageInAppFileStorageHandler : NSObject
 - (void)migrateInAppsDataWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
@@ -368,6 +381,7 @@ SWIFT_CLASS("_TtC14MoEngageInApps31MoEngageInAppFileStorageHandler")
 @end
 
 
+/// :nodoc:
 SWIFT_CLASS("_TtC14MoEngageInApps22MoEngageInAppMigration")
 @interface MoEngageInAppMigration : NSObject
 + (void)migrateDataFromPreviousVersionsWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
@@ -382,13 +396,13 @@ SWIFT_CLASS("_TtC14MoEngageInApps22MoEngageInAppMigration")
 /// Confirm to this protocol to get all the InApp campaigns related callbacks
 SWIFT_PROTOCOL("_TtP14MoEngageInApps27MoEngageInAppNativeDelegate_")
 @protocol MoEngageInAppNativeDelegate <NSObject>
-/// This method will be called when an inApp Campaign is shown by the SDK
+/// Callback received when an inApp Campaign is shown by the SDK
 /// \param inappCampaign MoEngageInAppCampaign instance providing the info of the campaign currently being shown
 ///
 /// \param accountMeta MoEngageAccountMeta instance providing the info of the MoEngage Account to which the campaign belongs
 ///
 - (void)inAppShownWithCampaignInfo:(MoEngageInAppCampaign * _Nonnull)inappCampaign forAccountMeta:(MoEngageAccountMeta * _Nonnull)accountMeta;
-/// This method will be called when a inApp is clicked by the user to perform a navigation action
+/// Callback received when a inApp is clicked by the user to perform a navigation action
 /// \param inappCampaign MoEngageInAppCampaign instance providing the info of the campaign which is clicked by the user
 ///
 /// \param navigationAction MoEngageInAppAction instance giving navigation action info along with key-value pairs provided while creating the campaign
@@ -396,7 +410,7 @@ SWIFT_PROTOCOL("_TtP14MoEngageInApps27MoEngageInAppNativeDelegate_")
 /// \param accountMeta MoEngageAccountMeta instance providing the info of the MoEngage Account to which the campaign belongs
 ///
 - (void)inAppClickedWithCampaignInfo:(MoEngageInAppCampaign * _Nonnull)inappCampaign andNavigationActionInfo:(MoEngageInAppAction * _Nonnull)navigationAction forAccountMeta:(MoEngageAccountMeta * _Nonnull)accountMeta;
-/// This method will be called when an inApp Campaign is clicked by the user to perform Custom Action
+/// Callback received when an inApp Campaign is clicked by the user to perform Custom Action
 /// \param inappCampaign MoEngageInAppCampaign instance providing the info of the campaign which is clicked by the user
 ///
 /// \param customAction MoEngageInAppAction instance giving custom action info along with key-value pairs provided while creating the campaign
@@ -404,13 +418,13 @@ SWIFT_PROTOCOL("_TtP14MoEngageInApps27MoEngageInAppNativeDelegate_")
 /// \param accountMeta MoEngageAccountMeta instance providing the info of the MoEngage Account to which the campaign belongs
 ///
 - (void)inAppClickedWithCampaignInfo:(MoEngageInAppCampaign * _Nonnull)inappCampaign andCustomActionInfo:(MoEngageInAppAction * _Nonnull)customAction forAccountMeta:(MoEngageAccountMeta * _Nonnull)accountMeta;
-/// This method will be called when an inApp is dismissed
+/// Callback received when an inApp is dismissed
 /// \param inappCampaign MoEngageInAppCampaign instance providing the info of the campaign which is being dismissed by the user
 ///
 /// \param accountMeta MoEngageAccountMeta instance providing the info of the MoEngage Account to which the campaign belongs
 ///
 - (void)inAppDismissedWithCampaignInfo:(MoEngageInAppCampaign * _Nonnull)inappCampaign forAccountMeta:(MoEngageAccountMeta * _Nonnull)accountMeta;
-/// This method will be only be called when a self handled inApp is triggered by an event
+/// Callback received when a self handled inApp is triggered by an event
 /// \param inappCampaign MoEngageInAppSelfHandledCampaign instance with self handled inApp info
 ///
 /// \param accountMeta MoEngageAccountMeta instance providing the info of the MoEngage Account to which the campaign belongs
@@ -422,34 +436,21 @@ SWIFT_PROTOCOL("_TtP14MoEngageInApps27MoEngageInAppNativeDelegate_")
 /// MoEngageInAppSelfHandledCampaign gives all the information required for a self-handled inApp campaign
 SWIFT_CLASS("_TtC14MoEngageInApps32MoEngageInAppSelfHandledCampaign")
 @interface MoEngageInAppSelfHandledCampaign : MoEngageInAppCampaign
-/// campaignContent provides information entered while creating a self-handled inapp campaign
+/// Self handled campaign payload.
 @property (nonatomic, readonly, copy) NSString * _Nonnull campaignContent;
-/// In case auto dismiss was provided while creating the self-handled inapp campaign, the same will be provided here. By default the value will be -1.
+/// Interval after which in-app should be dismissed, unit - Seconds. By default the value will be -1.
 @property (nonatomic, readonly) NSInteger autoDismissInterval;
-/// Method to create an instance of MoEngageInAppSelfHandledCampaign
-/// This method is for internal purpose. Do not call it explicitly.
-/// \param campaignContent campaignContent provides information entered while creating a self-handled inapp campaign
-///
-/// \param autoDismissInterval In case auto dismiss was provided while creating the self-handled inapp campaign, the same will be provided here. By default the value will be -1.
-///
-/// \param campaign_id A unique Id to identify the campaign
-///
-/// \param campaign_name Campaign name provided while creating the campaign
-///
-/// \param expiry_time Date instance of the expiry time of the campaign
-///
-/// \param isDraft isDraft is a flag which provides info if the campaign is a draft being shown for testing purpose
-///
-/// \param campaignContext Dictionary containing formatted campaign id, and other campaign meta information
-///
+/// :nodoc:
 - (nonnull instancetype)initWithCampaignContent:(NSString * _Nonnull)campaignContent autoDismissInterval:(NSInteger)autoDismissInterval campaign_id:(NSString * _Nonnull)campaign_id campaign_name:(NSString * _Nonnull)campaign_name expiry_time:(NSDate * _Nonnull)expiry_time isDraft:(BOOL)isDraft campaignContext:(NSDictionary<NSString *, id> * _Nonnull)campaignContext OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCampaignId:(NSString * _Nonnull)campaignId campaignName:(NSString * _Nonnull)campaignName expiryTime:(NSDate * _Nonnull)expiryTime isDraft:(BOOL)isDraft campaignContext:(NSDictionary<NSString *, id> * _Nonnull)campaignContext SWIFT_UNAVAILABLE;
 @end
 
 @class UIViewController;
 
+/// Class to configure to InApp
 SWIFT_CLASS("_TtC14MoEngageInApps16MoEngageSDKInApp")
 @interface MoEngageSDKInApp : NSObject
+/// Singleton instance
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKInApp * _Nonnull sharedInstance;)
 + (MoEngageSDKInApp * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -889,6 +890,7 @@ SWIFT_CLASS("_TtC14MoEngageInApps19MoEngageInAppAction")
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull keyValuePairs;
 /// Method to create an instance of MoEngageInAppAction
 /// This method is for internal purpose. Do not call it explicitly.
+/// :nodoc:
 /// \param actionType Gives the action type Navigation/Custom Action
 ///
 /// \param screenName Incase the action type is Navigation then the screenName to which the navigation has to be performed
@@ -899,6 +901,7 @@ SWIFT_CLASS("_TtC14MoEngageInApps19MoEngageInAppAction")
 /// Method to create an instance of MoEngageInAppAction
 /// note:
 /// This method is for internal purpose. Do not call it explicitly.
+/// :nodoc:
 /// \param actionType Gives the action type Navigation/Custom Action
 ///
 /// \param keyValuePairs Custom key-value pairs entered while creating the campaign for the action.
@@ -918,24 +921,34 @@ SWIFT_CLASS("_TtC14MoEngageInApps21MoEngageInAppCampaign")
 @property (nonatomic, readonly, copy) NSString * _Nonnull campaignId;
 /// Campaign name provided while creating the campaign
 @property (nonatomic, readonly, copy) NSString * _Nonnull campaignName;
-/// Date instance of the expiry time of the campaign
+/// Expiry time of the campaign
 @property (nonatomic, readonly, strong) NSDate * _Nonnull expiryTime;
-/// isDraft is a flag which provides info if the campaign is a draft being shown for testing purpose
+/// Boolean flag if true then,  campaign is shown for testing purpose only.
 @property (nonatomic, readonly) BOOL isDraft;
-/// Dictionary containing formatted campaign id, and other campaign meta information
+/// Additional  meta data of campaign
 @property (nonatomic, readonly, copy) NSDictionary<NSString *, id> * _Nonnull campaignContext;
 /// Method to create an instance of MoEngageInAppCampaign
-/// This method is for internal purpose. Do not call it explicitly.
-/// \param campaignId A unique Id to identify the campaign
-///
-/// \param campaignName Campaign name provided while creating the campaign
-///
-/// \param expiryTime Date instance of the expiry time of the campaign
-///
-/// \param isDraft isDraft is a flag which provides info if the campaign is a draft being shown for testing purpose
-///
-/// \param campaignContext Dictionary containing formatted campaign id, and other campaign meta information
-///
+/// <ul>
+///   <li>
+///     Parameters:
+///   </li>
+///   <li>
+///     campaignId: A unique Id to identify the campaign
+///   </li>
+///   <li>
+///     campaignName: Campaign name provided while creating the campaign
+///   </li>
+///   <li>
+///     expiryTime: Date instance of the expiry time of the campaign
+///   </li>
+///   <li>
+///     isDraft: isDraft is a flag which provides info if the campaign is a draft being shown for testing purpose
+///   </li>
+///   <li>
+///     campaignContext: Dictionary containing formatted campaign id, and other campaign meta information
+///     :nodoc:
+///   </li>
+/// </ul>
 - (nonnull instancetype)initWithCampaignId:(NSString * _Nonnull)campaignId campaignName:(NSString * _Nonnull)campaignName expiryTime:(NSDate * _Nonnull)expiryTime isDraft:(BOOL)isDraft campaignContext:(NSDictionary<NSString *, id> * _Nonnull)campaignContext OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithDictionary:(NSDictionary * _Nullable)dict SWIFT_UNAVAILABLE;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -946,6 +959,7 @@ SWIFT_CLASS("_TtC14MoEngageInApps21MoEngageInAppCampaign")
 @class MoEngageInAppCampaignsData;
 @class MoEngageInAppStatData;
 
+/// :nodoc:
 SWIFT_CLASS("_TtC14MoEngageInApps31MoEngageInAppFileStorageHandler")
 @interface MoEngageInAppFileStorageHandler : NSObject
 - (void)migrateInAppsDataWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
@@ -959,6 +973,7 @@ SWIFT_CLASS("_TtC14MoEngageInApps31MoEngageInAppFileStorageHandler")
 @end
 
 
+/// :nodoc:
 SWIFT_CLASS("_TtC14MoEngageInApps22MoEngageInAppMigration")
 @interface MoEngageInAppMigration : NSObject
 + (void)migrateDataFromPreviousVersionsWithSdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
@@ -973,13 +988,13 @@ SWIFT_CLASS("_TtC14MoEngageInApps22MoEngageInAppMigration")
 /// Confirm to this protocol to get all the InApp campaigns related callbacks
 SWIFT_PROTOCOL("_TtP14MoEngageInApps27MoEngageInAppNativeDelegate_")
 @protocol MoEngageInAppNativeDelegate <NSObject>
-/// This method will be called when an inApp Campaign is shown by the SDK
+/// Callback received when an inApp Campaign is shown by the SDK
 /// \param inappCampaign MoEngageInAppCampaign instance providing the info of the campaign currently being shown
 ///
 /// \param accountMeta MoEngageAccountMeta instance providing the info of the MoEngage Account to which the campaign belongs
 ///
 - (void)inAppShownWithCampaignInfo:(MoEngageInAppCampaign * _Nonnull)inappCampaign forAccountMeta:(MoEngageAccountMeta * _Nonnull)accountMeta;
-/// This method will be called when a inApp is clicked by the user to perform a navigation action
+/// Callback received when a inApp is clicked by the user to perform a navigation action
 /// \param inappCampaign MoEngageInAppCampaign instance providing the info of the campaign which is clicked by the user
 ///
 /// \param navigationAction MoEngageInAppAction instance giving navigation action info along with key-value pairs provided while creating the campaign
@@ -987,7 +1002,7 @@ SWIFT_PROTOCOL("_TtP14MoEngageInApps27MoEngageInAppNativeDelegate_")
 /// \param accountMeta MoEngageAccountMeta instance providing the info of the MoEngage Account to which the campaign belongs
 ///
 - (void)inAppClickedWithCampaignInfo:(MoEngageInAppCampaign * _Nonnull)inappCampaign andNavigationActionInfo:(MoEngageInAppAction * _Nonnull)navigationAction forAccountMeta:(MoEngageAccountMeta * _Nonnull)accountMeta;
-/// This method will be called when an inApp Campaign is clicked by the user to perform Custom Action
+/// Callback received when an inApp Campaign is clicked by the user to perform Custom Action
 /// \param inappCampaign MoEngageInAppCampaign instance providing the info of the campaign which is clicked by the user
 ///
 /// \param customAction MoEngageInAppAction instance giving custom action info along with key-value pairs provided while creating the campaign
@@ -995,13 +1010,13 @@ SWIFT_PROTOCOL("_TtP14MoEngageInApps27MoEngageInAppNativeDelegate_")
 /// \param accountMeta MoEngageAccountMeta instance providing the info of the MoEngage Account to which the campaign belongs
 ///
 - (void)inAppClickedWithCampaignInfo:(MoEngageInAppCampaign * _Nonnull)inappCampaign andCustomActionInfo:(MoEngageInAppAction * _Nonnull)customAction forAccountMeta:(MoEngageAccountMeta * _Nonnull)accountMeta;
-/// This method will be called when an inApp is dismissed
+/// Callback received when an inApp is dismissed
 /// \param inappCampaign MoEngageInAppCampaign instance providing the info of the campaign which is being dismissed by the user
 ///
 /// \param accountMeta MoEngageAccountMeta instance providing the info of the MoEngage Account to which the campaign belongs
 ///
 - (void)inAppDismissedWithCampaignInfo:(MoEngageInAppCampaign * _Nonnull)inappCampaign forAccountMeta:(MoEngageAccountMeta * _Nonnull)accountMeta;
-/// This method will be only be called when a self handled inApp is triggered by an event
+/// Callback received when a self handled inApp is triggered by an event
 /// \param inappCampaign MoEngageInAppSelfHandledCampaign instance with self handled inApp info
 ///
 /// \param accountMeta MoEngageAccountMeta instance providing the info of the MoEngage Account to which the campaign belongs
@@ -1013,34 +1028,21 @@ SWIFT_PROTOCOL("_TtP14MoEngageInApps27MoEngageInAppNativeDelegate_")
 /// MoEngageInAppSelfHandledCampaign gives all the information required for a self-handled inApp campaign
 SWIFT_CLASS("_TtC14MoEngageInApps32MoEngageInAppSelfHandledCampaign")
 @interface MoEngageInAppSelfHandledCampaign : MoEngageInAppCampaign
-/// campaignContent provides information entered while creating a self-handled inapp campaign
+/// Self handled campaign payload.
 @property (nonatomic, readonly, copy) NSString * _Nonnull campaignContent;
-/// In case auto dismiss was provided while creating the self-handled inapp campaign, the same will be provided here. By default the value will be -1.
+/// Interval after which in-app should be dismissed, unit - Seconds. By default the value will be -1.
 @property (nonatomic, readonly) NSInteger autoDismissInterval;
-/// Method to create an instance of MoEngageInAppSelfHandledCampaign
-/// This method is for internal purpose. Do not call it explicitly.
-/// \param campaignContent campaignContent provides information entered while creating a self-handled inapp campaign
-///
-/// \param autoDismissInterval In case auto dismiss was provided while creating the self-handled inapp campaign, the same will be provided here. By default the value will be -1.
-///
-/// \param campaign_id A unique Id to identify the campaign
-///
-/// \param campaign_name Campaign name provided while creating the campaign
-///
-/// \param expiry_time Date instance of the expiry time of the campaign
-///
-/// \param isDraft isDraft is a flag which provides info if the campaign is a draft being shown for testing purpose
-///
-/// \param campaignContext Dictionary containing formatted campaign id, and other campaign meta information
-///
+/// :nodoc:
 - (nonnull instancetype)initWithCampaignContent:(NSString * _Nonnull)campaignContent autoDismissInterval:(NSInteger)autoDismissInterval campaign_id:(NSString * _Nonnull)campaign_id campaign_name:(NSString * _Nonnull)campaign_name expiry_time:(NSDate * _Nonnull)expiry_time isDraft:(BOOL)isDraft campaignContext:(NSDictionary<NSString *, id> * _Nonnull)campaignContext OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCampaignId:(NSString * _Nonnull)campaignId campaignName:(NSString * _Nonnull)campaignName expiryTime:(NSDate * _Nonnull)expiryTime isDraft:(BOOL)isDraft campaignContext:(NSDictionary<NSString *, id> * _Nonnull)campaignContext SWIFT_UNAVAILABLE;
 @end
 
 @class UIViewController;
 
+/// Class to configure to InApp
 SWIFT_CLASS("_TtC14MoEngageInApps16MoEngageSDKInApp")
 @interface MoEngageSDKInApp : NSObject
+/// Singleton instance
 SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKInApp * _Nonnull sharedInstance;)
 + (MoEngageSDKInApp * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
