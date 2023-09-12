@@ -2,6 +2,11 @@
 =====================
 ## Change Log:
 
+### Version 4.11.1 *(12th September 2023)*
+-------------------------------------------
+* Added delayed InApps support.
+* Updated the dependency to MoEngage-iOS-SDK 9.11.1.
+
 ### Version 4.11.0 *(30th August 2023)*
 -------------------------------------------
 * BugFix: Fixed the boolean value tracked as 0/1 in HTML InApp

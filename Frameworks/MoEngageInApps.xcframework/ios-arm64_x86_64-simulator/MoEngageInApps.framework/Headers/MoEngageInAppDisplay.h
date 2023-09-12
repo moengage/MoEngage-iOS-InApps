@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface MoEngageInAppDisplay : MoEngageModelObject <NSCoding>
 @property(nonatomic, strong) MoEngageInAppDisplayRules* rules;
+@property(nonatomic, assign) NSInteger delay;
 @end
 
 NS_ASSUME_NONNULL_END
