@@ -2,6 +2,10 @@
 =====================
 ## Change Log:
 
+### Version 4.11.2 *(26th September 2023)*
+-------------------------------------------
+* Updated the dependency to MoEngage-iOS-SDK 9.12.0.
+
 ### Version 4.11.1 *(12th September 2023)*
 -------------------------------------------
 * Added delayed InApps support.
