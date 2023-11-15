@@ -14,7 +14,7 @@
 @property NSArray   *embeddedInApps;
 @property NSArray   *selfHandledInApps;
 
-@property NSArray   *triggerEvents;
+@property NSSet<NSString *>     *triggerEvents;
 @property NSArray   *inAppStateData;
 @property NSNumber  *globalDelay;
 @property NSNumber  *syncDelay;

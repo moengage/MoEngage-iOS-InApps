@@ -6,7 +6,7 @@
 	<dict>
 		<key>CHANGELOG.md</key>
 		<data>
-		2PB1GBR3LuiYKPWVRBIezMGyZuY=
+		U8ULhxqhZ1Iyku3ryY5KGUxNR1E=
 		</data>
 		<key>Headers/MoEngageInAppActionType.h</key>
 		<data>
@@ -14,19 +14,23 @@
 		</data>
 		<key>Headers/MoEngageInAppCampaignMeta.h</key>
 		<data>
-		hehXSCIWrL5wEp++CN9SOEVv8/4=
+		ZdQKJemDmxufPbLL8oA0T8wNJy8=
 		</data>
 		<key>Headers/MoEngageInAppCampaignsData.h</key>
 		<data>
-		Y/+rrp/LsQtAJPr0GcD2gnwTKVQ=
+		K8+zJ0EkX/2j169sJi+P0+p/mLY=
 		</data>
 		<key>Headers/MoEngageInAppCommonUtils.h</key>
 		<data>
 		nB1vYeWw97T03JNVOdO+0naAz8I=
 		</data>
+		<key>Headers/MoEngageInAppConstants.h</key>
+		<data>
+		t/z6UhPfd3TeO93TbFlqEyYhDOU=
+		</data>
 		<key>Headers/MoEngageInAppDebuggingService.h</key>
 		<data>
-		sM6vEO8L6cF8QLu/vrFEApw/LNQ=
+		Z5kEXyjv6caCDsIlsSxXy8pvChM=
 		</data>
 		<key>Headers/MoEngageInAppDeliveryControl.h</key>
 		<data>
@@ -38,7 +42,7 @@
 		</data>
 		<key>Headers/MoEngageInAppHandler.h</key>
 		<data>
-		LtUT3j8U+G0cDgw2jbgWpWOxZC4=
+		J9PSxJOe8wIJJK9+bThR1E+x11k=
 		</data>
 		<key>Headers/MoEngageInAppState.h</key>
 		<data>
@@ -50,15 +54,19 @@
 		</data>
 		<key>Headers/MoEngageInAppTriggerCondition.h</key>
 		<data>
-		19XyBsNTKdwP8rVHaoV8m3WGSE0=
+		VDUxaOb7QCF9/4piVoJKjrgv2ms=
+		</data>
+		<key>Headers/MoEngageInAppUtils.h</key>
+		<data>
+		GNCTF2gLNWbGZRa3wV/njDomjKo=
 		</data>
 		<key>Headers/MoEngageInApps-Swift.h</key>
 		<data>
-		tY2Y+w2jgnTlmeMzds8mT4QxeXc=
+		4qlVGFF2f1i21aC1qPfZCHSJjuA=
 		</data>
 		<key>Headers/MoEngageInApps.h</key>
 		<data>
-		r2mfBbKnRBz+aN4bRCHGVmXZyuw=
+		KWdKrLAxfdfgPNee1fdTArhNyIM=
 		</data>
 		<key>Headers/MoEngageModelObject.h</key>
 		<data>
@@ -70,7 +78,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		abN0ksAm6uER9c7n0NwlVlpuZnI=
+		rK+8SNX2XrI5xpFCKRZ4uzhYoLU=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -78,23 +86,23 @@
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios.abi.json</key>
 		<data>
-		NBklTGRDJLIo8d7vxs6L4ictcuU=
+		1KRpNyFRcw0ZACOp7y4B/DXNpsg=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<data>
-		nHz2O7HH1Uo4u3jXBoYaHJLberA=
+		eY35VjHQVcs8EGazfvCxDtX+pmI=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		VuQeu91QZf/v8zO8NRp5iHH5IJY=
+		o09fhMOnJTK2TWMPK+sjTjVtIEE=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		nHz2O7HH1Uo4u3jXBoYaHJLberA=
+		eY35VjHQVcs8EGazfvCxDtX+pmI=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		p+UFied6i31eTAIw8Lu675ao72M=
+		kumK68ci8vsc5jtDlpKkcDdRwW4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -111,7 +119,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+GcIeBBf8Uw0hRLFonkIJBT1XOkj6/8MBMdiXVGbHao=
+			c57xV5bTUwTkhRbiiglur5RB9/Vb7mb6sMXPg31dQPA=
 			</data>
 		</dict>
 		<key>Headers/MoEngageInAppActionType.h</key>
@@ -125,14 +133,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FWYst+UCh9pC0aA+2d70D8Uz3AFKyK+zpNQBrdxFESg=
+			EMeOoy37PqEyhmjaHv6EKDGSi9W8TkkUyjZQasfCmnI=
 			</data>
 		</dict>
 		<key>Headers/MoEngageInAppCampaignsData.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			pj2WpNKVbUoMsNtqj47JYKWQmsdNOw3phIAH3u77SJM=
+			fLTKZjzlj19lUJN7kWPPhBOCm/TrX+UR7LUdEWO5ik0=
 			</data>
 		</dict>
 		<key>Headers/MoEngageInAppCommonUtils.h</key>
@@ -142,11 +150,18 @@
 			sRrOEk7MhqjlpoF6ylko403A/IOHVjqhJ1IZPi1Jqzs=
 			</data>
 		</dict>
+		<key>Headers/MoEngageInAppConstants.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			jLx1T1mYudf6S7A4/NCVxZoBOGg0Khjz4rbcJLFjfv8=
+			</data>
+		</dict>
 		<key>Headers/MoEngageInAppDebuggingService.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			U0Bc524sRiuNcZ/IF2h8SRjg4fbQIFFyyqBzuPT8+ck=
+			XtTeLHemwyIhoNO+FtwOa4RMTrJ676zxpDO5aregWwc=
 			</data>
 		</dict>
 		<key>Headers/MoEngageInAppDeliveryControl.h</key>
@@ -167,7 +182,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			wo82ey9rbw/iJAG3maTPw/m6dJeNjkShb6I3iAzFbSQ=
+			pFF9VLQ6vIfR0Epf/cGqnWzeu8e/ktEXqeQyQAAugYs=
 			</data>
 		</dict>
 		<key>Headers/MoEngageInAppState.h</key>
@@ -188,21 +203,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			d3DU2qRaHEwIZKWOfbkAK93J2ITro/k4UdJ1EgXI414=
+			Xe/NFi3Kmbuf2cOZqXoGw3Z48KHssrA1jjNGW5Ey0+Q=
+			</data>
+		</dict>
+		<key>Headers/MoEngageInAppUtils.h</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			6ew2uriMarUMq3W/sxsD6VVOQE7LnwLtPoXB9xurmpk=
 			</data>
 		</dict>
 		<key>Headers/MoEngageInApps-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			KJ7vitYGGODBdRE2WYg0MFpr2zWnJg8dGrIJJqRO870=
+			GcVwIMmnCdSK30dMccJRsrSRpHIz3MnfwKusR/QhZ9E=
 			</data>
 		</dict>
 		<key>Headers/MoEngageInApps.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			xoRB6OxkOtiXxbhuhvhhPc5nVmZYxi+ODH8Ynyk2ds0=
+			P/jOOQIx+wXGFZwNXGHSqxeDOfbx41p15uGRR89spMU=
 			</data>
 		</dict>
 		<key>Headers/MoEngageModelObject.h</key>
@@ -230,35 +252,35 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			SLoqiYevPmT897GvRePFxw2ri9ICBW1Z4TCrmvzEHN8=
+			mExTIEt2SfPbpOvVBSL7y7Yq1UYBxvvLtMHkKi02+mo=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wqDRm0nb73zBDZjFJzI8i1kU5DivuSKULumT5K/MLOw=
+			F2G7SBdCZ7vBZbPbjcayIcazPkkioNkuwIJ5LPwxJAA=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			jBE3Rvq3LpnK96NkLXL3/kQ8mgqnYckd2H/L2RW4jQY=
+			+txXYiXAWGcf8YwTXK9Zqnm1uoBr3ToeQFiqwPWfZ1I=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			wqDRm0nb73zBDZjFJzI8i1kU5DivuSKULumT5K/MLOw=
+			F2G7SBdCZ7vBZbPbjcayIcazPkkioNkuwIJ5LPwxJAA=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			/Onn1dIfwxjFeaa6xqBXyfqvsT7kuEODufM9rKpg9gg=
+			iQIXg/ZuSVyvN8XlZdevmkZT5eDKdsoeiluE35dwx9g=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
