@@ -28,5 +28,7 @@ FOUNDATION_EXPORT const unsigned char MoEngageInAppsVersionString[];
 #import <MoEngageInApps/MoEngageInAppState.h>
 #import <MoEngageInApps/MoEngageInAppCommonUtils.h>
 #import <MoEngageInApps/MoEngageInAppStatsTracking.h>
+#import <MoEngageInApps/MoEngageInAppConstants.h>
+#import <MoEngageInApps/MoEngageInAppUtils.h>
 
 

@@ -1,0 +1,3656 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "TopLevel",
+    "printedName": "TopLevel",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "MoEngageCore",
+        "printedName": "MoEngageCore",
+        "declKind": "Import",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MoEngageCore",
+        "printedName": "MoEngageCore",
+        "declKind": "Import",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MoEngageAnyEventConditionEvaluator",
+        "printedName": "MoEngageAnyEventConditionEvaluator",
+        "children": [
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(forCampaign:sdkInstance:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageAnyEventConditionEvaluator",
+                "printedName": "MoEngageInApps.MoEngageAnyEventConditionEvaluator",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageAnyEventConditionEvaluator"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppCampaignMeta",
+                "printedName": "MoEngageInApps.MoEngageInAppCampaignMeta",
+                "usr": "c:objc(cs)MoEngageInAppCampaignMeta"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKInstance",
+                "printedName": "MoEngageCore.MoEngageSDKInstance",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKInstance"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageAnyEventConditionEvaluator(im)initForCampaign:sdkInstance:",
+            "mangledName": "$s14MoEngageInApps0aB26AnyEventConditionEvaluatorC11forCampaign11sdkInstanceACSo0abc3AppJ4MetaC_0aB4Core0aB11SDKInstanceCtcfc",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "initForCampaign:sdkInstance:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Function",
+            "name": "checkConditionSatisfied",
+            "printedName": "checkConditionSatisfied(forEvent:andAttributes:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageAnyEventConditionEvaluator(im)checkConditionSatisfiedForEvent:andAttributes:",
+            "mangledName": "$s14MoEngageInApps0aB26AnyEventConditionEvaluatorC05checkG9Satisfied03forF013andAttributesSbSS_SDySSypGtF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "checkConditionSatisfiedForEvent:andAttributes:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageAnyEventConditionEvaluator",
+                "printedName": "MoEngageInApps.MoEngageAnyEventConditionEvaluator",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageAnyEventConditionEvaluator"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageAnyEventConditionEvaluator(im)init",
+            "mangledName": "$s14MoEngageInApps0aB26AnyEventConditionEvaluatorCACycfc",
+            "moduleName": "MoEngageInApps",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageAnyEventConditionEvaluator",
+        "mangledName": "$s14MoEngageInApps0aB26AnyEventConditionEvaluatorC",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "AccessControl",
+          "ObjCMembers",
+          "RawDocComment",
+          "ObjC"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MoEngageInAppMigration",
+        "printedName": "MoEngageInAppMigration",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "migrateDataFromPreviousVersions",
+            "printedName": "migrateDataFromPreviousVersions(sdkInstance:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKInstance",
+                "printedName": "MoEngageCore.MoEngageSDKInstance",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKInstance"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppMigration(cm)migrateDataFromPreviousVersionsWithSdkInstance:",
+            "mangledName": "$s14MoEngageInApps0abC12AppMigrationC31migrateDataFromPreviousVersions11sdkInstancey0aB4Core0aB11SDKInstanceC_tFZ",
+            "moduleName": "MoEngageInApps",
+            "static": true,
+            "objc_name": "migrateDataFromPreviousVersionsWithSdkInstance:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "migrateDataFromNoNEncryptionToEncryption",
+            "printedName": "migrateDataFromNoNEncryptionToEncryption(sdkInstance:currentSDKInstance:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKInstance",
+                "printedName": "MoEngageCore.MoEngageSDKInstance",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKInstance"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKInstance",
+                "printedName": "MoEngageCore.MoEngageSDKInstance",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKInstance"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppMigration(cm)migrateDataFromNoNEncryptionToEncryptionWithSdkInstance:currentSDKInstance:",
+            "mangledName": "$s14MoEngageInApps0abC12AppMigrationC40migrateDataFromNoNEncryptionToEncryption11sdkInstance18currentSDKInstancey0aB4Core0abQ0C_AItFZ",
+            "moduleName": "MoEngageInApps",
+            "static": true,
+            "objc_name": "migrateDataFromNoNEncryptionToEncryptionWithSdkInstance:currentSDKInstance:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "removeEncryptedFolder",
+            "printedName": "removeEncryptedFolder(sdkInstance:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKInstance",
+                "printedName": "MoEngageCore.MoEngageSDKInstance",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKInstance"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppMigration(cm)removeEncryptedFolderWithSdkInstance:",
+            "mangledName": "$s14MoEngageInApps0abC12AppMigrationC21removeEncryptedFolder11sdkInstancey0aB4Core0aB11SDKInstanceC_tFZ",
+            "moduleName": "MoEngageInApps",
+            "static": true,
+            "objc_name": "removeEncryptedFolderWithSdkInstance:",
+            "declAttributes": [
+              "Final",
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppMigration",
+                "printedName": "MoEngageInApps.MoEngageInAppMigration",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppMigration"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppMigration(im)init",
+            "mangledName": "$s14MoEngageInApps0abC12AppMigrationCACycfc",
+            "moduleName": "MoEngageInApps",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppMigration",
+        "mangledName": "$s14MoEngageInApps0abC12AppMigrationC",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MoEngageInAppSelfHandledCampaign",
+        "printedName": "MoEngageInAppSelfHandledCampaign",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "campaignContent",
+            "printedName": "campaignContent",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign(py)campaignContent",
+            "mangledName": "$s14MoEngageInApps0abC22AppSelfHandledCampaignC15campaignContentSSvp",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign(im)campaignContent",
+                "mangledName": "$s14MoEngageInApps0abC22AppSelfHandledCampaignC15campaignContentSSvg",
+                "moduleName": "MoEngageInApps",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "autoDismissInterval",
+            "printedName": "autoDismissInterval",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign(py)autoDismissInterval",
+            "mangledName": "$s14MoEngageInApps0abC22AppSelfHandledCampaignC19autoDismissIntervalSivp",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Int",
+                    "printedName": "Swift.Int",
+                    "usr": "s:Si"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign(im)autoDismissInterval",
+                "mangledName": "$s14MoEngageInApps0abC22AppSelfHandledCampaignC19autoDismissIntervalSivg",
+                "moduleName": "MoEngageInApps",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(campaignContent:autoDismissInterval:campaign_id:campaign_name:expiry_time:isDraft:campaignContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppSelfHandledCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppSelfHandledCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Int",
+                "printedName": "Swift.Int",
+                "usr": "s:Si"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDate",
+                "printedName": "Foundation.NSDate",
+                "usr": "c:objc(cs)NSDate"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign(im)initWithCampaignContent:autoDismissInterval:campaign_id:campaign_name:expiry_time:isDraft:campaignContext:",
+            "mangledName": "$s14MoEngageInApps0abC22AppSelfHandledCampaignC15campaignContent19autoDismissInterval0I3_id0I5_name11expiry_time7isDraft0I7ContextACSS_SiS2SSo6NSDateCSbSDySSypGtcfc",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "initWithCampaignContent:autoDismissInterval:campaign_id:campaign_name:expiry_time:isDraft:campaignContext:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(campaignId:campaignName:expiryTime:isDraft:campaignContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppSelfHandledCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppSelfHandledCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDate",
+                "printedName": "Foundation.NSDate",
+                "usr": "c:objc(cs)NSDate"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign(im)initWithCampaignId:campaignName:expiryTime:isDraft:campaignContext:",
+            "mangledName": "$s14MoEngageInApps0abC22AppSelfHandledCampaignC10campaignId0I4Name10expiryTime7isDraft0I7ContextACSS_SSSo6NSDateCSbSDySSypGtcfc",
+            "moduleName": "MoEngageInApps",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithCampaignId:campaignName:expiryTime:isDraft:campaignContext:",
+            "declAttributes": [
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign",
+        "mangledName": "$s14MoEngageInApps0abC22AppSelfHandledCampaignC",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign",
+        "superclassNames": [
+          "MoEngageInApps.MoEngageInAppCampaign",
+          "MoEngageInApps.MoEngageModelObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "MoEngageCore",
+        "printedName": "MoEngageCore",
+        "declKind": "Import",
+        "moduleName": "MoEngageInApps"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MoEngageInAppFileStorageHandler",
+        "printedName": "MoEngageInAppFileStorageHandler",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "migrateInAppsData",
+            "printedName": "migrateInAppsData(sdkInstance:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKInstance",
+                "printedName": "MoEngageCore.MoEngageSDKInstance",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKInstance"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppFileStorageHandler(im)migrateInAppsDataWithSdkInstance:",
+            "mangledName": "$s14MoEngageInApps0abC21AppFileStorageHandlerC07migratecD4Data11sdkInstancey0aB4Core0aB11SDKInstanceC_tF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "migrateInAppsDataWithSdkInstance:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveNoNEncryptedInAppData",
+            "printedName": "saveNoNEncryptedInAppData(data:sdkInstance:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppCampaignsData",
+                "printedName": "MoEngageInApps.MoEngageInAppCampaignsData",
+                "usr": "c:objc(cs)MoEngageInAppCampaignsData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKInstance",
+                "printedName": "MoEngageCore.MoEngageSDKInstance",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKInstance"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppFileStorageHandler(im)saveNoNEncryptedInAppDataWithData:sdkInstance:",
+            "mangledName": "$s14MoEngageInApps0abC21AppFileStorageHandlerC016saveNoNEncryptedcE4Data4data11sdkInstanceySo0abce9CampaignsL0C_0aB4Core0aB11SDKInstanceCtF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "saveNoNEncryptedInAppDataWithData:sdkInstance:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchInAppData",
+            "printedName": "fetchInAppData(sdkInstance:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppCampaignsData",
+                "printedName": "MoEngageInApps.MoEngageInAppCampaignsData",
+                "usr": "c:objc(cs)MoEngageInAppCampaignsData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKInstance",
+                "printedName": "MoEngageCore.MoEngageSDKInstance",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKInstance"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppFileStorageHandler(im)fetchInAppDataWithSdkInstance:",
+            "mangledName": "$s14MoEngageInApps0abC21AppFileStorageHandlerC05fetchcE4Data11sdkInstanceSo0abce9CampaignsJ0C0aB4Core0aB11SDKInstanceC_tF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "fetchInAppDataWithSdkInstance:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveInAppData",
+            "printedName": "saveInAppData(data:sdkInstance:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppCampaignsData",
+                "printedName": "MoEngageInApps.MoEngageInAppCampaignsData",
+                "usr": "c:objc(cs)MoEngageInAppCampaignsData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKInstance",
+                "printedName": "MoEngageCore.MoEngageSDKInstance",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKInstance"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppFileStorageHandler(im)saveInAppDataWithData:sdkInstance:",
+            "mangledName": "$s14MoEngageInApps0abC21AppFileStorageHandlerC04savecE4Data4data11sdkInstanceySo0abce9CampaignsJ0C_0aB4Core0aB11SDKInstanceCtF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "saveInAppDataWithData:sdkInstance:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "migrateInAppStatData",
+            "printedName": "migrateInAppStatData(sdkInstance:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKInstance",
+                "printedName": "MoEngageCore.MoEngageSDKInstance",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKInstance"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppFileStorageHandler(im)migrateInAppStatDataWithSdkInstance:",
+            "mangledName": "$s14MoEngageInApps0abC21AppFileStorageHandlerC07migratecE8StatData11sdkInstancey0aB4Core0aB11SDKInstanceC_tF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "migrateInAppStatDataWithSdkInstance:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "fetchInAppStatData",
+            "printedName": "fetchInAppStatData(sdkInstance:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppStatData",
+                "printedName": "MoEngageInApps.MoEngageInAppStatData",
+                "usr": "c:objc(cs)MoEngageInAppStatData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKInstance",
+                "printedName": "MoEngageCore.MoEngageSDKInstance",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKInstance"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppFileStorageHandler(im)fetchInAppStatDataWithSdkInstance:",
+            "mangledName": "$s14MoEngageInApps0abC21AppFileStorageHandlerC05fetchcE8StatData11sdkInstanceSo0abcejK0C0aB4Core0aB11SDKInstanceC_tF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "fetchInAppStatDataWithSdkInstance:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "saveInAppStatData",
+            "printedName": "saveInAppStatData(data:sdkInstance:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppStatData",
+                "printedName": "MoEngageInApps.MoEngageInAppStatData",
+                "usr": "c:objc(cs)MoEngageInAppStatData"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKInstance",
+                "printedName": "MoEngageCore.MoEngageSDKInstance",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageSDKInstance"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppFileStorageHandler(im)saveInAppStatDataWithData:sdkInstance:",
+            "mangledName": "$s14MoEngageInApps0abC21AppFileStorageHandlerC04savecE8StatData4data11sdkInstanceySo0abcejK0C_0aB4Core0aB11SDKInstanceCtF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "saveInAppStatDataWithData:sdkInstance:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppFileStorageHandler",
+                "printedName": "MoEngageInApps.MoEngageInAppFileStorageHandler",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppFileStorageHandler"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppFileStorageHandler(im)init",
+            "mangledName": "$s14MoEngageInApps0abC21AppFileStorageHandlerCACycfc",
+            "moduleName": "MoEngageInApps",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppFileStorageHandler",
+        "mangledName": "$s14MoEngageInApps0abC21AppFileStorageHandlerC",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MoEngageInAppNativeDelegate",
+        "printedName": "MoEngageInAppNativeDelegate",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "inAppShown",
+            "printedName": "inAppShown(withCampaignInfo:forAccountMeta:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageAccountMeta",
+                "printedName": "MoEngageCore.MoEngageAccountMeta",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageAccountMeta"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(pl)MoEngageInAppNativeDelegate(im)inAppShownWithCampaignInfo:forAccountMeta:",
+            "mangledName": "$s14MoEngageInApps0abC17AppNativeDelegateP02inE5Shown16withCampaignInfo14forAccountMetayAA0abceK0C_0aB4Core0abnO0CtF",
+            "moduleName": "MoEngageInApps",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoEngageInApps.MoEngageInAppNativeDelegate>",
+            "sugared_genericSig": "<Self where Self : MoEngageInApps.MoEngageInAppNativeDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "inAppClicked",
+            "printedName": "inAppClicked(withCampaignInfo:andNavigationActionInfo:forAccountMeta:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppAction",
+                "printedName": "MoEngageInApps.MoEngageInAppAction",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageAccountMeta",
+                "printedName": "MoEngageCore.MoEngageAccountMeta",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageAccountMeta"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(pl)MoEngageInAppNativeDelegate(im)inAppClickedWithCampaignInfo:andNavigationActionInfo:forAccountMeta:",
+            "mangledName": "$s14MoEngageInApps0abC17AppNativeDelegateP02inE7Clicked16withCampaignInfo019andNavigationActionL014forAccountMetayAA0abceK0C_AA0abceO0C0aB4Core0abqR0CtF",
+            "moduleName": "MoEngageInApps",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoEngageInApps.MoEngageInAppNativeDelegate>",
+            "sugared_genericSig": "<Self where Self : MoEngageInApps.MoEngageInAppNativeDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "inAppClicked",
+            "printedName": "inAppClicked(withCampaignInfo:andCustomActionInfo:forAccountMeta:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppAction",
+                "printedName": "MoEngageInApps.MoEngageInAppAction",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageAccountMeta",
+                "printedName": "MoEngageCore.MoEngageAccountMeta",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageAccountMeta"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(pl)MoEngageInAppNativeDelegate(im)inAppClickedWithCampaignInfo:andCustomActionInfo:forAccountMeta:",
+            "mangledName": "$s14MoEngageInApps0abC17AppNativeDelegateP02inE7Clicked16withCampaignInfo015andCustomActionL014forAccountMetayAA0abceK0C_AA0abceO0C0aB4Core0abqR0CtF",
+            "moduleName": "MoEngageInApps",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoEngageInApps.MoEngageInAppNativeDelegate>",
+            "sugared_genericSig": "<Self where Self : MoEngageInApps.MoEngageInAppNativeDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "inAppDismissed",
+            "printedName": "inAppDismissed(withCampaignInfo:forAccountMeta:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageAccountMeta",
+                "printedName": "MoEngageCore.MoEngageAccountMeta",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageAccountMeta"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(pl)MoEngageInAppNativeDelegate(im)inAppDismissedWithCampaignInfo:forAccountMeta:",
+            "mangledName": "$s14MoEngageInApps0abC17AppNativeDelegateP02inE9Dismissed16withCampaignInfo14forAccountMetayAA0abceK0C_0aB4Core0abnO0CtF",
+            "moduleName": "MoEngageInApps",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoEngageInApps.MoEngageInAppNativeDelegate>",
+            "sugared_genericSig": "<Self where Self : MoEngageInApps.MoEngageInAppNativeDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selfHandledInAppTriggered",
+            "printedName": "selfHandledInAppTriggered(withInfo:forAccountMeta:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppSelfHandledCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppSelfHandledCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageAccountMeta",
+                "printedName": "MoEngageCore.MoEngageAccountMeta",
+                "usr": "c:@M@MoEngageCore@objc(cs)MoEngageAccountMeta"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(pl)MoEngageInAppNativeDelegate(im)selfHandledInAppTriggeredWithInfo:forAccountMeta:",
+            "mangledName": "$s14MoEngageInApps0abC17AppNativeDelegateP011selfHandledcE9Triggered8withInfo14forAccountMetayAA0abce4SelfI8CampaignC_0aB4Core0abnO0CtF",
+            "moduleName": "MoEngageInApps",
+            "genericSig": "<τ_0_0 where τ_0_0 : MoEngageInApps.MoEngageInAppNativeDelegate>",
+            "sugared_genericSig": "<Self where Self : MoEngageInApps.MoEngageInAppNativeDelegate>",
+            "protocolReq": true,
+            "declAttributes": [
+              "RawDocComment",
+              "ObjC"
+            ],
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "c:@M@MoEngageInApps@objc(pl)MoEngageInAppNativeDelegate",
+        "mangledName": "$s14MoEngageInApps0abC17AppNativeDelegateP",
+        "moduleName": "MoEngageInApps",
+        "genericSig": "<τ_0_0 : ObjectiveC.NSObjectProtocol>",
+        "sugared_genericSig": "<Self : ObjectiveC.NSObjectProtocol>",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MoEngageInAppAction",
+        "printedName": "MoEngageInAppAction",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "actionType",
+            "printedName": "actionType",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppActionType",
+                "printedName": "MoEngageInApps.MoEngageInAppActionType",
+                "usr": "c:@EA@MoEngageInAppActionType"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction(py)actionType",
+            "mangledName": "$s14MoEngageInApps0abC9AppActionC10actionTypeSo0abcefH0avp",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MoEngageInAppActionType",
+                    "printedName": "MoEngageInApps.MoEngageInAppActionType",
+                    "usr": "c:@EA@MoEngageInAppActionType"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction(im)actionType",
+                "mangledName": "$s14MoEngageInApps0abC9AppActionC10actionTypeSo0abcefH0avg",
+                "moduleName": "MoEngageInApps",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "screenName",
+            "printedName": "screenName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction(py)screenName",
+            "mangledName": "$s14MoEngageInApps0abC9AppActionC10screenNameSSSgvp",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction(im)screenName",
+                "mangledName": "$s14MoEngageInApps0abC9AppActionC10screenNameSSSgvg",
+                "moduleName": "MoEngageInApps",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "keyValuePairs",
+            "printedName": "keyValuePairs",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction(py)keyValuePairs",
+            "mangledName": "$s14MoEngageInApps0abC9AppActionC13keyValuePairsSDySSypGvp",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction(im)keyValuePairs",
+                "mangledName": "$s14MoEngageInApps0abC9AppActionC13keyValuePairsSDySSypGvg",
+                "moduleName": "MoEngageInApps",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(actionType:screenName:keyValuePairs:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppAction",
+                "printedName": "MoEngageInApps.MoEngageInAppAction",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppActionType",
+                "printedName": "MoEngageInApps.MoEngageInAppActionType",
+                "usr": "c:@EA@MoEngageInAppActionType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction(im)initWithActionType:screenName:keyValuePairs:",
+            "mangledName": "$s14MoEngageInApps0abC9AppActionC10actionType10screenName13keyValuePairsACSo0abcefH0a_SSSgSDySSypGtcfc",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "initWithActionType:screenName:keyValuePairs:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(actionType:keyValuePairs:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppAction",
+                "printedName": "MoEngageInApps.MoEngageInAppAction",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppActionType",
+                "printedName": "MoEngageInApps.MoEngageInAppActionType",
+                "usr": "c:@EA@MoEngageInAppActionType"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction(im)initWithActionType:keyValuePairs:",
+            "mangledName": "$s14MoEngageInApps0abC9AppActionC10actionType13keyValuePairsACSo0abcefH0a_SDySSypGtcfc",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "initWithActionType:keyValuePairs:",
+            "declAttributes": [
+              "Convenience",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Convenience"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dictionary:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppAction",
+                "printedName": "MoEngageInApps.MoEngageInAppAction",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction(im)initWithDictionary:",
+            "mangledName": "$s14MoEngageInApps0abC9AppActionC10dictionaryACSDys11AnyHashableVypGSg_tcfc",
+            "moduleName": "MoEngageInApps",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithDictionary:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppAction",
+                "printedName": "MoEngageInApps.MoEngageInAppAction",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction(im)init",
+            "mangledName": "$s14MoEngageInApps0abC9AppActionCACycfc",
+            "moduleName": "MoEngageInApps",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppAction",
+        "mangledName": "$s14MoEngageInApps0abC9AppActionC",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)MoEngageModelObject",
+        "superclassNames": [
+          "MoEngageInApps.MoEngageModelObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MoEngageInAppCampaign",
+        "printedName": "MoEngageInAppCampaign",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "campaignId",
+            "printedName": "campaignId",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign(py)campaignId",
+            "mangledName": "$s14MoEngageInApps0abC11AppCampaignC10campaignIdSSvp",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign(im)campaignId",
+                "mangledName": "$s14MoEngageInApps0abC11AppCampaignC10campaignIdSSvg",
+                "moduleName": "MoEngageInApps",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "campaignName",
+            "printedName": "campaignName",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign(py)campaignName",
+            "mangledName": "$s14MoEngageInApps0abC11AppCampaignC12campaignNameSSvp",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign(im)campaignName",
+                "mangledName": "$s14MoEngageInApps0abC11AppCampaignC12campaignNameSSvg",
+                "moduleName": "MoEngageInApps",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "expiryTime",
+            "printedName": "expiryTime",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NSDate",
+                "printedName": "Foundation.NSDate",
+                "usr": "c:objc(cs)NSDate"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign(py)expiryTime",
+            "mangledName": "$s14MoEngageInApps0abC11AppCampaignC10expiryTimeSo6NSDateCvp",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "NSDate",
+                    "printedName": "Foundation.NSDate",
+                    "usr": "c:objc(cs)NSDate"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign(im)expiryTime",
+                "mangledName": "$s14MoEngageInApps0abC11AppCampaignC10expiryTimeSo6NSDateCvg",
+                "moduleName": "MoEngageInApps",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "isDraft",
+            "printedName": "isDraft",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign(py)isDraft",
+            "mangledName": "$s14MoEngageInApps0abC11AppCampaignC7isDraftSbvp",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign(im)isDraft",
+                "mangledName": "$s14MoEngageInApps0abC11AppCampaignC7isDraftSbvg",
+                "moduleName": "MoEngageInApps",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "campaignContext",
+            "printedName": "campaignContext",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign(py)campaignContext",
+            "mangledName": "$s14MoEngageInApps0abC11AppCampaignC15campaignContextSDySSypGvp",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "HasStorage",
+              "Final",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.String : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign(im)campaignContext",
+                "mangledName": "$s14MoEngageInApps0abC11AppCampaignC15campaignContextSDySSypGvg",
+                "moduleName": "MoEngageInApps",
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(campaignId:campaignName:expiryTime:isDraft:campaignContext:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "String",
+                "printedName": "Swift.String",
+                "usr": "s:SS"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "NSDate",
+                "printedName": "Foundation.NSDate",
+                "usr": "c:objc(cs)NSDate"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Dictionary",
+                "printedName": "[Swift.String : Any]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ProtocolComposition",
+                    "printedName": "Any"
+                  }
+                ],
+                "usr": "s:SD"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign(im)initWithCampaignId:campaignName:expiryTime:isDraft:campaignContext:",
+            "mangledName": "$s14MoEngageInApps0abC11AppCampaignC10campaignId0G4Name10expiryTime7isDraft0G7ContextACSS_SSSo6NSDateCSbSDySSypGtcfc",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "initWithCampaignId:campaignName:expiryTime:isDraft:campaignContext:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init(dictionary:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "[Swift.AnyHashable : Any]?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Dictionary",
+                    "printedName": "[Swift.AnyHashable : Any]",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "AnyHashable",
+                        "printedName": "Swift.AnyHashable",
+                        "usr": "s:s11AnyHashableV"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ProtocolComposition",
+                        "printedName": "Any"
+                      }
+                    ],
+                    "usr": "s:SD"
+                  }
+                ],
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign(im)initWithDictionary:",
+            "mangledName": "$s14MoEngageInApps0abC11AppCampaignC10dictionaryACSDys11AnyHashableVypGSg_tcfc",
+            "moduleName": "MoEngageInApps",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "initWithDictionary:",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          },
+          {
+            "kind": "Constructor",
+            "name": "init",
+            "printedName": "init()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign"
+              }
+            ],
+            "declKind": "Constructor",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign(im)init",
+            "mangledName": "$s14MoEngageInApps0abC11AppCampaignCACycfc",
+            "moduleName": "MoEngageInApps",
+            "overriding": true,
+            "implicit": true,
+            "objc_name": "init",
+            "declAttributes": [
+              "Dynamic",
+              "ObjC",
+              "Override"
+            ],
+            "init_kind": "Designated"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppCampaign",
+        "mangledName": "$s14MoEngageInApps0abC11AppCampaignC",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)MoEngageModelObject",
+        "superclassNames": [
+          "MoEngageInApps.MoEngageModelObject",
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "MoEngageSDKInApp",
+        "printedName": "MoEngageSDKInApp",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "sharedInstance",
+            "printedName": "sharedInstance",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageSDKInApp",
+                "printedName": "MoEngageInApps.MoEngageSDKInApp",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(cpy)sharedInstance",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC14sharedInstanceACvpZ",
+            "moduleName": "MoEngageInApps",
+            "static": true,
+            "declAttributes": [
+              "HasInitialValue",
+              "Final",
+              "HasStorage",
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "isLet": true,
+            "hasStorage": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "MoEngageSDKInApp",
+                    "printedName": "MoEngageInApps.MoEngageSDKInApp",
+                    "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(cm)sharedInstance",
+                "mangledName": "$s14MoEngageInApps0aB8SDKInAppC14sharedInstanceACvgZ",
+                "moduleName": "MoEngageInApps",
+                "static": true,
+                "implicit": true,
+                "declAttributes": [
+                  "Final",
+                  "ObjC"
+                ],
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "getSelfHandledInApp",
+            "printedName": "getSelfHandledInApp(completionBlock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoEngageInApps.MoEngageInAppSelfHandledCampaign?, MoEngageCore.MoEngageAccountMeta?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(MoEngageInApps.MoEngageInAppSelfHandledCampaign?, MoEngageCore.MoEngageAccountMeta?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "MoEngageInApps.MoEngageInAppSelfHandledCampaign?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MoEngageInAppSelfHandledCampaign",
+                            "printedName": "MoEngageInApps.MoEngageInAppSelfHandledCampaign",
+                            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "MoEngageCore.MoEngageAccountMeta?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MoEngageAccountMeta",
+                            "printedName": "MoEngageCore.MoEngageAccountMeta",
+                            "usr": "c:@M@MoEngageCore@objc(cs)MoEngageAccountMeta"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)getSelfHandledInAppWithCompletionBlock:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC014getSelfHandledcF015completionBlockyyAA0abcfhI8CampaignCSg_0aB4Core0aB11AccountMetaCSgtc_tF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "getSelfHandledInAppWithCompletionBlock:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "getSelfHandledInApp",
+            "printedName": "getSelfHandledInApp(forAppId:completionBlock:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(MoEngageInApps.MoEngageInAppSelfHandledCampaign?, MoEngageCore.MoEngageAccountMeta?) -> ()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Tuple",
+                    "printedName": "(MoEngageInApps.MoEngageInAppSelfHandledCampaign?, MoEngageCore.MoEngageAccountMeta?)",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "MoEngageInApps.MoEngageInAppSelfHandledCampaign?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MoEngageInAppSelfHandledCampaign",
+                            "printedName": "MoEngageInApps.MoEngageInAppSelfHandledCampaign",
+                            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "MoEngageCore.MoEngageAccountMeta?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "MoEngageAccountMeta",
+                            "printedName": "MoEngageCore.MoEngageAccountMeta",
+                            "usr": "c:@M@MoEngageCore@objc(cs)MoEngageAccountMeta"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)getSelfHandledInAppForAppId:completionBlock:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC014getSelfHandledcF003forF2Id15completionBlockySSSg_yAA0abcfhI8CampaignCSg_0aB4Core0aB11AccountMetaCSgtctF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "getSelfHandledInAppForAppId:completionBlock:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selfHandledShown",
+            "printedName": "selfHandledShown(campaignInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppSelfHandledCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppSelfHandledCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)selfHandledShownWithCampaignInfo:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC16selfHandledShown12campaignInfoyAA0abcf4SelfH8CampaignC_tF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "selfHandledShownWithCampaignInfo:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selfHandledShown",
+            "printedName": "selfHandledShown(campaignInfo:forAppId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppSelfHandledCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppSelfHandledCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)selfHandledShownWithCampaignInfo:forAppId:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC16selfHandledShown12campaignInfo03forF2IdyAA0abcf4SelfH8CampaignC_SSSgtF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "selfHandledShownWithCampaignInfo:forAppId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selfHandledClicked",
+            "printedName": "selfHandledClicked(campaignInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppSelfHandledCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppSelfHandledCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)selfHandledClickedWithCampaignInfo:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC18selfHandledClicked12campaignInfoyAA0abcf4SelfH8CampaignC_tF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "selfHandledClickedWithCampaignInfo:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selfHandledClicked",
+            "printedName": "selfHandledClicked(campaignInfo:forAppId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppSelfHandledCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppSelfHandledCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)selfHandledClickedWithCampaignInfo:forAppId:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC18selfHandledClicked12campaignInfo03forF2IdyAA0abcf4SelfH8CampaignC_SSSgtF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "selfHandledClickedWithCampaignInfo:forAppId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selfHandledDismissed",
+            "printedName": "selfHandledDismissed(campaignInfo:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppSelfHandledCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppSelfHandledCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)selfHandledDismissedWithCampaignInfo:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC20selfHandledDismissed12campaignInfoyAA0abcf4SelfH8CampaignC_tF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "selfHandledDismissedWithCampaignInfo:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "selfHandledDismissed",
+            "printedName": "selfHandledDismissed(campaignInfo:forAppId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppSelfHandledCampaign",
+                "printedName": "MoEngageInApps.MoEngageInAppSelfHandledCampaign",
+                "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageInAppSelfHandledCampaign"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)selfHandledDismissedWithCampaignInfo:forAppId:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC20selfHandledDismissed12campaignInfo03forF2IdyAA0abcf4SelfH8CampaignC_SSSgtF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "selfHandledDismissedWithCampaignInfo:forAppId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableInApps",
+            "printedName": "disableInApps()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)disableInApps",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC07disablecD0yyF",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disableInApps",
+            "printedName": "disableInApps(forAppId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)disableInAppsForAppId:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC07disablecD003forF2IdySSSg_tF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "disableInAppsForAppId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "blockInApp",
+            "printedName": "blockInApp(forViewController:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)blockInAppForViewController:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC05blockcF017forViewControllerySo06UIViewJ0C_tF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "blockInAppForViewController:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "blockInApp",
+            "printedName": "blockInApp(forViewController:forAppId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "UIViewController",
+                "printedName": "UIKit.UIViewController",
+                "usr": "c:objc(cs)UIViewController"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)blockInAppForViewController:forAppId:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC05blockcF017forViewController0hF2IdySo06UIViewJ0C_SSSgtF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "blockInAppForViewController:forAppId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCurrentInAppContexts",
+            "printedName": "setCurrentInAppContexts(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)setCurrentInAppContexts:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC010setCurrentcF8ContextsyySaySSGF",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setCurrentInAppContexts",
+            "printedName": "setCurrentInAppContexts(_:forAppId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Array",
+                "printedName": "[Swift.String]",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sa"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)setCurrentInAppContexts:forAppId:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC010setCurrentcF8Contexts_03forF2IdySaySSG_SSSgtF",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "invalidateInAppContexts",
+            "printedName": "invalidateInAppContexts()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)invalidateInAppContexts",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC010invalidatecF8ContextsyyF",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "invalidateInAppContexts",
+            "printedName": "invalidateInAppContexts(forAppId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)invalidateInAppContextsForAppId:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC010invalidatecF8Contexts03forF2IdySSSg_tF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "invalidateInAppContextsForAppId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setInAppDelegate",
+            "printedName": "setInAppDelegate(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppNativeDelegate",
+                "printedName": "MoEngageInApps.MoEngageInAppNativeDelegate",
+                "usr": "c:@M@MoEngageInApps@objc(pl)MoEngageInAppNativeDelegate"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)setInAppDelegate:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC03setcF8DelegateyyAA0abcf6NativeH0_pF",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "setInAppDelegate",
+            "printedName": "setInAppDelegate(_:forAppId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "MoEngageInAppNativeDelegate",
+                "printedName": "MoEngageInApps.MoEngageInAppNativeDelegate",
+                "usr": "c:@M@MoEngageInApps@objc(pl)MoEngageInAppNativeDelegate"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)setInAppDelegate:forAppId:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC03setcF8Delegate_03forF2IdyAA0abcf6NativeH0_p_SSSgtF",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetInAppDelegate",
+            "printedName": "resetInAppDelegate()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)resetInAppDelegate",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC05resetcF8DelegateyyF",
+            "moduleName": "MoEngageInApps",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "resetInAppDelegate",
+            "printedName": "resetInAppDelegate(forAppId:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "hasDefaultArg": true,
+                "usr": "s:Sq"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp(im)resetInAppDelegateForAppId:",
+            "mangledName": "$s14MoEngageInApps0aB8SDKInAppC05resetcF8Delegate03forF2IdySSSg_tF",
+            "moduleName": "MoEngageInApps",
+            "objc_name": "resetInAppDelegateForAppId:",
+            "declAttributes": [
+              "AccessControl",
+              "ObjC",
+              "RawDocComment"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Class",
+        "usr": "c:@M@MoEngageInApps@objc(cs)MoEngageSDKInApp",
+        "mangledName": "$s14MoEngageInApps0aB8SDKInAppC",
+        "moduleName": "MoEngageInApps",
+        "declAttributes": [
+          "AccessControl",
+          "ObjC",
+          "RawDocComment"
+        ],
+        "superclassUsr": "c:objc(cs)NSObject",
+        "hasMissingDesignatedInitializers": true,
+        "inheritsConvenienceInitializers": true,
+        "superclassNames": [
+          "ObjectiveC.NSObject"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Hashable",
+            "printedName": "Hashable",
+            "usr": "s:SH",
+            "mangledName": "$sSH"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CVarArg",
+            "printedName": "CVarArg",
+            "usr": "s:s7CVarArgP",
+            "mangledName": "$ss7CVarArgP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObservingPublishing",
+            "printedName": "_KeyValueCodingAndObservingPublishing",
+            "usr": "s:10Foundation37_KeyValueCodingAndObservingPublishingP",
+            "mangledName": "$s10Foundation37_KeyValueCodingAndObservingPublishingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "_KeyValueCodingAndObserving",
+            "printedName": "_KeyValueCodingAndObserving",
+            "usr": "s:10Foundation27_KeyValueCodingAndObservingP",
+            "mangledName": "$s10Foundation27_KeyValueCodingAndObservingP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomStringConvertible",
+            "printedName": "CustomStringConvertible",
+            "usr": "s:s23CustomStringConvertibleP",
+            "mangledName": "$ss23CustomStringConvertibleP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "CustomDebugStringConvertible",
+            "printedName": "CustomDebugStringConvertible",
+            "usr": "s:s28CustomDebugStringConvertibleP",
+            "mangledName": "$ss28CustomDebugStringConvertibleP"
+          }
+        ]
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageAnyEventConditionEvaluator.swift",
+      "kind": "StringLiteral",
+      "offset": 356,
+      "length": 34,
+      "value": "\"MoEngageInApps.MoEngageAnyEventConditionEvaluator\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/ModelObjects\/Public\/MoEngageInAppSelfHandledCampaign.swift",
+      "kind": "StringLiteral",
+      "offset": 308,
+      "length": 32,
+      "value": "\"MoEngageInApps.MoEngageInAppSelfHandledCampaign\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppFileStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 263,
+      "length": 10,
+      "value": "\"MOInApps\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppFileStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 313,
+      "length": 51,
+      "value": "\"MOInApps\/\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppFileStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 363,
+      "length": 1,
+      "value": "\"\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppFileStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 401,
+      "length": 16,
+      "value": "\"InAppCampaigns\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppFileStorage.swift",
+      "kind": "StringLiteral",
+      "offset": 449,
+      "length": 16,
+      "value": "\"InAppStatsInfo\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/ModelObjects\/Public\/MoEngageInAppAction.swift",
+      "kind": "StringLiteral",
+      "offset": 261,
+      "length": 19,
+      "value": "\"MoEngageInApps.MoEngageInAppAction\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/ModelObjects\/Public\/MoEngageInAppAction.swift",
+      "kind": "StringLiteral",
+      "offset": 261,
+      "length": 19,
+      "value": "\"MoEngageInApps.MoEngageInAppAction\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 247,
+      "length": 15,
+      "value": "\"generalInApps\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 295,
+      "length": 16,
+      "value": "\"embeddedInApps\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 347,
+      "length": 19,
+      "value": "\"selfHandledInApps\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 398,
+      "length": 15,
+      "value": "\"triggerInApps\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 445,
+      "length": 15,
+      "value": "\"triggerEvents\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 490,
+      "length": 19,
+      "value": "\"inAppsGlobalDelay\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 537,
+      "length": 17,
+      "value": "\"inAppsSyncDelay\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 588,
+      "length": 22,
+      "value": "\"inAppLastUpdatedTime\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 642,
+      "length": 20,
+      "value": "\"inAppLastShownTime\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 691,
+      "length": 12,
+      "value": "\"inappState\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 765,
+      "length": 12,
+      "value": "\"campaignId\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 810,
+      "length": 12,
+      "value": "\"expiryTime\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 858,
+      "length": 15,
+      "value": "\"lastShownTime\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 918,
+      "length": 24,
+      "value": "\"delTimebasedOnLastSync\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 983,
+      "length": 20,
+      "value": "\"numberOfTimesShown\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1048,
+      "length": 24,
+      "value": "\"primaryActionCompleted\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1133,
+      "length": 9,
+      "value": "\"batches\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1213,
+      "length": 9,
+      "value": "\"batchId\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1259,
+      "length": 12,
+      "value": "\"batchArray\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1364,
+      "length": 14,
+      "value": "\"formattedCid\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1417,
+      "length": 14,
+      "value": "\"campaignStat\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1520,
+      "length": 10,
+      "value": "\"statType\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1567,
+      "length": 12,
+      "value": "\"timeStamps\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1651,
+      "length": 12,
+      "value": "\"instanceId\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1696,
+      "length": 12,
+      "value": "\"campaignId\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1743,
+      "length": 14,
+      "value": "\"campaignName\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1792,
+      "length": 14,
+      "value": "\"campaignType\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1841,
+      "length": 14,
+      "value": "\"templateType\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1893,
+      "length": 17,
+      "value": "\"sdkCampaignType\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1944,
+      "length": 13,
+      "value": "\"updatedTime\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 1990,
+      "length": 12,
+      "value": "\"expiryTime\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2033,
+      "length": 10,
+      "value": "\"triggers\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2077,
+      "length": 13,
+      "value": "\"displayMeta\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2132,
+      "length": 21,
+      "value": "\"deliveryControlMeta\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2185,
+      "length": 11,
+      "value": "\"inappType\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2230,
+      "length": 13,
+      "value": "\"orientation\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2281,
+      "length": 17,
+      "value": "\"campaignContext\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2340,
+      "length": 21,
+      "value": "\"formattedCampaignId\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2447,
+      "length": 12,
+      "value": "\"actionName\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2496,
+      "length": 12,
+      "value": "\"eventsDict\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2597,
+      "length": 14,
+      "value": "\"displayRules\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2650,
+      "length": 14,
+      "value": "\"displayDelay\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2757,
+      "length": 12,
+      "value": "\"screenName\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2807,
+      "length": 9,
+      "value": "\"context\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2922,
+      "length": 10,
+      "value": "\"priority\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 2971,
+      "length": 14,
+      "value": "\"isPersistent\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 3018,
+      "length": 8,
+      "value": "\"fcMeta\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 3107,
+      "length": 19,
+      "value": "\"ignoreGlobalDelay\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 3165,
+      "length": 10,
+      "value": "\"maxCount\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/MoEngageInAppParser.swift",
+      "kind": "StringLiteral",
+      "offset": 3214,
+      "length": 10,
+      "value": "\"minDelay\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/ModelObjects\/Public\/MoEngageInAppCampaign.swift",
+      "kind": "StringLiteral",
+      "offset": 267,
+      "length": 21,
+      "value": "\"MoEngageInApps.MoEngageInAppCampaign\""
+    },
+    {
+      "filePath": "\/Users\/babul.raj@moengage.com\/MoenWorkSpace\/MoEFramework\/MoEngage\/MoEngageInApps\/ModelObjects\/Public\/MoEngageInAppCampaign.swift",
+      "kind": "StringLiteral",
+      "offset": 267,
+      "length": 21,
+      "value": "\"MoEngageInApps.MoEngageInAppCampaign\""
+    }
+  ]
+}

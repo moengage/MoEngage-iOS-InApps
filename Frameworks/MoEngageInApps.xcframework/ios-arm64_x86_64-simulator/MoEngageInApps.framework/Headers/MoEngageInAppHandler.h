@@ -47,9 +47,11 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark- Show In-App Pop
 
+#if !TARGET_OS_TV
 /// Call this method to show Pop-up OR Fullscreen InApps inside the app.
 /// @param appID MoEngage Account Identifier.
 -(void)showInAppCampaignForAppID:(NSString* _Nullable)appID;
+#endif
 
 /// Call this method to block InApps in a particular ViewController
 /// @param viewController UIViewController instance where InApps have to be blocked
@@ -58,6 +60,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark- Nudge Campaign
 
+#if !TARGET_OS_TV
 /// Method to show Nudge campaign at the specified position
 /// @param nudgePosition specifies the position where the nudge has to be showed Top/Bottom.
 /// @param appID MoEngage Account Identifier.
@@ -73,6 +76,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param campaignInfo MoEngageInAppCampaign instance with the campaign info.
 /// @param appID MoEngage Account Identifier.
 -(void)nudgeCampaignShownWithCampaignInfo:(MoEngageInAppCampaign* _Nullable)campaignInfo forAppID:(NSString* _Nullable)appID;
+#endif
 
 #pragma mark- SelfHandled Campaign
 

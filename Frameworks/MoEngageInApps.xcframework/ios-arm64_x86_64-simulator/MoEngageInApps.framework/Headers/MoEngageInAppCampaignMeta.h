@@ -12,9 +12,11 @@
 #import <MoEngageInApps/MoEngageInAppTriggerCondition.h>
 #import <MoEngageInApps/MoEngageInAppCommonUtils.h>
 
+@class MoEngageSDKInstance;
+
 @interface MoEngageInAppCampaignMeta : MoEngageModelObject <NSCoding>
 @property(nonatomic, strong) NSString* instance_id;
-@property(nonatomic, strong) NSString* campaign_id;
+@property(nonatomic, strong) NSString* _Nonnull campaign_id;
 @property(nonatomic, strong) NSString* formatted_campaign_id;
 @property(nonatomic, strong) NSString* campaign_name;
 @property(nonatomic, strong) NSString* campaign_type;
@@ -32,7 +34,6 @@
 
 @property(strong, nonatomic) NSDictionary* campaign_context;
 
--(instancetype)initWithDictionary:(NSDictionary*)metaDict andInstanceID:(NSString*)instanceID;
--(BOOL)checkIfAttributeConditionSatisfiedForEvent:(NSString*)event andAttributes:(NSDictionary*)eventDict;
+-(instancetype)initWithDictionary:(NSDictionary*)metaDict sdkInstance:(MoEngageSDKInstance*)sdkInstance;
 -(BOOL)isCampaignMetaValid;
 @end

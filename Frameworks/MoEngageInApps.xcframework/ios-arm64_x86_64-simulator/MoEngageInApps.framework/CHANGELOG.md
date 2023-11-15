@@ -3,6 +3,11 @@
 
 ## Change Log:
 
+### Version 4.12.0 *(15th November 2023)*
+-------------------------------------------
+* Added self-handled inapps for tvOS.
+* Added OR condition support for trigger events.
+
 ### Version 4.11.2 *(26th September 2023)*
 -------------------------------------------
 * Updated the dependency to MoEngage-iOS-SDK 9.12.0. 

@@ -8,6 +8,11 @@ import MoEngageCore
 import Swift
 import _Concurrency
 import _StringProcessing
+@objc @objcMembers public class MoEngageAnyEventConditionEvaluator : ObjectiveC.NSObject {
+  @objc public init(forCampaign campaignMeta: MoEngageInApps.MoEngageInAppCampaignMeta, sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  @objc public func checkConditionSatisfied(forEvent event: Swift.String, andAttributes attributes: [Swift.String : Any]) -> Swift.Bool
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class MoEngageInAppMigration : ObjectiveC.NSObject {
   @objc public static func migrateDataFromPreviousVersions(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc public static func migrateDataFromNoNEncryptionToEncryption(sdkInstance: MoEngageCore.MoEngageSDKInstance, currentSDKInstance: MoEngageCore.MoEngageSDKInstance)
@@ -58,13 +63,21 @@ import _StringProcessing
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MoEngageSDKInApp : ObjectiveC.NSObject {
   @objc public static let sharedInstance: MoEngageInApps.MoEngageSDKInApp
+  @available(tvOS, unavailable)
   @objc public func showInApp()
+  @available(tvOS, unavailable)
   @objc public func showInApp(forAppId appId: Swift.String? = nil)
+  @available(tvOS, unavailable)
   @objc public func showNudge(atPosition position: MoEngageInApps.MoEngageNudgePosition)
+  @available(tvOS, unavailable)
   @objc public func showNudge(atPosition position: MoEngageInApps.MoEngageNudgePosition, forAppId appId: Swift.String? = nil)
+  @available(tvOS, unavailable)
   @objc public func getNudgeView(completionBlock: @escaping MoEngageInApps.NudgeCreationCompletionBlock)
+  @available(tvOS, unavailable)
   @objc public func getNudgeView(forAppId appId: Swift.String? = nil, completionBlock: @escaping MoEngageInApps.NudgeCreationCompletionBlock)
+  @available(tvOS, unavailable)
   @objc public func nudgeCampaignShown(_ campaignInfo: MoEngageInApps.MoEngageInAppCampaign?)
+  @available(tvOS, unavailable)
   @objc public func nudgeCampaignShown(_ campaignInfo: MoEngageInApps.MoEngageInAppCampaign?, forAppId appId: Swift.String? = nil)
   @objc public func getSelfHandledInApp(completionBlock: @escaping ((_ campaignInfo: MoEngageInApps.MoEngageInAppSelfHandledCampaign?, _ accountMeta: MoEngageCore.MoEngageAccountMeta?) -> Swift.Void))
   @objc public func getSelfHandledInApp(forAppId appId: Swift.String? = nil, completionBlock: @escaping ((_ campaignInfo: MoEngageInApps.MoEngageInAppSelfHandledCampaign?, _ accountMeta: MoEngageCore.MoEngageAccountMeta?) -> Swift.Void))
