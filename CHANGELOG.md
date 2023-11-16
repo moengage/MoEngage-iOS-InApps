@@ -2,6 +2,10 @@
 =====================
 ## Change Log:
 
+### Version 4.12.1 *(15th November 2023)*
+-------------------------------------------
+* Added self-handled inapps for tvOS.
+
 ### Version 4.12.0 *(15th November 2023)*
 -------------------------------------------
 * Added self-handled inapps for tvOS.
