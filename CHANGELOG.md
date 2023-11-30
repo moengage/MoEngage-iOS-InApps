@@ -2,6 +2,10 @@
 =====================
 ## Change Log:
 
+### Version 4.13.0 *(30th November 2023)*
+-------------------------------------------
+* Updated hashing algorithm usages to SHA256.
+
 ### Version 4.12.1 *(15th November 2023)*
 -------------------------------------------
 * Added self-handled inapps for tvOS.
