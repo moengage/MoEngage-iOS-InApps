@@ -6,7 +6,7 @@
 	<dict>
 		<key>CHANGELOG.md</key>
 		<data>
-		9GSn5GAZEVqIJBsD1q0d6A2/Rck=
+		oGLuADQDxqLlS0QqasslLm5RtyA=
 		</data>
 		<key>Headers/MoEngageInAppActionType.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/MoEngageInApps-Swift.h</key>
 		<data>
-		5IiANI2zbOHLxelWCs6/t4rxI8M=
+		BLmFTFwaBggos7uZlrbYwFId+r8=
 		</data>
 		<key>Headers/MoEngageInApps.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ScbyBaCWfCISqzRyY2uWNIvLN5o=
+		tMGmOy5GwVcj56rdaUZtzJKMHig=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -86,47 +86,51 @@
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		xpJs1dzCuKLMUFogZ1gY44Mpf8o=
+		/yyL8CoshIpuNjwDGLmpJ/67xPo=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		aDzFacKrvqYByVY3kSmiN0wmsAI=
+		6VV9Ko2M55eF99uIgMdpfLx2TQQ=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		z6lbS5hn9+gEwMnNg76qKv/y1ms=
+		GfBnO2SdNqU0Y9+C5sljkC3FdZE=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		aDzFacKrvqYByVY3kSmiN0wmsAI=
+		6VV9Ko2M55eF99uIgMdpfLx2TQQ=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		nT0VNHowwzL3Mlps03Fylrx/59A=
+		O2OsMqaM6dhsCIcPgwyajYitfrU=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		xpJs1dzCuKLMUFogZ1gY44Mpf8o=
+		/yyL8CoshIpuNjwDGLmpJ/67xPo=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		Q2bGzXO7bB2Vhg0n+5tQfsNtd0k=
+		rCcOAGJiH6uIeKgiztH8BJ2Yahc=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-		JLasVU/vyDwVJjqvvQaGs3VI+D4=
+		rLWrZysyQMYCY549C83z+8eCO0Q=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		Q2bGzXO7bB2Vhg0n+5tQfsNtd0k=
+		rCcOAGJiH6uIeKgiztH8BJ2Yahc=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		KBbDE91m0Bk2lcdYvuTs1guVrKg=
+		5iPfgXzzlTl/G9LHjr/wdHh7ACo=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		s7rw/FrEeZwrPLz+una4MqZ2V5o=
+		uYJpD6df0J93xQmgEkXPO7WD3IM=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		UUU3tmVZy+aBHNn10JICKjaTGDA=
 		</data>
 		<key>defaultCloseButton.png</key>
 		<data>
@@ -139,7 +143,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Fq25d68zB8362FPWZo6sVh57ck7zcTl/fZ8lbyBBYc=
+			oUZx76LYQh0c3Wu+v7G8pPI80GduK3wsLzVgqkijiM8=
 			</data>
 		</dict>
 		<key>Headers/MoEngageInAppActionType.h</key>
@@ -237,7 +241,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			lUy8gNbB7x75mEsGg/rSAwkNQEW9SGfrv6Vg80srk2s=
+			6zDdi/Ke/ZKzRXy9peZE0bNWp+NkOgOgcDkRcNf6edM=
 			</data>
 		</dict>
 		<key>Headers/MoEngageInApps.h</key>
@@ -272,77 +276,84 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			fUyx96wRkXCYyAeHQ6aAIQlFN7ZIWSWrT6BzKaduzvU=
+			OlkzhsWAQrZNSeztDtDBWn6SkOrlfVu0d0MOLjQTJGM=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uDZOrrjzGodw2xf9GIiaprJpNpF2bETQxC/63/15Ff4=
+			WUsNWJhQqGvacx2dqCWU44+UYmzGkt82UnxFQCi4CAo=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			PkGtFTNBne7aszpbPEbzQGrjHrsTZpkcdtJ/ZM8NxtE=
+			8cl6Pon+fw8ov8lY7h6OxTnjQiMEcELXOhGak6qt8Ig=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			uDZOrrjzGodw2xf9GIiaprJpNpF2bETQxC/63/15Ff4=
+			WUsNWJhQqGvacx2dqCWU44+UYmzGkt82UnxFQCi4CAo=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			k2dldTK01GBeFSIWAa53f6yZuGNenpsKMEdp0Yg8hDM=
+			zwCGtRt/j1nqDm91kk0obQ5hIzfHGDb721AoYk6NNIE=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			fUyx96wRkXCYyAeHQ6aAIQlFN7ZIWSWrT6BzKaduzvU=
+			OlkzhsWAQrZNSeztDtDBWn6SkOrlfVu0d0MOLjQTJGM=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WlFszwgijuGue4Z1fvpgvesHBK+Aqn5zKzGRcZNmIto=
+			rWxaYnx3vy34S1zD+7eBjYJN8524zSEUrVGWdQC0DGA=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			q+WTTU499hAbcQ3ca1e4Uun7BJRXlTRlIOcO7VrKJ1Q=
+			+jtPE+arOjCPdN4R1rgrLQNA1iF24SiSwDh+TnogpL8=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WlFszwgijuGue4Z1fvpgvesHBK+Aqn5zKzGRcZNmIto=
+			rWxaYnx3vy34S1zD+7eBjYJN8524zSEUrVGWdQC0DGA=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ze9c9oLAe6JLZRQ/UJb/KX4WYHoRG2PrTdV7BAOOfJU=
+			G1bAnqz5aedLMcM+DoY9jd0mRX8n1R3H6xIQ66M8sRs=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V0lMjLSKHRtS9uiRWkaSBHLgK/NsIU+6q0MiNr197ko=
+			ymlM9iUxqMj48MrDFfEdmTabXI6jL4u4giLEZX15kM4=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5qjxpQPizQEDVdeqEnRkBa4+MD2jXTBji81EweRtFYc=
 			</data>
 		</dict>
 		<key>defaultCloseButton.png</key>

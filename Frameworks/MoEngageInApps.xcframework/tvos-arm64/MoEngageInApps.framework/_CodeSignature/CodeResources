@@ -6,7 +6,7 @@
 	<dict>
 		<key>CHANGELOG.md</key>
 		<data>
-		9GSn5GAZEVqIJBsD1q0d6A2/Rck=
+		oGLuADQDxqLlS0QqasslLm5RtyA=
 		</data>
 		<key>Headers/MoEngageInAppActionType.h</key>
 		<data>
@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/MoEngageInApps-Swift.h</key>
 		<data>
-		4qlVGFF2f1i21aC1qPfZCHSJjuA=
+		9vsNEo2Bi1IY7pJtiYTysCJ3ubI=
 		</data>
 		<key>Headers/MoEngageInApps.h</key>
 		<data>
@@ -78,7 +78,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		ePE1l4Jb/qbElNypCSsfclRbDMI=
+		ZeWcskNC4D8lHHZizYOw7QxJvoE=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -86,27 +86,31 @@
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-tvos.abi.json</key>
 		<data>
-		474haFcmEklXxLcULH542GDxs7k=
+		vqte7aV5sJGKuVM03Gi7bTmWrCE=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<data>
-		UUuuRD4zqWF/EIcsXOZgK+KK82M=
+		sY3gbRxwgMjEQdllVR+8FnvalWU=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<data>
-		CGr8wlDGIGrie6PYGatBCVBMqoA=
+		89Zl686rr3BlKNkiDMFrAtxlf9s=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<data>
-		UUuuRD4zqWF/EIcsXOZgK+KK82M=
+		sY3gbRxwgMjEQdllVR+8FnvalWU=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<data>
-		MLEaPhbPogAT83lGSdJe6mXezhI=
+		8EIDjTAjAbsrAwGrq+d/x1Eygp4=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		s7rw/FrEeZwrPLz+una4MqZ2V5o=
+		uYJpD6df0J93xQmgEkXPO7WD3IM=
+		</data>
+		<key>PrivacyInfo.xcprivacy</key>
+		<data>
+		UUU3tmVZy+aBHNn10JICKjaTGDA=
 		</data>
 		<key>defaultCloseButton.png</key>
 		<data>
@@ -119,7 +123,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			3Fq25d68zB8362FPWZo6sVh57ck7zcTl/fZ8lbyBBYc=
+			oUZx76LYQh0c3Wu+v7G8pPI80GduK3wsLzVgqkijiM8=
 			</data>
 		</dict>
 		<key>Headers/MoEngageInAppActionType.h</key>
@@ -217,7 +221,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			GcVwIMmnCdSK30dMccJRsrSRpHIz3MnfwKusR/QhZ9E=
+			3ZsyO/anBzTDAGE+GXLMX4+DzAVnVi2hSiDZaVabGs4=
 			</data>
 		</dict>
 		<key>Headers/MoEngageInApps.h</key>
@@ -252,42 +256,49 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			pbHnnUJIZAeBVRjwlSgMzUWlou/v9NlyMtGFLnorxQA=
+			Zp9gLfmPej7FR5XLbLlkcJlaRjic4GTppYX0RZV6d0Q=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-tvos.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IazpcxDJ0Hm65iEmLY+EW0WfqfKc3wf3ohddrV9Vx14=
+			qbdtUJxyioisXzXLKywEER0RE8zWvGfj94kKfUSAulc=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-tvos.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eZbAACb5fHbkd0lSWFdFdFT//J2BBkRPN9CKnvd43TQ=
+			IfOfWlrAGK7qYZqi1YqfEa/InIzzAqoIaaWvCWRUU9A=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-tvos.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			IazpcxDJ0Hm65iEmLY+EW0WfqfKc3wf3ohddrV9Vx14=
+			qbdtUJxyioisXzXLKywEER0RE8zWvGfj94kKfUSAulc=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-tvos.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XfZc6ihLeuTaDvuv2wSekwadV5QUrWetqaMDdSQ4LiA=
+			p+H5yR/kusOiKDiSjnfxx4epS9hOqzqKWJfFjfjMSjo=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			V0lMjLSKHRtS9uiRWkaSBHLgK/NsIU+6q0MiNr197ko=
+			ymlM9iUxqMj48MrDFfEdmTabXI6jL4u4giLEZX15kM4=
+			</data>
+		</dict>
+		<key>PrivacyInfo.xcprivacy</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			5qjxpQPizQEDVdeqEnRkBa4+MD2jXTBji81EweRtFYc=
 			</data>
 		</dict>
 		<key>defaultCloseButton.png</key>
