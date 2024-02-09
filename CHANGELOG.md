@@ -2,6 +2,10 @@
 =====================
 ## Change Log:
 
+### Version 4.14.1 *(9th February 2024)*
+-------------------------------------------
+* BugFix - Fixed HTML InApps leaking.
+
 ### Version 4.14.0 *(23rd January 2024)*
 -------------------------------------------
 * Added privacy manifest file
