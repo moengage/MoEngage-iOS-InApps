@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MoEngageInAppCampaignMeta.h"
 
 @interface MoEngageInAppCampaignsData : NSObject<NSCoding>
 @property NSArray   *generalInApps;
@@ -20,5 +21,7 @@
 @property NSNumber  *syncDelay;
 @property NSDate    *inAppLastUpdatedTime;
 @property NSDate    *inAppLastShownTime;
+
+@property NSMutableDictionary<NSString *, NSMutableArray<MoEngageInAppCampaignMeta *> *> *nonIntrusiveInApps;
 @end
 

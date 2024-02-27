@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <MoEngageInApps/MoEngageNudgePosition.h>
 #import <MoEngageCore/MoEngageCore-Swift.h>
 #import <MoEngageInApps/MoEngageInAppCommonUtils.h>
 
@@ -65,17 +64,6 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param nudgePosition specifies the position where the nudge has to be showed Top/Bottom.
 /// @param appID MoEngage Account Identifier.
 -(void)showNudgeAtPosition:(MoEngageNudgePosition)nudgePosition forAppID:(NSString* _Nullable)appID;
-
-/// Method to get the UIView instance of the nudge to embed it anywhere inside the app
-/// @param appID MoEngage Account Identifier.
-/// @param completionBlock Completion Block for getting the Nudge InApp Campaign, which is used in case an inApp has to be embedded in your screen.
-/// -- It gives nudge UIView instance and MoEngageInAppCampaign instance giving campaign info.
--(void)getNudgeViewForAppID:(NSString* _Nullable)appID withCompletionBlock:(NudgeCreationCompletionBlock)completionBlock;
-
-/// Incase Nudge campaign is obtained using getNudgeViewWithCompletionBlock: and embedded by developers in the app, this method has to be called to inform if the nudge is shown successfully to the user.
-/// @param campaignInfo MoEngageInAppCampaign instance with the campaign info.
-/// @param appID MoEngage Account Identifier.
--(void)nudgeCampaignShownWithCampaignInfo:(MoEngageInAppCampaign* _Nullable)campaignInfo forAppID:(NSString* _Nullable)appID;
 #endif
 
 #pragma mark- SelfHandled Campaign

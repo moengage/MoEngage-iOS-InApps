@@ -27,6 +27,8 @@ typedef enum{
     MOE_WIDGET_ACTION_CONDITIONAL,
     MOE_WIDGET_ACTION_USER_INPUT,
     MOE_WIDGET_ACTION_CUSTOM,
+    MOE_WIDGET_ACTION_RATING_CHANGE,
+    MOE_WIDGET_ACTION_SET_TEXT,
     MOE_WIDGET_ACTION_UNKNOWN
 } MoEngageWidgetActionType;
 
@@ -94,7 +96,9 @@ NS_ASSUME_NONNULL_BEGIN
 +(void)raiseMandatoryParamsMissingException;
 +(void)raiseInAppSizeExceededException;
 +(void)raiseInAppImageDownloadFailureException;
++(void)raiseInAppVideoDownloadFailureException;
 +(void)raiseInAppHTMLResourceDownloadFailureException;
++(void)raiseExceptionForError:(NSError*)error;
 +(void)raiseFCIDMissingInMetaException;
 +(BOOL)dateSameAs:(NSDate*)date1 date2:(NSDate*)date2;
 +(BOOL)dateLater:(NSDate*)date1 date2:(NSDate*)date2;

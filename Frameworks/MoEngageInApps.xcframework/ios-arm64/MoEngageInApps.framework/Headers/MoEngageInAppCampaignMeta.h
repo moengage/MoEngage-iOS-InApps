@@ -14,6 +14,14 @@
 
 @class MoEngageSDKInstance;
 
+typedef NS_ENUM(NSUInteger, MoEngageNudgeDisplayPosition) {
+    MoEngageNudgeDisplayPositionNone,
+    MoEngageNudgeDisplayPositionTop,
+    MoEngageNudgeDisplayPositionBottom,
+    MoEngageNudgeDisplayPositionBottomLeft,
+    MoEngageNudgeDisplayPositionBottomRight
+};
+
 @interface MoEngageInAppCampaignMeta : MoEngageModelObject <NSCoding>
 @property(nonatomic, strong) NSString* instance_id;
 @property(nonatomic, strong) NSString* _Nonnull campaign_id;
@@ -24,6 +32,7 @@
 @property(nonatomic, assign) MoEngageInAppTemplateType template_type;
 @property(nonatomic, assign) MoEngageInAppSDKCampaignType sdk_campaign_type;
 @property(nonatomic, assign) MoEngageInAppOrientationType orientation_supported;
+@property(nonatomic, assign) MoEngageNudgeDisplayPosition position;
 
 @property(nonatomic, strong) NSDate* updated_time;
 @property(nonatomic, strong) NSDate* expiry_time;

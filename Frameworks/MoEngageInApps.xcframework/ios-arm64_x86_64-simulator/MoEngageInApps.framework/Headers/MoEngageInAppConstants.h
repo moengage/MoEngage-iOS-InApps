@@ -11,6 +11,10 @@
 
 //InApp Version
 extern NSString* const MO_INAPP_VERSION;
+
+//LogTag With Version
+extern NSString* const MO_LOG_TAG;
+
 #pragma mark - Storage Paths
 
 //Storage Paths
@@ -66,6 +70,7 @@ extern NSString* const MO_INAPP_META_KEY_SDK_CMP_TYPE;
 extern NSString* const MO_INAPP_META_KEY_INAPP_TYPE;
 extern NSString* const MO_INAPP_META_KEY_ORIENTATION;
 extern NSString* const MO_INAPP_META_C_TYPE_VAL_MOBILE_INAPP;
+extern NSString* const MO_INAPP_META_KEY_POSITION;
 
 
 extern NSString* const MO_INAPP_META_KEY_EXPIRY;
@@ -136,6 +141,7 @@ extern NSString* const MO_INAPP_PAYLOAD_KEY_DATA_MAPS;
 extern NSString* const MO_INAPP_PAYLOAD_KEY_DISMISS_INTERVAL;
 extern NSString* const MO_INAPP_PAYLOAD_KEY_SELF_HANDLED_PAYLOAD;
 extern NSString* const MO_INAPP_PAYLOAD_KEY_HTML_META;
+extern NSString* const MO_INAPP_PAYLOAD_KEY_VIDEO_LINKS;
 
 extern NSString* const MO_INAPP_PAYLOAD_KEY_FAILURE_CODE;
 extern NSString* const MO_INAPP_PAYLOAD_VALUE_CG_FAILURE_CODE;
@@ -172,7 +178,9 @@ extern NSString* const MO_INAPP_WIDGET_KEY_IMAGE_TYPE;
 extern NSString* const MO_INAPP_WIDGET_KEY_BUTTON_TYPE;
 extern NSString* const MO_INAPP_WIDGET_KEY_RATING_TYPE;
 extern NSString* const MO_INAPP_WIDGET_KEY_CLOSE_BUTTON_TYPE;
-
+extern NSString* const MO_INAPP_WIDGET_KEY_VIDEO;
+extern NSString* const MO_INAPP_WIDGET_KEY_FEEDBACK_TEXT;
+extern NSString* const MO_INAPP_WIDGET_KEY_CUSTOM_RATING;
 // STYLE KEYS
 extern NSString* const MO_INAPP_STYLE_KEY_HEIGHT;
 extern NSString* const MO_INAPP_STYLE_KEY_WIDTH;
@@ -188,7 +196,8 @@ extern NSString* const MO_INAPP_STYLE_KEY_FONT;
 extern NSString* const MO_INAPP_STYLE_KEY_CLOSE_BUT_FLOAT;
 extern NSString* const MO_INAPP_STYLE_KEY_MIN_HEIGHT;
 extern NSString* const MO_INAPP_STYLE_KEY_DISPLAY;
-
+extern NSString* const MO_INAPP_STYLE_KEY_DISPLAY_SIZE;
+extern NSString* const MO_INAPP_STYLE_KEY_INITIAL_STATE;
 // POSITION KEYS
 extern NSString* const MO_INAPP_STYLE_KEY_POSITION_ORIGIN;
 extern NSString* const MO_INAPP_STYLE_KEY_POSITION_X;
@@ -242,7 +251,7 @@ extern NSString* const MO_INAPP_TEMPLATE_TYPE_POP_UP;
 extern NSString* const MO_INAPP_TEMPLATE_TYPE_EMBEDDED;
 extern NSString* const MO_INAPP_TEMPLATE_TYPE_FULL_SCREEN;
 extern NSString* const MO_INAPP_TEMPLATE_TYPE_SELF_HANDLED;
-
+extern NSString* const MO_INAPP_TEMPLATE_TYPE_NON_INTRUSIVE;
 
 // ANIMATION VALUES
 extern NSString* const MO_INAPP_ANIMATION_VALUE_FADE_IN;
@@ -288,6 +297,8 @@ extern NSString* const MO_INAPP_ACTION_TYPE_NOTIFICATION_ACTION;
 extern NSString* const MO_INAPP_ACTION_TYPE_CONDITIONAL_ACTION;
 extern NSString* const MO_INAPP_ACTION_TYPE_USER_INPUT_ACTION;
 extern NSString* const MO_INAPP_ACTION_TYPE_CUSTOM_ACTION;
+extern NSString* const MO_INAPP_ACTION_TYPE_RATING_CHANGE;
+extern NSString* const MO_INAPP_ACTION_TYPE_SET_TEXT;
 
 // ACTION Track Type
 extern NSString* const MO_INAPP_ACTION_TRACK_TYPE_EVENT;
@@ -301,6 +312,9 @@ extern NSString* const MO_INAPP_ACTION_NAV_EXTERNAL_BROWSER;
 
 // ACTION User Input Type
 extern NSString* const MO_INAPP_ACTION_USER_INPUT_RATING;
+extern NSString* const MO_INAPP_ACTION_USER_INPUT_CUSTOM_RATING;
+extern NSString* const MO_INAPP_STYLE_RATING_KEY_NUM_OF_RATINGS;
+extern NSString* const MO_INAPP_STYLE_RATING_KEY_RATING_TYPE;
 
 #pragma -mark Misc
 extern NSString* const IN_APP_V2_LAST_SHOWN_INAPP;
@@ -313,6 +327,7 @@ extern NSString* const MO_INAPP_TRACK_USER_TIME_STAMP;
 extern NSString* const MO_INAPP_EXCEPTION_MANDATORY_PARAM_MISSING;
 extern NSString* const MO_INAPP_EXCEPTION_SIZE_EXCEEDED;
 extern NSString* const MO_INAPP_EXCEPTION_IMAGE_DOWNLOAD;
+extern NSString* const MO_INAPP_EXCEPTION_VIDEO_DOWNLOAD;
 extern NSString* const MO_INAPP_EXCEPTION_FCID_MISSING_IN_META;
 extern NSString* const MO_INAPP_EXCEPTION_HTML_ASSETS_DOWNLOAD_FAILURE;
 
