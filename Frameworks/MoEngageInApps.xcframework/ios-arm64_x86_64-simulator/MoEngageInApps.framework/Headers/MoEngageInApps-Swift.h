@@ -277,8 +277,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #import <MoEngageInApps/MoEngageInApps.h>
@@ -364,6 +366,61 @@ SWIFT_CLASS("_TtC14MoEngageInApps19MoEngageInAppAction")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSURL;
+@class MoEngageSDKConfig;
+@class NSData;
+
+@interface MoEngageInAppAssetsManager (SWIFT_EXTENSION(MoEngageInApps))
+/// Get video resource name from URL.
+/// \param url The resource URL.
+///
+///
+/// returns:
+/// Resource file name.
+- (NSString * _Nonnull)getInAppVideoNameFor:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
+/// Get assets that aren’t cached and needs download.
+/// \param resourceLinks The resources to be downloaded.
+///
+/// \param inAppType The campaign type.
+///
+/// \param campaignID The campaign id.
+///
+/// \param sdkInstance The instance of SDK.
+///
+///
+/// returns:
+/// The resources that aren’t cached.
+- (NSDictionary<NSURL *, NSURL *> * _Nullable)getAssetsToBeDownloadedWithResourceLinks:(NSDictionary<NSString *, NSString *> * _Nonnull)resourceLinks withInAppType:(MoEngageInAppType)inAppType forCampaignID:(NSString * _Nonnull)campaignID forSDKInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance SWIFT_WARN_UNUSED_RESULT;
+/// Move resource to provided path.
+/// Create path if doesn’t exist.
+/// \param resource The original path.
+///
+/// \param newPath The new path.
+///
+- (BOOL)moveWithResource:(NSURL * _Nonnull)resource to:(NSURL * _Nonnull)newPath error:(NSError * _Nullable * _Nullable)error;
+/// Download video assets.
+/// \param resourceLinks The resources to be downloaded.
+///
+/// \param inAppType The campaign type.
+///
+/// \param campaignID The campaign id.
+///
+/// \param sdkInstance The instance of sdk.
+///
+/// \param completionBlock The block to execute after downloads.
+///
+- (void)downloadVideoAssetsWithResourceLinks:(NSDictionary<NSString *, NSString *> * _Nonnull)resourceLinks withInAppType:(MoEngageInAppType)inAppType forCampaignID:(NSString * _Nonnull)campaignID forSDKInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance andCompletionBlock:(void (^ _Nonnull)(BOOL))completionBlock;
+/// Downloads asset at provided URL.
+/// \param url The asset URL.
+///
+/// \param sdkConfig The current SDK config.
+///
+/// \param completionBlock The download completion callback
+/// :nodoc:
+///
+- (void)downloadAssetsDataForURL:(NSURL * _Nonnull)url sdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig withCompletionHandler:(void (^ _Nonnull)(BOOL, NSData * _Nullable))completionBlock;
+@end
+
 @class NSDate;
 
 /// MoEngageInAppCampaign gives all the information about the inApp campaign
@@ -405,6 +462,113 @@ SWIFT_CLASS("_TtC14MoEngageInApps21MoEngageInAppCampaign")
 - (nonnull instancetype)initWithDictionary:(NSDictionary * _Nullable)dict SWIFT_UNAVAILABLE;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class MoEngageInAppPrimaryContainerView;
+@class UIViewController;
+
+/// This class can be used for all inapp instance agnostic behaviour
+SWIFT_CLASS("_TtC14MoEngageInApps33MoEngageInAppConfigurationHandler")
+@interface MoEngageInAppConfigurationHandler : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageInAppConfigurationHandler * _Nonnull sharedInstance;)
++ (MoEngageInAppConfigurationHandler * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+/// Store nudgeview attached with passed view controller.
+/// \param nudgeView The view to track.
+///
+/// \param controller The view controller nudge displayed at.
+///
+/// \param sdkInstance The current SDK instance.
+///
+- (void)trackNudgeView:(MoEngageInAppPrimaryContainerView * _Nonnull)nudgeView onController:(UIViewController * _Nonnull)controller sdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface MoEngageInAppContainer (SWIFT_EXTENSION(MoEngageInApps))
+/// The height that widgets won’t occupy.
+/// Gif and video widget must be resized to occupy this height.
+///
+/// returns:
+/// The empty height.
+- (CGFloat)nonScalableHeight SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface MoEngageInAppController (SWIFT_EXTENSION(MoEngageInApps))
+/// Check non-instrusive inapp specific eligibility condition.
+/// \param campaignMeta The campaign metadata to check.
+///
+/// \param inPrioratizingStage Whether check is in priority stage.
+///
+///
+/// returns:
+/// Whether campaign passes check.
+- (BOOL)isNudgeCampaignEligible:(MoEngageInAppCampaignMeta * _Nonnull)campaignMeta inPrioratizingStage:(BOOL)inPrioratizingStage SWIFT_WARN_UNUSED_RESULT;
+/// Perform InApp campaigns sync.
+/// \param completionBlock The sync callback.
+/// :nodoc:
+///
+- (void)syncInAppsWithCompletionBlock:(void (^ _Nonnull)(BOOL))completionBlock;
+/// Gets query parameters for request.
+///
+/// returns:
+/// URL query parameters.
+/// :nodoc:
+- (NSDictionary<NSString *, NSString *> * _Nonnull)getQueryStringParamsForInAppRequest SWIFT_WARN_UNUSED_RESULT;
+/// Fetches inapp campaign metadata.
+/// \param campaignMeta The campaign meta.
+///
+/// \param forPreviewFlow If for preview.
+///
+/// \param triggerInfoDict The trigger data.
+///
+/// \param completionBlock The data callback.
+/// :nodoc:
+///
+- (void)fetchInAppRequestWithCampaignMeta:(MoEngageInAppCampaignMeta * _Nonnull)campaignMeta forPreview:(BOOL)forPreviewFlow withTriggerInfo:(NSDictionary * _Nonnull)triggerInfoDict withCompletionBlock:(void (^ _Nonnull)(BOOL, NSInteger, NSDictionary * _Nullable))completionBlock;
+/// Performs inapp fetch request.
+/// \param campaignID The campaign id to fetch.
+///
+/// \param completionBlock The fetched data callback.
+/// :nodoc:
+///
+- (void)fetchInAppRequestWithCampaignID:(NSString * _Nonnull)campaignID withCompletionBlock:(void (^ _Nonnull)(BOOL, NSDictionary * _Nullable))completionBlock;
+@end
+
+@class MoEngageInAppRatingIcon;
+
+/// Custom Rating Widget
+/// :nodoc:
+SWIFT_CLASS("_TtC14MoEngageInApps31MoEngageInAppCustomRatingWidget")
+@interface MoEngageInAppCustomRatingWidget : MoEngageInAppWidget
+/// List where key is position and value is <code>MoEngageRatingIcon</code>
+@property (nonatomic, copy) NSDictionary<NSString *, MoEngageInAppRatingIcon *> * _Nonnull ratingIconList;
+/// Initialize the Rating Icon list
+/// \param payloadDict InApp Template Payload
+///
+/// \param andRef Custom rating reference path
+///
+/// \param andSDKInstance MoEngageSDK Instance
+///
+- (nullable instancetype)initWithPayloadDict:(NSDictionary * _Nonnull)payloadDict andRef:(NSString * _Nonnull)andRef andSDKInstance:(MoEngageSDKInstance * _Nonnull)andSDKInstance error:(NSError * _Nullable * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
+- (null_unspecified instancetype)initWithPayloadDict:(NSDictionary * _Null_unspecified)payloadDict andRef:(NSString * _Null_unspecified)ref andSDKInstance:(MoEngageSDKInstance * _Null_unspecified)sdkInstance SWIFT_UNAVAILABLE;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// MoEngageInAppDisplaySize Utils
+SWIFT_CLASS("_TtC14MoEngageInApps29MoEngageInAppDisplaySizeUtils")
+@interface MoEngageInAppDisplaySizeUtils : NSObject
+/// Fetch MoEngageInAppDisplaySize from its string representation
+/// \param displaySizeStr Display size in string form
+///
+///
+/// returns:
+/// MoEngageInAppDisplaySize
++ (MoEngageInAppDisplaySize)getDisplaySizeFrom:(NSString * _Nonnull)displaySizeStr SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class MoEngageInAppCampaignsData;
@@ -475,6 +639,98 @@ SWIFT_PROTOCOL("_TtP14MoEngageInApps27MoEngageInAppNativeDelegate_")
 - (void)selfHandledInAppTriggeredWithInfo:(MoEngageInAppSelfHandledCampaign * _Nonnull)inappCampaign forAccountMeta:(MoEngageAccountMeta * _Nonnull)accountMeta;
 @end
 
+@protocol MoEngageInAppWidgetResizingCallbackListnerDelegate;
+
+/// The delegate that handles fullscreen resize.
+SWIFT_PROTOCOL("_TtP14MoEngageInApps35MoEngageInAppWidgetResizingDelegate_")
+@protocol MoEngageInAppWidgetResizingDelegate <NSObject>
+/// The container widget width.
+@property (nonatomic, readonly) CGFloat originalWidth;
+/// The curret display size.
+@property (nonatomic, readonly) MoEngageInAppDisplaySize currentDisplaySize;
+/// Add resize callback listner.
+/// \param listner The listner to add.
+///
+- (void)addListner:(id <MoEngageInAppWidgetResizingCallbackListnerDelegate> _Nonnull)listner;
+/// Switch to/from fullscreen.
+- (void)toggleFullscreen;
+@end
+
+
+@interface MoEngageInAppPrimaryContainerView (SWIFT_EXTENSION(MoEngageInApps)) <MoEngageInAppWidgetResizingDelegate>
+/// The container widget width.
+@property (nonatomic, readonly) CGFloat originalWidth;
+/// The curret display size.
+@property (nonatomic, readonly) MoEngageInAppDisplaySize currentDisplaySize;
+/// Add resize callback listner.
+/// \param listner The listner to add.
+///
+- (void)addListner:(id <MoEngageInAppWidgetResizingCallbackListnerDelegate> _Nonnull)listner;
+/// Switch to/from fullscreen.
+/// \param animated Whether animation will be applied.
+///
+- (void)toggleFullscreenWithAnimated:(BOOL)animated;
+/// Switch to/from fullscreen.
+- (void)toggleFullscreen;
+/// Set container display size.
+- (void)setDisplaySize;
+@end
+
+@class NSNumber;
+@class MoEngageInAppRatingIconState;
+
+/// Rating Icon
+/// :nodoc:
+SWIFT_CLASS("_TtC14MoEngageInApps23MoEngageInAppRatingIcon")
+@interface MoEngageInAppRatingIcon : NSObject
+/// Value associated with the  RatingIcon. Not used in current flow
+@property (nonatomic, strong) NSNumber * _Nullable value;
+/// Description associated with the  RatingIcon
+@property (nonatomic, copy) NSString * _Nullable ratingDescription;
+/// associated with the RatingIcon selected state
+@property (nonatomic, strong) MoEngageInAppRatingIconState * _Nullable selectedState;
+/// associated with the RatingIcon unselected state
+@property (nonatomic, strong) MoEngageInAppRatingIconState * _Nullable unselectedState;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class MoEngageInAppWidgetStyle;
+
+/// Rating Icon State
+/// :nodoc:
+SWIFT_CLASS("_TtC14MoEngageInApps28MoEngageInAppRatingIconState")
+@interface MoEngageInAppRatingIconState : NSObject
+/// Style of the Rating Icon
+@property (nonatomic, strong) MoEngageInAppWidgetStyle * _Nullable style;
+/// not used now
+@property (nonatomic, copy) NSString * _Nullable icon;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Custom Rating Type
+/// :nodoc:
+typedef SWIFT_ENUM(NSInteger, MoEngageInAppRatingType, open) {
+  MoEngageInAppRatingTypeStar = 0,
+  MoEngageInAppRatingTypeNone = 1,
+};
+
+
+/// Custom Rating Type Utils
+/// :nodoc:
+SWIFT_CLASS("_TtC14MoEngageInApps28MoEngageInAppRatingTypeUtils")
+@interface MoEngageInAppRatingTypeUtils : NSObject
+/// Fetch rating type from its string value
+/// \param ratingTypeStr rating typ
+///
+///
+/// returns:
+/// MoEngageInAppRatingType
++ (enum MoEngageInAppRatingType)getInAppRatingTypeFrom:(NSString * _Nonnull)ratingTypeStr SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 /// MoEngageInAppSelfHandledCampaign gives all the information required for a self-handled inApp campaign
 SWIFT_CLASS("_TtC14MoEngageInApps32MoEngageInAppSelfHandledCampaign")
@@ -488,8 +744,184 @@ SWIFT_CLASS("_TtC14MoEngageInApps32MoEngageInAppSelfHandledCampaign")
 - (nonnull instancetype)initWithCampaignId:(NSString * _Nonnull)campaignId campaignName:(NSString * _Nonnull)campaignName expiryTime:(NSDate * _Nonnull)expiryTime isDraft:(BOOL)isDraft campaignContext:(NSDictionary<NSString *, id> * _Nonnull)campaignContext SWIFT_UNAVAILABLE;
 @end
 
+@class MoEngageInAppBatchData;
 
-@class UIViewController;
+@interface MoEngageInAppStatsManager (SWIFT_EXTENSION(MoEngageInApps))
+/// Syncs stats data.
+/// \param shouldSendJWT Whether to add JWT token.
+///
+/// \param batchData The batch data to sync.
+///
+/// \param completion The sync callback.
+/// :nodoc:
+///
+- (void)syncBatchWithShouldSendJWT:(BOOL)shouldSendJWT batchData:(MoEngageInAppBatchData * _Nonnull)batchData WithCompletion:(void (^ _Nonnull)(BOOL))completion;
+/// Gets query parameters for request.
+///
+/// returns:
+/// URL query parametes.
+/// :nodoc:
+- (NSDictionary<NSString *, NSString *> * _Nonnull)getQueryStringParamsForInAppRequest SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface MoEngageInAppUtils (SWIFT_EXTENSION(MoEngageInApps))
++ (NSString * _Nonnull)getStringRepresentationFor:(MoEngageInAppSDKCampaignType)sdkCampaignType SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class NSCoder;
+@class UIWindow;
+
+/// Video widget view for inapps.
+SWIFT_CLASS("_TtC14MoEngageInApps24MoEngageInAppVideoWidget")
+@interface MoEngageInAppVideoWidget : UIView
+/// The data for this widget.
+@property (nonatomic, readonly, strong) MoEngageInAppWidget * _Nonnull widget;
+/// The end position for this widget.
+@property (nonatomic, readonly) CGPoint endPosition;
+/// The delegate that handles fullscreen resize.
+@property (nonatomic, weak) id <MoEngageInAppWidgetResizingDelegate> _Nullable resizeDelegate;
+/// Creates and adds a new video widget view.
+/// \param widget The widget data.
+///
+/// \param templateType The inapp template type for which wiget created.
+///
+/// \param viewContainer The container view.
+///
+/// \param startPosition The start position.
+///
+/// \param campaignId The current campaign id.
+///
+/// \param resizeDelegate The fullscreen resize delegate.
+///
+- (nullable instancetype)initWithInAppWidget:(MoEngageInAppWidget * _Nonnull)widget forTemplateType:(MoEngageInAppTemplateType)templateType inContainer:(UIView * _Nonnull)viewContainer withStartPosition:(CGPoint)startPosition andCampaignID:(NSString * _Nonnull)campaignId resizeDelegate:(id <MoEngageInAppWidgetResizingDelegate> _Nullable)resizeDelegate error:(NSError * _Nullable * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+/// Callback for view will change window.
+/// \param newWindow The new parent window.
+///
+- (void)willMoveToWindow:(UIWindow * _Nullable)newWindow;
+/// Callback for view added to window.
+- (void)didMoveToWindow;
+- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
+/// Callback for view removed from superview.
+- (void)removeFromSuperview;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+/// Listen to widget resize callback.
+SWIFT_PROTOCOL("_TtP14MoEngageInApps50MoEngageInAppWidgetResizingCallbackListnerDelegate_")
+@protocol MoEngageInAppWidgetResizingCallbackListnerDelegate
+/// Handle widget resize.
+/// \param displaySize The new size.
+///
+/// \param container The container in which reszing happened.
+///
+/// \param xScale The x-axis resize scale.
+///
+/// \param yScale The y-axis resize scale.
+///
+- (void)resizedTo:(MoEngageInAppDisplaySize)displaySize in:(MoEngageInAppContainer * _Nonnull)container xScale:(CGFloat)xScale yScale:(CGFloat)yScale;
+@end
+
+
+@interface MoEngageInAppVideoWidget (SWIFT_EXTENSION(MoEngageInApps)) <MoEngageInAppWidgetResizingCallbackListnerDelegate>
+/// Handle widget resize.
+/// \param displaySize The new size.
+///
+/// \param container The container in which reszing happened.
+///
+/// \param xScale The x-axis resize scale.
+///
+/// \param yScale The y-axis resize scale.
+///
+- (void)resizedTo:(MoEngageInAppDisplaySize)displaySize in:(MoEngageInAppContainer * _Nonnull)container xScale:(CGFloat)xScale yScale:(CGFloat)yScale;
+@end
+
+
+
+
+
+@class UIImage;
+
+/// Video widget helpers.
+SWIFT_CLASS("_TtC14MoEngageInApps29MoEngageInAppVideoWidgetUtils")
+@interface MoEngageInAppVideoWidgetUtils : NSObject
+/// The fullscreen action image.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIImage * _Nullable fullscreenImage;)
++ (UIImage * _Nullable)fullscreenImage SWIFT_WARN_UNUSED_RESULT;
+/// The minimize action image.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIImage * _Nullable closeFullscreenImage;)
++ (UIImage * _Nullable)closeFullscreenImage SWIFT_WARN_UNUSED_RESULT;
+/// The buttons’ height and width..
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat buttonSideLength;)
++ (CGFloat)buttonSideLength SWIFT_WARN_UNUSED_RESULT;
+/// The duration after tap button is shown.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval buttonShowDuration;)
++ (NSTimeInterval)buttonShowDuration SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+/// InApp Widget initial Visibilty status
+/// :nodoc
+typedef SWIFT_ENUM(NSInteger, MoEngageInAppViewVisibility, open) {
+  MoEngageInAppViewVisibilityHidden = 0,
+  MoEngageInAppViewVisibilityVisible = 1,
+};
+
+
+/// MoEngageInAppViewVisibility Utils class
+/// :nodoc:
+SWIFT_CLASS("_TtC14MoEngageInApps32MoEngageInAppViewVisibilityUtils")
+@interface MoEngageInAppViewVisibilityUtils : NSObject
+/// Fetch MoEngageInAppViewVisibility from its string representation
+/// \param visibilityStr visibility in string
+///
+///
+/// returns:
+/// MoEngageInAppViewVisibility
++ (enum MoEngageInAppViewVisibility)getViewVisibilityStatusFrom:(NSString * _Nonnull)visibilityStr SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+/// Utility class for NudgePositons
+/// :nodoc:
+SWIFT_CLASS("_TtC14MoEngageInApps27MoEngageNudgePositionsUtils")
+@interface MoEngageNudgePositionsUtils : NSObject
+/// Fetch the MoEngageNudgePosition
+/// \param position position in string
+///
+///
+/// returns:
+/// MoEngageNudgePosition
++ (MoEngageNudgePosition)getNudgePositionFrom:(NSString * _Nonnull)positionStr SWIFT_WARN_UNUSED_RESULT;
+/// Fetch the MoEngageNudgeDisplayPosition.
+/// \param position position in string.
+///
+///
+/// returns:
+/// MoEngageNudgeDisplayPosition.
++ (MoEngageNudgeDisplayPosition)getNudgeDisplayPositionFrom:(NSString * _Nonnull)positionStr SWIFT_WARN_UNUSED_RESULT;
+/// Get the string representation of nudge position
+/// \param position MoEngageNudgePosition
+///
+///
+/// returns:
+/// String value of the nudge position
++ (NSString * _Nonnull)getStringRepresentationFor:(MoEngageNudgePosition)position SWIFT_WARN_UNUSED_RESULT;
+/// Get the string representation of nudge display position.
+/// \param position MoEngageNudgeDisplayPosition.
+///
+///
+/// returns:
+/// String value of the nudge display position.
++ (NSString * _Nonnull)getStringRepresentationForDisplayPosition:(MoEngageNudgeDisplayPosition)position SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 /// Class to configure to InApp
 SWIFT_CLASS("_TtC14MoEngageInApps16MoEngageSDKInApp")
@@ -505,37 +937,23 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKI
 /// \param appId MoEngage Account Identifier.
 ///
 - (void)showInAppForAppId:(NSString * _Nullable)appId SWIFT_AVAILABILITY(tvos,unavailable);
-/// Method to show Nudge campaign at the specified position for Default MoEngage Instance
+/// Method to show non-intrusive nudge campaign at any available position for Default MoEngage Instance.
+- (void)showNudge SWIFT_AVAILABILITY(tvos,unavailable);
+/// Method to show non-intrusive nudge campaign at any available position.
+/// \param appId MoEngage Account Identifier.
+///
+- (void)showNudgeForAppId:(NSString * _Nullable)appId SWIFT_AVAILABILITY(tvos,unavailable);
+/// Method to show non-intrusive nudge campaign at the specified position if available
+/// for Default MoEngage Instance.
 /// \param position specifies the position where the nudge has to be showed Top/Bottom.
 ///
 - (void)showNudgeAtPosition:(MoEngageNudgePosition)position SWIFT_AVAILABILITY(tvos,unavailable);
-/// Method to show Nudge campaign at the specified position
+/// Method to show non-intrusive nudge campaign at the specified position if available.
 /// \param position specifies the position where the nudge has to be showed Top/Bottom.
 ///
 /// \param appId MoEngage Account Identifier.
 ///
 - (void)showNudgeAtPosition:(MoEngageNudgePosition)position forAppId:(NSString * _Nullable)appId SWIFT_AVAILABILITY(tvos,unavailable);
-/// Method to get the UIView instance of the nudge to embed it anywhere inside the app
-/// \param completionBlock Completion Block for getting the Nudge InApp Campaign, which is used in case an inApp has to be embedded in your screen.
-///
-- (void)getNudgeViewWithCompletionBlock:(NudgeCreationCompletionBlock _Nonnull)completionBlock SWIFT_AVAILABILITY(tvos,unavailable);
-/// Method to get the UIView instance of the nudge to embed it anywhere inside the app
-/// \param appId MoEngage Account Identifier.
-///
-/// \param completionBlock Completion Block for getting the Nudge InApp Campaign, which is used in case an inApp has to be embedded in your screen.
-/// It gives nudge UIView instance and MoEngageInAppCampaign instance giving campaign info.
-///
-- (void)getNudgeViewForAppId:(NSString * _Nullable)appId completionBlock:(NudgeCreationCompletionBlock _Nonnull)completionBlock SWIFT_AVAILABILITY(tvos,unavailable);
-/// Incase Nudge campaign is obtained using getNudgeViewWithCompletionBlock: and embedded by developers in the app, this method has to be called to inform if the nudge is shown successfully to the user for Default MoEngageInstance.
-/// \param campaignInfo MoEngageInAppCampaign instance with the campaign info.
-///
-- (void)nudgeCampaignShown:(MoEngageInAppCampaign * _Nullable)campaignInfo SWIFT_AVAILABILITY(tvos,unavailable);
-/// Incase Nudge campaign is obtained using getNudgeViewWithCompletionBlock: and embedded by developers in the app, this method has to be called to inform if the nudge is shown successfully to the user.
-/// \param campaignInfo MoEngageInAppCampaign instance with the campaign info.
-///
-/// \param appId MoEngage Account Identifier.
-///
-- (void)nudgeCampaignShown:(MoEngageInAppCampaign * _Nullable)campaignInfo forAppId:(NSString * _Nullable)appId SWIFT_AVAILABILITY(tvos,unavailable);
 /// Method to obtain self-handled inApp Campaign for Default MoEngage Instance.
 /// \param completionBlock Completion Block which provides MoEngageInAppSelfHandledCampaign* instance(campaignInfo), incase one is active and satisfies all the rule checks OR else campaignInfo will be nil.
 ///
@@ -625,6 +1043,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKI
 ///
 - (void)resetInAppDelegateForAppId:(NSString * _Nullable)appId;
 @end
+
+
 
 #endif
 #if __has_attribute(external_source_symbol)
@@ -913,8 +1333,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreFoundation;
 @import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #import <MoEngageInApps/MoEngageInApps.h>
@@ -1000,6 +1422,61 @@ SWIFT_CLASS("_TtC14MoEngageInApps19MoEngageInAppAction")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class NSURL;
+@class MoEngageSDKConfig;
+@class NSData;
+
+@interface MoEngageInAppAssetsManager (SWIFT_EXTENSION(MoEngageInApps))
+/// Get video resource name from URL.
+/// \param url The resource URL.
+///
+///
+/// returns:
+/// Resource file name.
+- (NSString * _Nonnull)getInAppVideoNameFor:(NSURL * _Nonnull)url SWIFT_WARN_UNUSED_RESULT;
+/// Get assets that aren’t cached and needs download.
+/// \param resourceLinks The resources to be downloaded.
+///
+/// \param inAppType The campaign type.
+///
+/// \param campaignID The campaign id.
+///
+/// \param sdkInstance The instance of SDK.
+///
+///
+/// returns:
+/// The resources that aren’t cached.
+- (NSDictionary<NSURL *, NSURL *> * _Nullable)getAssetsToBeDownloadedWithResourceLinks:(NSDictionary<NSString *, NSString *> * _Nonnull)resourceLinks withInAppType:(MoEngageInAppType)inAppType forCampaignID:(NSString * _Nonnull)campaignID forSDKInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance SWIFT_WARN_UNUSED_RESULT;
+/// Move resource to provided path.
+/// Create path if doesn’t exist.
+/// \param resource The original path.
+///
+/// \param newPath The new path.
+///
+- (BOOL)moveWithResource:(NSURL * _Nonnull)resource to:(NSURL * _Nonnull)newPath error:(NSError * _Nullable * _Nullable)error;
+/// Download video assets.
+/// \param resourceLinks The resources to be downloaded.
+///
+/// \param inAppType The campaign type.
+///
+/// \param campaignID The campaign id.
+///
+/// \param sdkInstance The instance of sdk.
+///
+/// \param completionBlock The block to execute after downloads.
+///
+- (void)downloadVideoAssetsWithResourceLinks:(NSDictionary<NSString *, NSString *> * _Nonnull)resourceLinks withInAppType:(MoEngageInAppType)inAppType forCampaignID:(NSString * _Nonnull)campaignID forSDKInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance andCompletionBlock:(void (^ _Nonnull)(BOOL))completionBlock;
+/// Downloads asset at provided URL.
+/// \param url The asset URL.
+///
+/// \param sdkConfig The current SDK config.
+///
+/// \param completionBlock The download completion callback
+/// :nodoc:
+///
+- (void)downloadAssetsDataForURL:(NSURL * _Nonnull)url sdkConfig:(MoEngageSDKConfig * _Nonnull)sdkConfig withCompletionHandler:(void (^ _Nonnull)(BOOL, NSData * _Nullable))completionBlock;
+@end
+
 @class NSDate;
 
 /// MoEngageInAppCampaign gives all the information about the inApp campaign
@@ -1041,6 +1518,113 @@ SWIFT_CLASS("_TtC14MoEngageInApps21MoEngageInAppCampaign")
 - (nonnull instancetype)initWithDictionary:(NSDictionary * _Nullable)dict SWIFT_UNAVAILABLE;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class MoEngageInAppPrimaryContainerView;
+@class UIViewController;
+
+/// This class can be used for all inapp instance agnostic behaviour
+SWIFT_CLASS("_TtC14MoEngageInApps33MoEngageInAppConfigurationHandler")
+@interface MoEngageInAppConfigurationHandler : NSObject
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageInAppConfigurationHandler * _Nonnull sharedInstance;)
++ (MoEngageInAppConfigurationHandler * _Nonnull)sharedInstance SWIFT_WARN_UNUSED_RESULT;
+/// Store nudgeview attached with passed view controller.
+/// \param nudgeView The view to track.
+///
+/// \param controller The view controller nudge displayed at.
+///
+/// \param sdkInstance The current SDK instance.
+///
+- (void)trackNudgeView:(MoEngageInAppPrimaryContainerView * _Nonnull)nudgeView onController:(UIViewController * _Nonnull)controller sdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+@interface MoEngageInAppContainer (SWIFT_EXTENSION(MoEngageInApps))
+/// The height that widgets won’t occupy.
+/// Gif and video widget must be resized to occupy this height.
+///
+/// returns:
+/// The empty height.
+- (CGFloat)nonScalableHeight SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface MoEngageInAppController (SWIFT_EXTENSION(MoEngageInApps))
+/// Check non-instrusive inapp specific eligibility condition.
+/// \param campaignMeta The campaign metadata to check.
+///
+/// \param inPrioratizingStage Whether check is in priority stage.
+///
+///
+/// returns:
+/// Whether campaign passes check.
+- (BOOL)isNudgeCampaignEligible:(MoEngageInAppCampaignMeta * _Nonnull)campaignMeta inPrioratizingStage:(BOOL)inPrioratizingStage SWIFT_WARN_UNUSED_RESULT;
+/// Perform InApp campaigns sync.
+/// \param completionBlock The sync callback.
+/// :nodoc:
+///
+- (void)syncInAppsWithCompletionBlock:(void (^ _Nonnull)(BOOL))completionBlock;
+/// Gets query parameters for request.
+///
+/// returns:
+/// URL query parameters.
+/// :nodoc:
+- (NSDictionary<NSString *, NSString *> * _Nonnull)getQueryStringParamsForInAppRequest SWIFT_WARN_UNUSED_RESULT;
+/// Fetches inapp campaign metadata.
+/// \param campaignMeta The campaign meta.
+///
+/// \param forPreviewFlow If for preview.
+///
+/// \param triggerInfoDict The trigger data.
+///
+/// \param completionBlock The data callback.
+/// :nodoc:
+///
+- (void)fetchInAppRequestWithCampaignMeta:(MoEngageInAppCampaignMeta * _Nonnull)campaignMeta forPreview:(BOOL)forPreviewFlow withTriggerInfo:(NSDictionary * _Nonnull)triggerInfoDict withCompletionBlock:(void (^ _Nonnull)(BOOL, NSInteger, NSDictionary * _Nullable))completionBlock;
+/// Performs inapp fetch request.
+/// \param campaignID The campaign id to fetch.
+///
+/// \param completionBlock The fetched data callback.
+/// :nodoc:
+///
+- (void)fetchInAppRequestWithCampaignID:(NSString * _Nonnull)campaignID withCompletionBlock:(void (^ _Nonnull)(BOOL, NSDictionary * _Nullable))completionBlock;
+@end
+
+@class MoEngageInAppRatingIcon;
+
+/// Custom Rating Widget
+/// :nodoc:
+SWIFT_CLASS("_TtC14MoEngageInApps31MoEngageInAppCustomRatingWidget")
+@interface MoEngageInAppCustomRatingWidget : MoEngageInAppWidget
+/// List where key is position and value is <code>MoEngageRatingIcon</code>
+@property (nonatomic, copy) NSDictionary<NSString *, MoEngageInAppRatingIcon *> * _Nonnull ratingIconList;
+/// Initialize the Rating Icon list
+/// \param payloadDict InApp Template Payload
+///
+/// \param andRef Custom rating reference path
+///
+/// \param andSDKInstance MoEngageSDK Instance
+///
+- (nullable instancetype)initWithPayloadDict:(NSDictionary * _Nonnull)payloadDict andRef:(NSString * _Nonnull)andRef andSDKInstance:(MoEngageSDKInstance * _Nonnull)andSDKInstance error:(NSError * _Nullable * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
+- (null_unspecified instancetype)initWithPayloadDict:(NSDictionary * _Null_unspecified)payloadDict andRef:(NSString * _Null_unspecified)ref andSDKInstance:(MoEngageSDKInstance * _Null_unspecified)sdkInstance SWIFT_UNAVAILABLE;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+/// MoEngageInAppDisplaySize Utils
+SWIFT_CLASS("_TtC14MoEngageInApps29MoEngageInAppDisplaySizeUtils")
+@interface MoEngageInAppDisplaySizeUtils : NSObject
+/// Fetch MoEngageInAppDisplaySize from its string representation
+/// \param displaySizeStr Display size in string form
+///
+///
+/// returns:
+/// MoEngageInAppDisplaySize
++ (MoEngageInAppDisplaySize)getDisplaySizeFrom:(NSString * _Nonnull)displaySizeStr SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 @class MoEngageInAppCampaignsData;
@@ -1111,6 +1695,98 @@ SWIFT_PROTOCOL("_TtP14MoEngageInApps27MoEngageInAppNativeDelegate_")
 - (void)selfHandledInAppTriggeredWithInfo:(MoEngageInAppSelfHandledCampaign * _Nonnull)inappCampaign forAccountMeta:(MoEngageAccountMeta * _Nonnull)accountMeta;
 @end
 
+@protocol MoEngageInAppWidgetResizingCallbackListnerDelegate;
+
+/// The delegate that handles fullscreen resize.
+SWIFT_PROTOCOL("_TtP14MoEngageInApps35MoEngageInAppWidgetResizingDelegate_")
+@protocol MoEngageInAppWidgetResizingDelegate <NSObject>
+/// The container widget width.
+@property (nonatomic, readonly) CGFloat originalWidth;
+/// The curret display size.
+@property (nonatomic, readonly) MoEngageInAppDisplaySize currentDisplaySize;
+/// Add resize callback listner.
+/// \param listner The listner to add.
+///
+- (void)addListner:(id <MoEngageInAppWidgetResizingCallbackListnerDelegate> _Nonnull)listner;
+/// Switch to/from fullscreen.
+- (void)toggleFullscreen;
+@end
+
+
+@interface MoEngageInAppPrimaryContainerView (SWIFT_EXTENSION(MoEngageInApps)) <MoEngageInAppWidgetResizingDelegate>
+/// The container widget width.
+@property (nonatomic, readonly) CGFloat originalWidth;
+/// The curret display size.
+@property (nonatomic, readonly) MoEngageInAppDisplaySize currentDisplaySize;
+/// Add resize callback listner.
+/// \param listner The listner to add.
+///
+- (void)addListner:(id <MoEngageInAppWidgetResizingCallbackListnerDelegate> _Nonnull)listner;
+/// Switch to/from fullscreen.
+/// \param animated Whether animation will be applied.
+///
+- (void)toggleFullscreenWithAnimated:(BOOL)animated;
+/// Switch to/from fullscreen.
+- (void)toggleFullscreen;
+/// Set container display size.
+- (void)setDisplaySize;
+@end
+
+@class NSNumber;
+@class MoEngageInAppRatingIconState;
+
+/// Rating Icon
+/// :nodoc:
+SWIFT_CLASS("_TtC14MoEngageInApps23MoEngageInAppRatingIcon")
+@interface MoEngageInAppRatingIcon : NSObject
+/// Value associated with the  RatingIcon. Not used in current flow
+@property (nonatomic, strong) NSNumber * _Nullable value;
+/// Description associated with the  RatingIcon
+@property (nonatomic, copy) NSString * _Nullable ratingDescription;
+/// associated with the RatingIcon selected state
+@property (nonatomic, strong) MoEngageInAppRatingIconState * _Nullable selectedState;
+/// associated with the RatingIcon unselected state
+@property (nonatomic, strong) MoEngageInAppRatingIconState * _Nullable unselectedState;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@class MoEngageInAppWidgetStyle;
+
+/// Rating Icon State
+/// :nodoc:
+SWIFT_CLASS("_TtC14MoEngageInApps28MoEngageInAppRatingIconState")
+@interface MoEngageInAppRatingIconState : NSObject
+/// Style of the Rating Icon
+@property (nonatomic, strong) MoEngageInAppWidgetStyle * _Nullable style;
+/// not used now
+@property (nonatomic, copy) NSString * _Nullable icon;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+/// Custom Rating Type
+/// :nodoc:
+typedef SWIFT_ENUM(NSInteger, MoEngageInAppRatingType, open) {
+  MoEngageInAppRatingTypeStar = 0,
+  MoEngageInAppRatingTypeNone = 1,
+};
+
+
+/// Custom Rating Type Utils
+/// :nodoc:
+SWIFT_CLASS("_TtC14MoEngageInApps28MoEngageInAppRatingTypeUtils")
+@interface MoEngageInAppRatingTypeUtils : NSObject
+/// Fetch rating type from its string value
+/// \param ratingTypeStr rating typ
+///
+///
+/// returns:
+/// MoEngageInAppRatingType
++ (enum MoEngageInAppRatingType)getInAppRatingTypeFrom:(NSString * _Nonnull)ratingTypeStr SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 /// MoEngageInAppSelfHandledCampaign gives all the information required for a self-handled inApp campaign
 SWIFT_CLASS("_TtC14MoEngageInApps32MoEngageInAppSelfHandledCampaign")
@@ -1124,8 +1800,184 @@ SWIFT_CLASS("_TtC14MoEngageInApps32MoEngageInAppSelfHandledCampaign")
 - (nonnull instancetype)initWithCampaignId:(NSString * _Nonnull)campaignId campaignName:(NSString * _Nonnull)campaignName expiryTime:(NSDate * _Nonnull)expiryTime isDraft:(BOOL)isDraft campaignContext:(NSDictionary<NSString *, id> * _Nonnull)campaignContext SWIFT_UNAVAILABLE;
 @end
 
+@class MoEngageInAppBatchData;
 
-@class UIViewController;
+@interface MoEngageInAppStatsManager (SWIFT_EXTENSION(MoEngageInApps))
+/// Syncs stats data.
+/// \param shouldSendJWT Whether to add JWT token.
+///
+/// \param batchData The batch data to sync.
+///
+/// \param completion The sync callback.
+/// :nodoc:
+///
+- (void)syncBatchWithShouldSendJWT:(BOOL)shouldSendJWT batchData:(MoEngageInAppBatchData * _Nonnull)batchData WithCompletion:(void (^ _Nonnull)(BOOL))completion;
+/// Gets query parameters for request.
+///
+/// returns:
+/// URL query parametes.
+/// :nodoc:
+- (NSDictionary<NSString *, NSString *> * _Nonnull)getQueryStringParamsForInAppRequest SWIFT_WARN_UNUSED_RESULT;
+@end
+
+
+@interface MoEngageInAppUtils (SWIFT_EXTENSION(MoEngageInApps))
++ (NSString * _Nonnull)getStringRepresentationFor:(MoEngageInAppSDKCampaignType)sdkCampaignType SWIFT_WARN_UNUSED_RESULT;
+@end
+
+@class NSCoder;
+@class UIWindow;
+
+/// Video widget view for inapps.
+SWIFT_CLASS("_TtC14MoEngageInApps24MoEngageInAppVideoWidget")
+@interface MoEngageInAppVideoWidget : UIView
+/// The data for this widget.
+@property (nonatomic, readonly, strong) MoEngageInAppWidget * _Nonnull widget;
+/// The end position for this widget.
+@property (nonatomic, readonly) CGPoint endPosition;
+/// The delegate that handles fullscreen resize.
+@property (nonatomic, weak) id <MoEngageInAppWidgetResizingDelegate> _Nullable resizeDelegate;
+/// Creates and adds a new video widget view.
+/// \param widget The widget data.
+///
+/// \param templateType The inapp template type for which wiget created.
+///
+/// \param viewContainer The container view.
+///
+/// \param startPosition The start position.
+///
+/// \param campaignId The current campaign id.
+///
+/// \param resizeDelegate The fullscreen resize delegate.
+///
+- (nullable instancetype)initWithInAppWidget:(MoEngageInAppWidget * _Nonnull)widget forTemplateType:(MoEngageInAppTemplateType)templateType inContainer:(UIView * _Nonnull)viewContainer withStartPosition:(CGPoint)startPosition andCampaignID:(NSString * _Nonnull)campaignId resizeDelegate:(id <MoEngageInAppWidgetResizingDelegate> _Nullable)resizeDelegate error:(NSError * _Nullable * _Nullable)error OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder SWIFT_UNAVAILABLE;
+/// Callback for view will change window.
+/// \param newWindow The new parent window.
+///
+- (void)willMoveToWindow:(UIWindow * _Nullable)newWindow;
+/// Callback for view added to window.
+- (void)didMoveToWindow;
+- (void)observeValueForKeyPath:(NSString * _Nullable)keyPath ofObject:(id _Nullable)object change:(NSDictionary<NSKeyValueChangeKey, id> * _Nullable)change context:(void * _Nullable)context;
+/// Callback for view removed from superview.
+- (void)removeFromSuperview;
+- (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
+@end
+
+
+/// Listen to widget resize callback.
+SWIFT_PROTOCOL("_TtP14MoEngageInApps50MoEngageInAppWidgetResizingCallbackListnerDelegate_")
+@protocol MoEngageInAppWidgetResizingCallbackListnerDelegate
+/// Handle widget resize.
+/// \param displaySize The new size.
+///
+/// \param container The container in which reszing happened.
+///
+/// \param xScale The x-axis resize scale.
+///
+/// \param yScale The y-axis resize scale.
+///
+- (void)resizedTo:(MoEngageInAppDisplaySize)displaySize in:(MoEngageInAppContainer * _Nonnull)container xScale:(CGFloat)xScale yScale:(CGFloat)yScale;
+@end
+
+
+@interface MoEngageInAppVideoWidget (SWIFT_EXTENSION(MoEngageInApps)) <MoEngageInAppWidgetResizingCallbackListnerDelegate>
+/// Handle widget resize.
+/// \param displaySize The new size.
+///
+/// \param container The container in which reszing happened.
+///
+/// \param xScale The x-axis resize scale.
+///
+/// \param yScale The y-axis resize scale.
+///
+- (void)resizedTo:(MoEngageInAppDisplaySize)displaySize in:(MoEngageInAppContainer * _Nonnull)container xScale:(CGFloat)xScale yScale:(CGFloat)yScale;
+@end
+
+
+
+
+
+@class UIImage;
+
+/// Video widget helpers.
+SWIFT_CLASS("_TtC14MoEngageInApps29MoEngageInAppVideoWidgetUtils")
+@interface MoEngageInAppVideoWidgetUtils : NSObject
+/// The fullscreen action image.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIImage * _Nullable fullscreenImage;)
++ (UIImage * _Nullable)fullscreenImage SWIFT_WARN_UNUSED_RESULT;
+/// The minimize action image.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) UIImage * _Nullable closeFullscreenImage;)
++ (UIImage * _Nullable)closeFullscreenImage SWIFT_WARN_UNUSED_RESULT;
+/// The buttons’ height and width..
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) CGFloat buttonSideLength;)
++ (CGFloat)buttonSideLength SWIFT_WARN_UNUSED_RESULT;
+/// The duration after tap button is shown.
+SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly) NSTimeInterval buttonShowDuration;)
++ (NSTimeInterval)buttonShowDuration SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+/// InApp Widget initial Visibilty status
+/// :nodoc
+typedef SWIFT_ENUM(NSInteger, MoEngageInAppViewVisibility, open) {
+  MoEngageInAppViewVisibilityHidden = 0,
+  MoEngageInAppViewVisibilityVisible = 1,
+};
+
+
+/// MoEngageInAppViewVisibility Utils class
+/// :nodoc:
+SWIFT_CLASS("_TtC14MoEngageInApps32MoEngageInAppViewVisibilityUtils")
+@interface MoEngageInAppViewVisibilityUtils : NSObject
+/// Fetch MoEngageInAppViewVisibility from its string representation
+/// \param visibilityStr visibility in string
+///
+///
+/// returns:
+/// MoEngageInAppViewVisibility
++ (enum MoEngageInAppViewVisibility)getViewVisibilityStatusFrom:(NSString * _Nonnull)visibilityStr SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+
+
+/// Utility class for NudgePositons
+/// :nodoc:
+SWIFT_CLASS("_TtC14MoEngageInApps27MoEngageNudgePositionsUtils")
+@interface MoEngageNudgePositionsUtils : NSObject
+/// Fetch the MoEngageNudgePosition
+/// \param position position in string
+///
+///
+/// returns:
+/// MoEngageNudgePosition
++ (MoEngageNudgePosition)getNudgePositionFrom:(NSString * _Nonnull)positionStr SWIFT_WARN_UNUSED_RESULT;
+/// Fetch the MoEngageNudgeDisplayPosition.
+/// \param position position in string.
+///
+///
+/// returns:
+/// MoEngageNudgeDisplayPosition.
++ (MoEngageNudgeDisplayPosition)getNudgeDisplayPositionFrom:(NSString * _Nonnull)positionStr SWIFT_WARN_UNUSED_RESULT;
+/// Get the string representation of nudge position
+/// \param position MoEngageNudgePosition
+///
+///
+/// returns:
+/// String value of the nudge position
++ (NSString * _Nonnull)getStringRepresentationFor:(MoEngageNudgePosition)position SWIFT_WARN_UNUSED_RESULT;
+/// Get the string representation of nudge display position.
+/// \param position MoEngageNudgeDisplayPosition.
+///
+///
+/// returns:
+/// String value of the nudge display position.
++ (NSString * _Nonnull)getStringRepresentationForDisplayPosition:(MoEngageNudgeDisplayPosition)position SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 /// Class to configure to InApp
 SWIFT_CLASS("_TtC14MoEngageInApps16MoEngageSDKInApp")
@@ -1141,37 +1993,23 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKI
 /// \param appId MoEngage Account Identifier.
 ///
 - (void)showInAppForAppId:(NSString * _Nullable)appId SWIFT_AVAILABILITY(tvos,unavailable);
-/// Method to show Nudge campaign at the specified position for Default MoEngage Instance
+/// Method to show non-intrusive nudge campaign at any available position for Default MoEngage Instance.
+- (void)showNudge SWIFT_AVAILABILITY(tvos,unavailable);
+/// Method to show non-intrusive nudge campaign at any available position.
+/// \param appId MoEngage Account Identifier.
+///
+- (void)showNudgeForAppId:(NSString * _Nullable)appId SWIFT_AVAILABILITY(tvos,unavailable);
+/// Method to show non-intrusive nudge campaign at the specified position if available
+/// for Default MoEngage Instance.
 /// \param position specifies the position where the nudge has to be showed Top/Bottom.
 ///
 - (void)showNudgeAtPosition:(MoEngageNudgePosition)position SWIFT_AVAILABILITY(tvos,unavailable);
-/// Method to show Nudge campaign at the specified position
+/// Method to show non-intrusive nudge campaign at the specified position if available.
 /// \param position specifies the position where the nudge has to be showed Top/Bottom.
 ///
 /// \param appId MoEngage Account Identifier.
 ///
 - (void)showNudgeAtPosition:(MoEngageNudgePosition)position forAppId:(NSString * _Nullable)appId SWIFT_AVAILABILITY(tvos,unavailable);
-/// Method to get the UIView instance of the nudge to embed it anywhere inside the app
-/// \param completionBlock Completion Block for getting the Nudge InApp Campaign, which is used in case an inApp has to be embedded in your screen.
-///
-- (void)getNudgeViewWithCompletionBlock:(NudgeCreationCompletionBlock _Nonnull)completionBlock SWIFT_AVAILABILITY(tvos,unavailable);
-/// Method to get the UIView instance of the nudge to embed it anywhere inside the app
-/// \param appId MoEngage Account Identifier.
-///
-/// \param completionBlock Completion Block for getting the Nudge InApp Campaign, which is used in case an inApp has to be embedded in your screen.
-/// It gives nudge UIView instance and MoEngageInAppCampaign instance giving campaign info.
-///
-- (void)getNudgeViewForAppId:(NSString * _Nullable)appId completionBlock:(NudgeCreationCompletionBlock _Nonnull)completionBlock SWIFT_AVAILABILITY(tvos,unavailable);
-/// Incase Nudge campaign is obtained using getNudgeViewWithCompletionBlock: and embedded by developers in the app, this method has to be called to inform if the nudge is shown successfully to the user for Default MoEngageInstance.
-/// \param campaignInfo MoEngageInAppCampaign instance with the campaign info.
-///
-- (void)nudgeCampaignShown:(MoEngageInAppCampaign * _Nullable)campaignInfo SWIFT_AVAILABILITY(tvos,unavailable);
-/// Incase Nudge campaign is obtained using getNudgeViewWithCompletionBlock: and embedded by developers in the app, this method has to be called to inform if the nudge is shown successfully to the user.
-/// \param campaignInfo MoEngageInAppCampaign instance with the campaign info.
-///
-/// \param appId MoEngage Account Identifier.
-///
-- (void)nudgeCampaignShown:(MoEngageInAppCampaign * _Nullable)campaignInfo forAppId:(NSString * _Nullable)appId SWIFT_AVAILABILITY(tvos,unavailable);
 /// Method to obtain self-handled inApp Campaign for Default MoEngage Instance.
 /// \param completionBlock Completion Block which provides MoEngageInAppSelfHandledCampaign* instance(campaignInfo), incase one is active and satisfies all the rule checks OR else campaignInfo will be nil.
 ///
@@ -1261,6 +2099,8 @@ SWIFT_CLASS_PROPERTY(@property (nonatomic, class, readonly, strong) MoEngageSDKI
 ///
 - (void)resetInAppDelegateForAppId:(NSString * _Nullable)appId;
 @end
+
+
 
 #endif
 #if __has_attribute(external_source_symbol)

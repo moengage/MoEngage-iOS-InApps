@@ -12,10 +12,10 @@
 
 /// Use this file to add utils that is used in Objective-C and in Swift
 typedef enum : NSUInteger{
-    TEMPLATE_EMBEDDED,
     TEMPLATE_FULL_SCREEN,
     TEMPLATE_POP_UP,
     TEMPLATE_SELF_HANDLED,
+    TEMPLATE_NON_INTRUSIVE,
     TEMPLATE_UNKNOWN
 }MoEngageInAppTemplateType;
 
@@ -28,7 +28,7 @@ typedef enum : NSUInteger{
 typedef enum : NSUInteger{
     SDK_INAPP_TYPE_GENERAL,
     SDK_INAPP_TYPE_TRIGGERED,
-    SDK_INAPP_TYPE_EMBEDDED,
+    SDK_INAPP_TYPE_NON_INTRUSIVE,
     SDK_INAPP_TYPE_SELF_HANDLED,
     SDK_INAPP_TYPE_UNKNOWN
 }MoEngageInAppSDKCampaignType;
@@ -43,7 +43,11 @@ typedef enum : NSUInteger{
 /// NudgePosition Enumerator to show Nudge InApp Campaigns at Top/Bottom position in a screen.
 typedef enum{
     NudgePositionTop,
-    NudgePositionBottom
+    NudgePositionBottom,
+    NudgePositionBottomLeft,
+    NudgePositionBottomRight,
+    NudgePositionAny,
+    NudgePositionNone
 }MoEngageNudgePosition;
 
 

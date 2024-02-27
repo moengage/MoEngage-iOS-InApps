@@ -2,16 +2,53 @@
 // swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
 // swift-module-flags: -target x86_64-apple-tvos11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageInApps
 // swift-module-flags-ignorable: -enable-bare-slash-regex
+import DeveloperToolsSupport
 import Foundation
 import MoEngageCore
 @_exported import MoEngageInApps
 import Swift
+import SwiftUI
+import UIKit
 import _Concurrency
 import _StringProcessing
 import _SwiftConcurrencyShims
+@objc extension MoEngageInApps.MoEngageInAppController {
+  @objc dynamic public func syncInApps(withCompletionBlock completionBlock: @escaping (Swift.Bool) -> Swift.Void)
+  @nonobjc public func getInAppSyncRequest() -> MoEngageCore.MoEngageNetworkRequest?
+  @objc dynamic public func getQueryStringParamsForInAppRequest() -> [Swift.String : Swift.String]
+  @objc dynamic public func fetchInAppRequest(withCampaignMeta campaignMeta: MoEngageInApps.MoEngageInAppCampaignMeta, forPreview forPreviewFlow: Swift.Bool, withTriggerInfo triggerInfoDict: [Swift.AnyHashable : Any], withCompletionBlock completionBlock: @escaping (Swift.Bool, Swift.Int, [Swift.AnyHashable : Any]?) -> Swift.Void)
+  @nonobjc public func getInAppFetchPayloadRequest(forCampaign campaignMeta: MoEngageInApps.MoEngageInAppCampaignMeta, withTriggerInfo triggerInfoDict: [Swift.AnyHashable : Any]) -> MoEngageCore.MoEngageNetworkRequest?
+  @objc dynamic public func fetchInAppRequest(withCampaignID campaignID: Swift.String, withCompletionBlock completionBlock: @escaping (Swift.Bool, [Swift.AnyHashable : Any]?) -> Swift.Void)
+}
+@objc extension MoEngageInApps.MoEngageInAppStatsManager {
+  @objc dynamic public func syncBatch(shouldSendJWT: Swift.Bool, batchData: MoEngageInApps.MoEngageInAppBatchData, WithCompletion completion: @escaping (Swift.Bool) -> Swift.Void)
+  @objc dynamic public func getQueryStringParamsForInAppRequest() -> [Swift.String : Swift.String]
+}
+extension MoEngageInApps.MoEngageInAppUtils {
+  @objc public static func getStringRepresentation(for sdkCampaignType: MoEngageInApps.MoEngageInAppSDKCampaignType) -> Swift.String
+}
 @objc @objcMembers public class MoEngageAnyEventConditionEvaluator : ObjectiveC.NSObject {
   @objc public init(forCampaign campaignMeta: MoEngageInApps.MoEngageInAppCampaignMeta, sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc public func checkConditionSatisfied(forEvent event: Swift.String, andAttributes attributes: [Swift.String : Any]) -> Swift.Bool
+  @objc deinit
+}
+@objc public enum MoEngageInAppRatingType : Swift.Int {
+  case star
+  case none
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MoEngageInAppRatingTypeUtils : ObjectiveC.NSObject {
+  @objc public static func getInAppRatingType(from ratingTypeStr: Swift.String) -> MoEngageInApps.MoEngageInAppRatingType
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public class MoEngageInAppCustomRatingWidget : MoEngageInApps.MoEngageInAppWidget {
+  @objc public var ratingIconList: [Swift.String : MoEngageInApps.MoEngageInAppRatingIcon]
+  @objc public init(withPayloadDict payloadDict: [Swift.AnyHashable : Any], andRef: Swift.String, andSDKInstance: MoEngageCore.MoEngageSDKInstance) throws
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MoEngageInAppMigration : ObjectiveC.NSObject {
@@ -19,6 +56,11 @@ import _SwiftConcurrencyShims
   @objc public static func migrateDataFromNoNEncryptionToEncryption(sdkInstance: MoEngageCore.MoEngageSDKInstance, currentSDKInstance: MoEngageCore.MoEngageSDKInstance)
   @objc public static func removeEncryptedFolder(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc override dynamic public init()
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers @objc public class MoEngageInAppRatingIconState : ObjectiveC.NSObject {
+  @objc public var style: MoEngageInApps.MoEngageInAppWidgetStyle?
+  @objc public var icon: Swift.String?
   @objc deinit
 }
 @objc public class MoEngageInAppSelfHandledCampaign : MoEngageInApps.MoEngageInAppCampaign {
@@ -38,12 +80,27 @@ import _SwiftConcurrencyShims
   @objc override dynamic public init()
   @objc deinit
 }
+@_inheritsConvenienceInitializers @objc public class MoEngageNudgePositionsUtils : ObjectiveC.NSObject {
+  @objc public static func getNudgePosition(from positionStr: Swift.String) -> MoEngageInApps.MoEngageNudgePosition
+  @objc public static func getNudgeDisplayPosition(from positionStr: Swift.String) -> MoEngageInApps.MoEngageNudgeDisplayPosition
+  @objc public static func getStringRepresentation(for position: MoEngageInApps.MoEngageNudgePosition) -> Swift.String
+  @objc public static func getStringRepresentation(forDisplayPosition position: MoEngageInApps.MoEngageNudgeDisplayPosition) -> Swift.String
+  @objc override dynamic public init()
+  @objc deinit
+}
 @objc public protocol MoEngageInAppNativeDelegate : ObjectiveC.NSObjectProtocol {
   @objc func inAppShown(withCampaignInfo inappCampaign: MoEngageInApps.MoEngageInAppCampaign, forAccountMeta accountMeta: MoEngageCore.MoEngageAccountMeta)
   @objc func inAppClicked(withCampaignInfo inappCampaign: MoEngageInApps.MoEngageInAppCampaign, andNavigationActionInfo navigationAction: MoEngageInApps.MoEngageInAppAction, forAccountMeta accountMeta: MoEngageCore.MoEngageAccountMeta)
   @objc func inAppClicked(withCampaignInfo inappCampaign: MoEngageInApps.MoEngageInAppCampaign, andCustomActionInfo customAction: MoEngageInApps.MoEngageInAppAction, forAccountMeta accountMeta: MoEngageCore.MoEngageAccountMeta)
   @objc func inAppDismissed(withCampaignInfo inappCampaign: MoEngageInApps.MoEngageInAppCampaign, forAccountMeta accountMeta: MoEngageCore.MoEngageAccountMeta)
   @objc func selfHandledInAppTriggered(withInfo inappCampaign: MoEngageInApps.MoEngageInAppSelfHandledCampaign, forAccountMeta accountMeta: MoEngageCore.MoEngageAccountMeta)
+}
+@_hasMissingDesignatedInitializers @objc public class MoEngageInAppRatingIcon : ObjectiveC.NSObject {
+  @objc public var value: Foundation.NSNumber?
+  @objc public var ratingDescription: Swift.String?
+  @objc public var selectedState: MoEngageInApps.MoEngageInAppRatingIconState?
+  @objc public var unselectedState: MoEngageInApps.MoEngageInAppRatingIconState?
+  @objc deinit
 }
 @objc public class MoEngageInAppAction : MoEngageInApps.MoEngageModelObject {
   @objc final public let actionType: MoEngageInApps.MoEngageInAppActionType
@@ -62,6 +119,40 @@ import _SwiftConcurrencyShims
   @objc public init(campaignId: Swift.String, campaignName: Swift.String, expiryTime: Foundation.NSDate, isDraft: Swift.Bool, campaignContext: [Swift.String : Any])
   @objc deinit
 }
+@objc extension MoEngageInApps.MoEngageInAppAssetsManager {
+  @objc dynamic public func getInAppVideoName(for url: Foundation.URL) -> Swift.String
+  @objc dynamic public func getAssetsToBeDownloaded(resourceLinks: [Swift.String : Swift.String], withInAppType inAppType: MoEngageInApps.MoEngageInAppType, forCampaignID campaignID: Swift.String, forSDKInstance sdkInstance: MoEngageCore.MoEngageSDKInstance) -> [Foundation.URL : Foundation.URL]?
+  @objc dynamic public func move(resource: Foundation.URL, to newPath: Foundation.URL) throws
+  @objc dynamic public func downloadVideoAssets(resourceLinks: [Swift.String : Swift.String], withInAppType inAppType: MoEngageInApps.MoEngageInAppType, forCampaignID campaignID: Swift.String, forSDKInstance sdkInstance: MoEngageCore.MoEngageSDKInstance, andCompletionBlock completionBlock: @escaping (Swift.Bool) -> Swift.Void)
+  @objc dynamic public func downloadAssetsData(forURL url: Foundation.URL, sdkConfig: MoEngageCore.MoEngageSDKConfig, withCompletionHandler completionBlock: @escaping (Swift.Bool, Foundation.Data?) -> Swift.Void)
+}
+@_inheritsConvenienceInitializers @objc public class MoEngageInAppDisplaySizeUtils : ObjectiveC.NSObject {
+  @objc public static func getDisplaySize(from displaySizeStr: Swift.String) -> MoEngageInApps.MoEngageInAppDisplaySize
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class MoEngageInAppVideoWidgetUtils : ObjectiveC.NSObject {
+  @objc public static let fullscreenImage: UIKit.UIImage?
+  @objc public static let closeFullscreenImage: UIKit.UIImage?
+  @objc public static let buttonSideLength: CoreFoundation.CGFloat
+  @objc public static let buttonShowDuration: Swift.Double
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public enum MoEngageInAppViewVisibility : Swift.Int {
+  case hidden
+  case visible
+  public init?(rawValue: Swift.Int)
+  public typealias RawValue = Swift.Int
+  public var rawValue: Swift.Int {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class MoEngageInAppViewVisibilityUtils : ObjectiveC.NSObject {
+  @objc public static func getViewVisibilityStatus(from visibilityStr: Swift.String) -> MoEngageInApps.MoEngageInAppViewVisibility
+  @objc override dynamic public init()
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MoEngageSDKInApp : ObjectiveC.NSObject {
   @objc public static let sharedInstance: MoEngageInApps.MoEngageSDKInApp
   @available(tvOS, unavailable)
@@ -69,17 +160,13 @@ import _SwiftConcurrencyShims
   @available(tvOS, unavailable)
   @objc public func showInApp(forAppId appId: Swift.String? = nil)
   @available(tvOS, unavailable)
-  @objc public func showNudge(atPosition position: MoEngageInApps.MoEngageNudgePosition)
+  @objc public func showNudge()
   @available(tvOS, unavailable)
-  @objc public func showNudge(atPosition position: MoEngageInApps.MoEngageNudgePosition, forAppId appId: Swift.String? = nil)
+  @objc public func showNudge(forAppId appId: Swift.String? = nil)
   @available(tvOS, unavailable)
-  @objc public func getNudgeView(completionBlock: @escaping MoEngageInApps.NudgeCreationCompletionBlock)
+  @objc public func showNudge(atPosition position: MoEngageInApps.MoEngageNudgePosition = NudgePositionAny)
   @available(tvOS, unavailable)
-  @objc public func getNudgeView(forAppId appId: Swift.String? = nil, completionBlock: @escaping MoEngageInApps.NudgeCreationCompletionBlock)
-  @available(tvOS, unavailable)
-  @objc public func nudgeCampaignShown(_ campaignInfo: MoEngageInApps.MoEngageInAppCampaign?)
-  @available(tvOS, unavailable)
-  @objc public func nudgeCampaignShown(_ campaignInfo: MoEngageInApps.MoEngageInAppCampaign?, forAppId appId: Swift.String? = nil)
+  @objc public func showNudge(atPosition position: MoEngageInApps.MoEngageNudgePosition = NudgePositionAny, forAppId appId: Swift.String? = nil)
   @objc public func getSelfHandledInApp(completionBlock: @escaping ((_ campaignInfo: MoEngageInApps.MoEngageInAppSelfHandledCampaign?, _ accountMeta: MoEngageCore.MoEngageAccountMeta?) -> Swift.Void))
   @objc public func getSelfHandledInApp(forAppId appId: Swift.String? = nil, completionBlock: @escaping ((_ campaignInfo: MoEngageInApps.MoEngageInAppSelfHandledCampaign?, _ accountMeta: MoEngageCore.MoEngageAccountMeta?) -> Swift.Void))
   @objc public func selfHandledShown(campaignInfo: MoEngageInApps.MoEngageInAppSelfHandledCampaign)
@@ -102,3 +189,9 @@ import _SwiftConcurrencyShims
   @objc public func resetInAppDelegate(forAppId appId: Swift.String? = nil)
   @objc deinit
 }
+extension MoEngageInApps.MoEngageInAppRatingType : Swift.Equatable {}
+extension MoEngageInApps.MoEngageInAppRatingType : Swift.Hashable {}
+extension MoEngageInApps.MoEngageInAppRatingType : Swift.RawRepresentable {}
+extension MoEngageInApps.MoEngageInAppViewVisibility : Swift.Equatable {}
+extension MoEngageInApps.MoEngageInAppViewVisibility : Swift.Hashable {}
+extension MoEngageInApps.MoEngageInAppViewVisibility : Swift.RawRepresentable {}

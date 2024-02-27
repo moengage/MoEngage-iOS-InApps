@@ -3,6 +3,13 @@
 
 ## Change Log:
 
+### Version 4.15.0 *(27th February 2024)*
+-------------------------------------------
+* Refactored network layer.
+* Refactored data tracking.
+* Refactored logging.
+* Added support for Non-Intrusive InApps.
+
 ### Version 4.14.1 *(9th February 2024)*
 -------------------------------------------
 * BugFix - Fixed HTML InApps leaking.
