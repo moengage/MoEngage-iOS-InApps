@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		t5puBKJJyFQlgL6TvyFv9HeStns=
+		gD8ZPtyvyJF7eYDXFiEjAGIDm8s=
 		</data>
 		<key>CHANGELOG.md</key>
 		<data>
-		BVWtoNSA9zAEwxi3t1DGdC7t2D8=
+		2FRiPmi6GoqAxB7tJfpJ7j0ZX+Q=
 		</data>
 		<key>Headers/MoEngageInAppActionType.h</key>
 		<data>
@@ -114,7 +114,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		pbI6HCzyhSgB6e86zhVjAAZtExA=
+		8MMn79QJB16WYl4nvE+kXOh9mUU=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-tvos-simulator.abi.json</key>
 		<data>
-		pe/mvYhU7NF2dP4naZSoOMVyqjg=
+		GbV5Cm3+Fh8gJT7NwovCgg67DmE=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -142,7 +142,7 @@
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-tvos-simulator.abi.json</key>
 		<data>
-		pe/mvYhU7NF2dP4naZSoOMVyqjg=
+		GbV5Cm3+Fh8gJT7NwovCgg67DmE=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
 		<data>
@@ -179,14 +179,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			hdxgrIFghZ43hla5McdOwoqrlh8maxW95OXoM6q5Cvg=
+			lCYg4kTCSMUPENXgU/zJzmVOJy7+5i4TH3UTyPpOUpg=
 			</data>
 		</dict>
 		<key>CHANGELOG.md</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			ddTmup7aE/zTh1+qKj5GdV+jRl0FibFI62iHbeUzR84=
+			Jfgpsu8vDLabBnTffvSGnAfRaLA9N9T53FAQMJLmHtY=
 			</data>
 		</dict>
 		<key>Headers/MoEngageInAppActionType.h</key>
@@ -375,7 +375,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UNzmb3WGqQCUjhV6/S6/IcLGCMi5oyPcGTSjz7lmWzY=
+			/jOfeysBKYBqzhGLMsnBjt424cCLg+aDcDGxlBE4CSk=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-tvos-simulator.private.swiftinterface</key>
@@ -410,7 +410,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			UNzmb3WGqQCUjhV6/S6/IcLGCMi5oyPcGTSjz7lmWzY=
+			/jOfeysBKYBqzhGLMsnBjt424cCLg+aDcDGxlBE4CSk=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-tvos-simulator.private.swiftinterface</key>
