@@ -2,7 +2,7 @@
 =====================
 ## Change Log:
 
-### Version 5.0.0 *(07th March 2024)*
+### Version 5.00.0 *(07th March 2024)*
 -------------------------------------------
 
 * Added support for Non-Intrusive InApps.
