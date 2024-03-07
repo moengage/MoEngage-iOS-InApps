@@ -10,7 +10,7 @@
 		</data>
 		<key>CHANGELOG.md</key>
 		<data>
-		BVWtoNSA9zAEwxi3t1DGdC7t2D8=
+		2FRiPmi6GoqAxB7tJfpJ7j0ZX+Q=
 		</data>
 		<key>Headers/MoEngageInAppActionType.h</key>
 		<data>
@@ -118,7 +118,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		E8CJNxVqEbbs2pt9IRKt8Su0W8I=
+		0NkKAh7F9O7yY98bwy/VEfZovhk=
 		</data>
 		<key>LICENSE</key>
 		<data>
@@ -126,7 +126,7 @@
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		CaNwuSpgnQ/3X/Y8+2+c+dt8KCE=
+		GTd3/6584gYRPQXGA2BXMmVdM5Q=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -146,7 +146,7 @@
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		CaNwuSpgnQ/3X/Y8+2+c+dt8KCE=
+		GTd3/6584gYRPQXGA2BXMmVdM5Q=
 		</data>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
@@ -190,7 +190,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			ddTmup7aE/zTh1+qKj5GdV+jRl0FibFI62iHbeUzR84=
+			Jfgpsu8vDLabBnTffvSGnAfRaLA9N9T53FAQMJLmHtY=
 			</data>
 		</dict>
 		<key>Headers/MoEngageInAppActionType.h</key>
@@ -386,7 +386,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DllS/YAvinxtRHI5bB3UYImZ9u3U0hrdFAFqLS/2ff0=
+			+h/jnSUL9Rm5eV0gQSrLUVVEu+a8ivbfUCAG/TCxQeE=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
@@ -421,7 +421,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			DllS/YAvinxtRHI5bB3UYImZ9u3U0hrdFAFqLS/2ff0=
+			+h/jnSUL9Rm5eV0gQSrLUVVEu+a8ivbfUCAG/TCxQeE=
 			</data>
 		</dict>
 		<key>Modules/MoEngageInApps.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>

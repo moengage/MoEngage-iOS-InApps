@@ -3,6 +3,12 @@
 
 ## Change Log:
 
+### Version 5.0.0 *(07th March 2024)*
+-------------------------------------------
+
+* Added support for Non-Intrusive InApps.
+* Removed support for existing embedded nudges.
+
 ### Version 4.15.0 *(27th February 2024)*
 -------------------------------------------
 * Refactored network layer.
