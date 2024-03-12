@@ -25,4 +25,5 @@ Pod::Spec.new do |s|
   s.requires_arc = true
   s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics'
   s.dependency 'MoEngage-iOS-SDK', '>= 9.16.0', '< 9.17.0'
+  s.dependency 'MoEngageTriggerEvaluator', '>= 1.00.0', '< 1.10.0'
 end
