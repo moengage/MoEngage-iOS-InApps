@@ -6,6 +6,7 @@ import DeveloperToolsSupport
 import Foundation
 import MoEngageCore
 @_exported import MoEngageInApps
+import MoEngageTriggerEvaluator
 import Swift
 import SwiftUI
 import UIKit
@@ -26,11 +27,6 @@ import _SwiftConcurrencyShims
 }
 extension MoEngageInApps.MoEngageInAppUtils {
   @objc public static func getStringRepresentation(for sdkCampaignType: MoEngageInApps.MoEngageInAppSDKCampaignType) -> Swift.String
-}
-@objc @objcMembers public class MoEngageAnyEventConditionEvaluator : ObjectiveC.NSObject {
-  @objc public init(forCampaign campaignMeta: MoEngageInApps.MoEngageInAppCampaignMeta, sdkInstance: MoEngageCore.MoEngageSDKInstance)
-  @objc public func checkConditionSatisfied(forEvent event: Swift.String, andAttributes attributes: [Swift.String : Any]) -> Swift.Bool
-  @objc deinit
 }
 @objc public enum MoEngageInAppRatingType : Swift.Int {
   case star

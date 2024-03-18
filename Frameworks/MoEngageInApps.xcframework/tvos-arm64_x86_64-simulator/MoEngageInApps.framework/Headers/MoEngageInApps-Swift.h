@@ -302,35 +302,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class MoEngageInAppCampaignMeta;
-@class MoEngageSDKInstance;
 @class NSString;
-
-/// Evaluates if any of the event trigger condition of campaign is satisfied
-/// by triggered event and attribute data.
-/// :nodoc:
-SWIFT_CLASS("_TtC14MoEngageInApps34MoEngageAnyEventConditionEvaluator")
-@interface MoEngageAnyEventConditionEvaluator : NSObject
-/// Create condition evaluator validating provided campaign metadata and SDK instance.
-/// \param campaignMeta The campaign metadata for which trigger condition checked.
-///
-/// \param sdkInstance The instance of SDK campaign belongs to.
-///
-- (nonnull instancetype)initForCampaign:(MoEngageInAppCampaignMeta * _Nonnull)campaignMeta sdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance OBJC_DESIGNATED_INITIALIZER;
-/// Checks whether provided event name and attributes data satisfy
-/// any trigger condition of evaluated campaign.
-/// \param event The triggered event name.
-///
-/// \param attributes The attributes data associated with triggered event.
-///
-///
-/// returns:
-/// Whether triggered event and attributes data pass any of the trigger condition.
-- (BOOL)checkConditionSatisfiedForEvent:(NSString * _Nonnull)event andAttributes:(NSDictionary<NSString *, id> * _Nonnull)attributes SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
+@class NSObject;
 
 /// MoEngageInAppAction gives all the information about the inApp action
 SWIFT_CLASS("_TtC14MoEngageInApps19MoEngageInAppAction")
@@ -366,6 +339,7 @@ SWIFT_CLASS("_TtC14MoEngageInApps19MoEngageInAppAction")
 @end
 
 @class NSURL;
+@class MoEngageSDKInstance;
 @class MoEngageSDKConfig;
 @class NSData;
 
@@ -463,6 +437,7 @@ SWIFT_CLASS("_TtC14MoEngageInApps21MoEngageInAppCampaign")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class MoEngageInAppCampaignMeta;
 
 @interface MoEngageInAppController (SWIFT_EXTENSION(MoEngageInApps))
 /// Perform InApp campaigns sync.
@@ -1207,35 +1182,8 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 #if defined(__OBJC__)
-@class MoEngageInAppCampaignMeta;
-@class MoEngageSDKInstance;
 @class NSString;
-
-/// Evaluates if any of the event trigger condition of campaign is satisfied
-/// by triggered event and attribute data.
-/// :nodoc:
-SWIFT_CLASS("_TtC14MoEngageInApps34MoEngageAnyEventConditionEvaluator")
-@interface MoEngageAnyEventConditionEvaluator : NSObject
-/// Create condition evaluator validating provided campaign metadata and SDK instance.
-/// \param campaignMeta The campaign metadata for which trigger condition checked.
-///
-/// \param sdkInstance The instance of SDK campaign belongs to.
-///
-- (nonnull instancetype)initForCampaign:(MoEngageInAppCampaignMeta * _Nonnull)campaignMeta sdkInstance:(MoEngageSDKInstance * _Nonnull)sdkInstance OBJC_DESIGNATED_INITIALIZER;
-/// Checks whether provided event name and attributes data satisfy
-/// any trigger condition of evaluated campaign.
-/// \param event The triggered event name.
-///
-/// \param attributes The attributes data associated with triggered event.
-///
-///
-/// returns:
-/// Whether triggered event and attributes data pass any of the trigger condition.
-- (BOOL)checkConditionSatisfiedForEvent:(NSString * _Nonnull)event andAttributes:(NSDictionary<NSString *, id> * _Nonnull)attributes SWIFT_WARN_UNUSED_RESULT;
-- (nonnull instancetype)init SWIFT_UNAVAILABLE;
-+ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
+@class NSObject;
 
 /// MoEngageInAppAction gives all the information about the inApp action
 SWIFT_CLASS("_TtC14MoEngageInApps19MoEngageInAppAction")
@@ -1271,6 +1219,7 @@ SWIFT_CLASS("_TtC14MoEngageInApps19MoEngageInAppAction")
 @end
 
 @class NSURL;
+@class MoEngageSDKInstance;
 @class MoEngageSDKConfig;
 @class NSData;
 
@@ -1368,6 +1317,7 @@ SWIFT_CLASS("_TtC14MoEngageInApps21MoEngageInAppCampaign")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class MoEngageInAppCampaignMeta;
 
 @interface MoEngageInAppController (SWIFT_EXTENSION(MoEngageInApps))
 /// Perform InApp campaigns sync.

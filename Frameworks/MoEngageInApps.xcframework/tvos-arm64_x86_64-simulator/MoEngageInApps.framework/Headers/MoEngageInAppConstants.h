@@ -40,6 +40,9 @@ extern NSString* const kEventAttributeCampaignID;
 extern NSString *const kEventAttributeCampaignName;
 extern NSString* const kEventAttributeWidgetID;
 extern NSString* const kEventAttributeRating;
+extern NSString* const kDismissSource;
+extern NSString* const kDismissSourceAutoDismiss;
+extern NSString* const kDismissSourceContextChange;
 
 
 #pragma mark - STATE KEYS
@@ -339,6 +342,4 @@ extern NSString* const kMODateFormatISO8601MilliSec;
 //ConditionEvaluator Keys
 extern NSString* const appVersion;
 extern NSString* const sdkVersion;
-extern NSString* const platform;
-extern NSString* const platformiOS;
 extern NSString* const eventAttributes;
