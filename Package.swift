@@ -15,7 +15,7 @@ let package = Package(
         .package(url:"https://github.com/moengage/ios-trigger-evalutor", "1.00.0"..<"1.01.0"),
     ],
     targets: [
-        .target(name: "MoEngageInAppSPM", dependencies: ["MoEngage-iOS-SDK"], path: "Sources/..",exclude: ["MoEngageInApp.podspec", "README.md","./Frameworks/MoEngageInApps.xcframework", "LICENSE","CHANGELOG.md","Images/moe_logo_blue.png"]),
+        .target(name: "MoEngageInAppSPM", dependencies: ["MoEngage-iOS-SDK",.product(name: "MoEngageTriggerEvaluator", package: "ios-trigger-evalutor")], path: "Sources/..",exclude: ["MoEngageInApp.podspec", "README.md","./Frameworks/MoEngageInApps.xcframework", "LICENSE","CHANGELOG.md","Images/moe_logo_blue.png"]),
         .binaryTarget(name: "MoEngageInApps",path: "./Frameworks/MoEngageInApps.xcframework")
     ]
 )
