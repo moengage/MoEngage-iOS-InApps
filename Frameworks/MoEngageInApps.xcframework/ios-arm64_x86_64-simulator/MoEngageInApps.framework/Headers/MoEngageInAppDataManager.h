@@ -127,6 +127,14 @@ Method to get List of InApp Campaign IDs for which State instance is available
 -(NSMutableArray*)getTriggerCampaignsForEvent:(NSString*)eventName withAttributes:(NSDictionary*)attrDict;
 
 /**
+ Method to get the trigger campaigns with the provided campaignIds
+
+ @param campaignIds provided campaignIds
+ @return Array of InApp Campaigns matching campaignIds
+ */
+- (NSMutableArray<MoEngageInAppCampaignMeta *> *)getTriggerCampaignsForIds:(NSArray<NSString *> *)campaignIds;
+
+/**
  Method to reset inApps data on user logout
  */
 -(void)resetInAppsData;

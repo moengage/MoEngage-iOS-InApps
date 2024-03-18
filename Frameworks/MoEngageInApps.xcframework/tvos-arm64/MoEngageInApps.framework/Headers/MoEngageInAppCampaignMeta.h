@@ -37,7 +37,7 @@ typedef NS_ENUM(NSUInteger, MoEngageNudgeDisplayPosition) {
 @property(nonatomic, strong) NSDate* updated_time;
 @property(nonatomic, strong) NSDate* expiry_time;
 
-@property(nonatomic, strong) NSArray<MoEngageInAppTriggerCondition*>* triggers;
+@property(nonatomic, strong) NSDictionary* triggerJson;
 @property(nonatomic, strong) MoEngageInAppDisplay* displayMeta;
 @property(nonatomic, strong) MoEngageInAppDeliveryControl* deliveryControlMeta;
 

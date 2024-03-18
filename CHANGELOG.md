@@ -2,6 +2,12 @@
 =====================
 ## Change Log:
 
+### Version 5.01.0 *(18th March 2024)*
+-------------------------------------------
+* Dismiss inapp on context change
+* Added tvOS platform identifier changes
+* Added AND Support
+
 ### Version 5.00.0 *(07th March 2024)*
 -------------------------------------------
 

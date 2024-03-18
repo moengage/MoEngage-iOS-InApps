@@ -38,6 +38,7 @@
 @class MoEngageInAppCampaign;
 @class MoEngageInAppCampaignMeta;
 @class MoEngageInAppActionHandler;
+@class  MoEngageTriggerEvaluatorManager;
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -61,6 +62,8 @@ typedef MoEngageNudgePosition(^nonIntrusiveInAppCompletion)(void);
 @property(nonatomic, assign) BOOL inAppFetchApiInProgress;
 @property(nonatomic, assign) BOOL inAppFetchedSuccessfully;
 @property(nonatomic, strong, nullable) NSDate* inAppSyncTimeInSession;
+@property(nonatomic, strong) MoEngageTriggerEvaluatorManager* triggerEvaluator;
+
 
 @property(nonatomic, strong) NSMutableArray<nonIntrusiveInAppCompletion>* cachedNudgePosition;
 #if !TARGET_OS_TV
@@ -89,6 +92,8 @@ typedef MoEngageNudgePosition(^nonIntrusiveInAppCompletion)(void);
 -(void)inAppSyncCompleted;
 -(void)clearExpiredInAppImages;
 -(NSDictionary*)getCurrentScreenAndContextInfoDict;
+- (NSArray<NSDictionary<NSString *, id> *> *)convertCampaignsToDictionaries:(NSArray<MoEngageInAppCampaignMeta *> *)campaigns;
+
 
 #pragma mark- InApp Delegate Handling
 
