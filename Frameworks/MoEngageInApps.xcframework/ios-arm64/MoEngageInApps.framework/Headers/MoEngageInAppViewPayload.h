@@ -8,10 +8,20 @@
 
 #import <Foundation/Foundation.h>
 #import "MoEngageInAppConstants.h"
-#import "MoEngageInAppContainer.h"
 #import "MoEngageInAppCampaignMeta.h"
 
+@class MoEngageInAppContainer;
+@class MoEngageInAppResolution;
 typedef NS_ENUM(NSUInteger, MoEngageNudgeDisplayPosition);
+
+typedef NS_ENUM(NSInteger, MoEngageInAppTemplateAlignment) {
+    MoEngageInAppTemplateAlignmentInvalid,
+    MoEngageInAppTemplateAlignmentCenter,
+    MoEngageInAppTemplateAlignmentTopLeft,
+    MoEngageInAppTemplateAlignmentTopRight,
+    MoEngageInAppTemplateAlignmentBottomLeft,
+    MoEngageInAppTemplateAlignmentBottomRight,
+};
 
 @interface MoEngageInAppViewPayload : NSObject
 @property(strong, nonatomic) NSString* instance_id;
@@ -22,6 +32,8 @@ typedef NS_ENUM(NSUInteger, MoEngageNudgeDisplayPosition);
 @property(assign, nonatomic) MoEngageInAppType inapp_type;
 @property(assign, nonatomic) MoEngageInAppOrientationType orientation_supported;
 @property(assign, nonatomic) MoEngageNudgeDisplayPosition position;
+@property(nonatomic, assign) MoEngageInAppTemplateAlignment alignment;
+@property(strong, nonatomic) MoEngageInAppResolution* baseResolution;
 
 @property(strong, nonatomic) NSString* customPayload;
 @property(strong, nonatomic) NSString* primaryWidgetRef;

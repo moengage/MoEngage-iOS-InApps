@@ -2,6 +2,11 @@
 =====================
 ## Change Log:
 
+### Version 5.02.0 *(8th April 2024)*
+-------------------------------------------
+* Added Intrusive InApp support for tvOS
+* BugFix - Fixed type name collision
+
 ### Version 5.01.0 *(18th March 2024)*
 -------------------------------------------
 * Dismiss inapp on context change

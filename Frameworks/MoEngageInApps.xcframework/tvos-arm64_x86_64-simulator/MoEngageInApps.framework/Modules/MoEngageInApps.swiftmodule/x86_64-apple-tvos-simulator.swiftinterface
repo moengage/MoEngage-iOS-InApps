@@ -1,7 +1,7 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target x86_64-apple-tvos11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageInApps
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target x86_64-apple-tvos11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MoEngageInApps
+import AVFoundation
 import DeveloperToolsSupport
 import Foundation
 import MoEngageCore
@@ -21,12 +21,58 @@ import _SwiftConcurrencyShims
   @nonobjc public func getInAppFetchPayloadRequest(forCampaign campaignMeta: MoEngageInApps.MoEngageInAppCampaignMeta, withTriggerInfo triggerInfoDict: [Swift.AnyHashable : Any]) -> MoEngageCore.MoEngageNetworkRequest?
   @objc dynamic public func fetchInAppRequest(withCampaignID campaignID: Swift.String, withCompletionBlock completionBlock: @escaping (Swift.Bool, [Swift.AnyHashable : Any]?) -> Swift.Void)
 }
+@objc @_hasMissingDesignatedInitializers @objcMembers @_Concurrency.MainActor(unsafe) public class MoEngageInAppVideoWidget : UIKit.UIView {
+  @objc @_Concurrency.MainActor(unsafe) final public let widget: MoEngageInApps.MoEngageInAppWidget
+  @objc @_Concurrency.MainActor(unsafe) public var endPosition: CoreFoundation.CGPoint {
+    get
+  }
+  @objc @_Concurrency.MainActor(unsafe) weak public var resizeDelegate: (any MoEngageInApps.MoEngageInAppWidgetResizingDelegate)?
+  @objc @_Concurrency.MainActor(unsafe) public init(withInAppWidget widget: MoEngageInApps.MoEngageInAppWidget, forTemplateType templateType: MoEngageInApps.MoEngageInAppTemplateType, inContainer viewContainer: UIKit.UIView, withStartPosition startPosition: CoreFoundation.CGPoint, andCampaignID campaignId: Swift.String, resizeDelegate: (any MoEngageInApps.MoEngageInAppWidgetResizingDelegate)? = nil) throws
+  @objc deinit
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func willMove(toWindow newWindow: UIKit.UIWindow?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func didMoveToWindow()
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func observeValue(forKeyPath keyPath: Swift.String?, of object: Any?, change: [Foundation.NSKeyValueChangeKey : Any]?, context: Swift.UnsafeMutableRawPointer?)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic public func removeFromSuperview()
+}
+extension MoEngageInApps.MoEngageInAppVideoWidget : MoEngageInApps.MoEngageInAppWidgetResizingCallbackListnerDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func resized(to displaySize: MoEngageInApps.MoEngageInAppDisplaySize, in container: MoEngageInApps.MoEngageInAppContainer, xScale: CoreFoundation.CGFloat, yScale: CoreFoundation.CGFloat)
+}
+@objc @objcMembers public class MoEngageInAppResolution : ObjectiveC.NSObject {
+  @objc final public let height: Swift.Float
+  @objc final public let width: Swift.Float
+  @objc public init?(withPayload payload: [Swift.AnyHashable : Any]?, sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  @objc deinit
+}
 @objc extension MoEngageInApps.MoEngageInAppStatsManager {
   @objc dynamic public func syncBatch(shouldSendJWT: Swift.Bool, batchData: MoEngageInApps.MoEngageInAppBatchData, WithCompletion completion: @escaping (Swift.Bool) -> Swift.Void)
   @objc dynamic public func getQueryStringParamsForInAppRequest() -> [Swift.String : Swift.String]
 }
 extension MoEngageInApps.MoEngageInAppUtils {
   @objc public static func getStringRepresentation(for sdkCampaignType: MoEngageInApps.MoEngageInAppSDKCampaignType) -> Swift.String
+}
+@objc public protocol MoEngageInAppWidgetResizingDelegate : ObjectiveC.NSObjectProtocol {
+  @objc var originalWidth: CoreFoundation.CGFloat { get }
+  @objc var currentDisplaySize: MoEngageInApps.MoEngageInAppDisplaySize { get }
+  @objc(addListner:) func add(listner: any MoEngageInApps.MoEngageInAppWidgetResizingCallbackListnerDelegate)
+  @objc func toggleFullscreen()
+}
+@objc public protocol MoEngageInAppWidgetResizingCallbackListnerDelegate {
+  @objc func resized(to displaySize: MoEngageInApps.MoEngageInAppDisplaySize, in container: MoEngageInApps.MoEngageInAppContainer, xScale: CoreFoundation.CGFloat, yScale: CoreFoundation.CGFloat)
+}
+@objc extension MoEngageInApps.MoEngageInAppPrimaryContainerView : MoEngageInApps.MoEngageInAppWidgetResizingDelegate {
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var originalWidth: CoreFoundation.CGFloat {
+    @objc get
+  }
+  @_Concurrency.MainActor(unsafe) @objc dynamic public var currentDisplaySize: MoEngageInApps.MoEngageInAppDisplaySize {
+    @objc get
+  }
+  @objc(addListner:) @_Concurrency.MainActor(unsafe) dynamic public func add(listner: any MoEngageInApps.MoEngageInAppWidgetResizingCallbackListnerDelegate)
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func toggleFullscreen(animated: Swift.Bool)
+  @_Concurrency.MainActor(unsafe) @objc dynamic public func toggleFullscreen()
+  @objc @_Concurrency.MainActor(unsafe) dynamic public func setDisplaySize()
+}
+@objc extension MoEngageInApps.MoEngageInAppContainer {
+  @objc dynamic public func nonScalableHeight() -> CoreFoundation.CGFloat
 }
 @objc public enum MoEngageInAppRatingType : Swift.Int {
   case star
@@ -47,11 +93,33 @@ extension MoEngageInApps.MoEngageInAppUtils {
   @objc public init(withPayloadDict payloadDict: [Swift.AnyHashable : Any], andRef: Swift.String, andSDKInstance: MoEngageCore.MoEngageSDKInstance) throws
   @objc deinit
 }
+@objc @objcMembers public class MoEngageInAppWidgetFocusedStateStyle : ObjectiveC.NSObject {
+  @objc final public let background: MoEngageInApps.MoEngageWidgetBackground?
+  @objc final public let border: MoEngageInApps.MoEngageWidgetBorder?
+  @objc required public init(withPayloadDict payload: [Swift.AnyHashable : Any], andSDKInstance sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  @objc public static func create(for widgetType: MoEngageInApps.MoEngageInAppWidgetType, withPayloadDict payload: [Swift.AnyHashable : Any]?, andSDKInstance sdkInstance: MoEngageCore.MoEngageSDKInstance) throws -> MoEngageInApps.MoEngageInAppWidgetFocusedStateStyle
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class MoEngageInAppLabelWidgetFocusedStateStyle : MoEngageInApps.MoEngageInAppWidgetFocusedStateStyle {
+  @objc final public let font: MoEngageInApps.MoEngageWidgetFont?
+  @objc required public init(withPayloadDict payload: [Swift.AnyHashable : Any], andSDKInstance sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @objcMembers public class MoEngageInAppButtonWidgetFocusedStateStyle : MoEngageInApps.MoEngageInAppLabelWidgetFocusedStateStyle {
+  @objc final public let isPrimaryFocusItem: Swift.Bool
+  @objc required public init(withPayloadDict payload: [Swift.AnyHashable : Any], andSDKInstance sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  @objc deinit
+}
 @_inheritsConvenienceInitializers @objc public class MoEngageInAppMigration : ObjectiveC.NSObject {
   @objc public static func migrateDataFromPreviousVersions(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc public static func migrateDataFromNoNEncryptionToEncryption(sdkInstance: MoEngageCore.MoEngageSDKInstance, currentSDKInstance: MoEngageCore.MoEngageSDKInstance)
   @objc public static func removeEncryptedFolder(sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc override dynamic public init()
+  @objc deinit
+}
+@objc @_hasMissingDesignatedInitializers @objcMembers final public class MoEngageInAppConfigurationHandler : ObjectiveC.NSObject {
+  @objc public static let sharedInstance: MoEngageInApps.MoEngageInAppConfigurationHandler
+  @objc(trackNudgeView:onController:sdkInstance:) final public func track(nudgeView: MoEngageInApps.MoEngageInAppPrimaryContainerView, onController controller: UIKit.UIViewController, sdkInstance: MoEngageCore.MoEngageSDKInstance)
   @objc deinit
 }
 @_hasMissingDesignatedInitializers @objc public class MoEngageInAppRatingIconState : ObjectiveC.NSObject {
@@ -63,6 +131,27 @@ extension MoEngageInApps.MoEngageInAppUtils {
   @objc final public let campaignContent: Swift.String
   @objc final public let autoDismissInterval: Swift.Int
   @objc public init(campaignContent: Swift.String, autoDismissInterval: Swift.Int, campaign_id: Swift.String, campaign_name: Swift.String, expiry_time: Foundation.NSDate, isDraft: Swift.Bool, campaignContext: [Swift.String : Any])
+  @objc deinit
+}
+@objc extension MoEngageInApps.MoEngageInAppWidgetStyle {
+  @objc dynamic public var isFocusable: Swift.Bool {
+    @objc get
+  }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class MoEngageInAppWidgetAlignmentUtil : ObjectiveC.NSObject {
+  @objc public static func getWidgetAlignment(fromStringValue strValue: Swift.String) -> MoEngageInApps.MoEngageInAppWidgetAlignment
+  @objc public static func getStringValue(for alignment: MoEngageInApps.MoEngageInAppWidgetAlignment) -> Swift.String?
+  @objc deinit
+}
+@objc public protocol MoEngageInAppFocusDataSource {
+  @objc weak var primaryFocusView: UIKit.UIView? { get set }
+}
+@objc public protocol MoEngageInAppViewDataSource {
+  @objc weak var inAppPayload: MoEngageInApps.MoEngageInAppViewPayload? { get set }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class MoEngageInAppTemplateAlignmentUtil : ObjectiveC.NSObject {
+  @objc public static func getTemplateAlignment(fromStringValue strValue: Swift.String) -> MoEngageInApps.MoEngageInAppTemplateAlignment
+  @objc public static func getStringValue(for alignment: MoEngageInApps.MoEngageInAppTemplateAlignment) -> Swift.String?
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MoEngageInAppFileStorageHandler : ObjectiveC.NSObject {
@@ -151,9 +240,7 @@ extension MoEngageInApps.MoEngageInAppUtils {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MoEngageSDKInApp : ObjectiveC.NSObject {
   @objc public static let sharedInstance: MoEngageInApps.MoEngageSDKInApp
-  @available(tvOS, unavailable)
   @objc public func showInApp()
-  @available(tvOS, unavailable)
   @objc public func showInApp(forAppId appId: Swift.String? = nil)
   @available(tvOS, unavailable)
   @objc public func showNudge()
