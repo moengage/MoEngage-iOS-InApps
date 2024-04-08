@@ -46,11 +46,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 #pragma mark- Show In-App Pop
 
-#if !TARGET_OS_TV
 /// Call this method to show Pop-up OR Fullscreen InApps inside the app.
 /// @param appID MoEngage Account Identifier.
 -(void)showInAppCampaignForAppID:(NSString* _Nullable)appID;
-#endif
 
 /// Call this method to block InApps in a particular ViewController
 /// @param viewController UIViewController instance where InApps have to be blocked

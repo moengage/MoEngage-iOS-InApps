@@ -9,7 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <CoreGraphics/CoreGraphics.h>
 #import <UIKit/UIKit.h>
-#import "MoEngageInAppConstants.h"
+
+@protocol MoEngageInAppViewDataSource;
+@class MoEngageSDKInstance;
+@class MoEngageInAppContainerView;
 
 typedef enum{
     MOE_ANIMATION_FADE_IN,
@@ -97,7 +100,8 @@ typedef NS_ENUM(NSInteger, MoEngageInAppViewVisibility);
 @property(nonatomic, strong) UIColor    *textColor;
 
 -(instancetype)initWithDict:(NSDictionary*)infoDict andSDKInstance:(MoEngageSDKInstance*)sdkInstance;
--(UIFont*)getUIFontOfInstance;
+-(UIFont*)getUIFontOfInstanceWithSource:(id<MoEngageInAppViewDataSource>)dataSource;
+-(UIFont*)getUIFontOfInstanceWithSource:(id<MoEngageInAppViewDataSource>)dataSource fallbackFont:(NSString*)fallbackFontName;
 @end
 
 
@@ -123,6 +127,32 @@ typedef NS_ENUM(NSInteger, MoEngageInAppViewVisibility);
 -(instancetype)initWithDict:(NSDictionary*)infoDict andInstanceID:(NSString*)instanceID;
 @end
 
+typedef enum{
+    WIDGET_CONTAINER,
+    WIDGET_LABEL,
+    WIDGET_BUTTON,
+    WIDGET_IMAGE,
+    WIDGET_RATING,
+    WIDGET_CLOSE_BUTTON,
+    WIDGET_VIDEO,
+    WIDGET_FEEDBACK_TEXT,
+    WIDGET_CUSTOM_RATING,
+    WIDGET_UNKNOWN
+}MoEngageInAppWidgetType;
+
+typedef NS_ENUM(NSInteger, MoEngageInAppWidgetAlignment) {
+    MoEngageInAppWidgetAlignmentNone,
+    MoEngageInAppWidgetAlignmentCenter,
+    MoEngageInAppWidgetAlignmentLeft,
+    MoEngageInAppWidgetAlignmentRight,
+    MoEngageInAppWidgetAlignmentTop,
+    MoEngageInAppWidgetAlignmentBottom
+};
+
+#if TARGET_OS_TV
+@class MoEngageInAppWidgetFocusedStateStyle;
+#endif
+
 @interface MoEngageInAppWidgetStyle : NSObject
 @property(nonatomic, strong) MoEngageWidgetSize              *size;
 @property(nonatomic, strong) MoEngageWidgetMargin            *margin;
@@ -132,11 +162,16 @@ typedef NS_ENUM(NSInteger, MoEngageInAppViewVisibility);
 @property(nonatomic, strong) MoEngageWidgetBackground        *background;
 @property(nonatomic, strong) MoEngageWidgetFont              *font;
 @property(nonatomic, strong) MoEngageInAppAnimation          *animation;
+#if TARGET_OS_TV
+@property(nonatomic, strong) MoEngageInAppWidgetFocusedStateStyle* _Nullable focused;
+#endif
 @property(nonatomic, assign) BOOL                      display;
 @property(nonatomic, assign) BOOL                      includeSafeArea;
+@property(nonatomic, assign) MoEngageInAppWidgetAlignment alignment;
+@property(nonatomic, assign) MoEngageInAppWidgetAlignment contentAlignment;
 @property(nonatomic, strong) NSString                  *closeButtonFloat;
 @property(nonatomic, assign) MoEngageInAppDisplaySize  displaySize;
 @property(nonatomic, assign) MoEngageInAppViewVisibility visibility;
 
--(instancetype)initWithPayloadDict:(NSDictionary*)payloadDict andRef:(NSString*)ref andSDKInstance:(MoEngageSDKInstance*)sdkInstance;
+-(instancetype)initWithPayloadDict:(NSDictionary*)payloadDict andRef:(NSString*)ref andSDKInstance:(MoEngageSDKInstance*)sdkInstance widgetType:(MoEngageInAppWidgetType)widgetType;
 @end

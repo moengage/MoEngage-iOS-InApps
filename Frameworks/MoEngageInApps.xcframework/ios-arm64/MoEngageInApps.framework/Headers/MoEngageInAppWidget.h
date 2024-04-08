@@ -17,6 +17,6 @@
 -(instancetype)initWithPayloadDict:(NSDictionary*)payloadDict andRef:(NSString*)ref andSDKInstance:(MoEngageSDKInstance*)sdkInstance;
 
 +(NSMutableArray*)getWidgetActionsWithActionRefArray:(NSMutableArray*)actionRefArray withPayloadDict:(NSDictionary*)payloadDict;
-+(InAppWidgetType)getWidgetTypeWithWidgetStr:(NSString*)widgetStr;
++(MoEngageInAppWidgetType)getWidgetTypeWithWidgetStr:(NSString*)widgetStr;
 @end
 

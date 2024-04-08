@@ -1,7 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.9.2 (swiftlang-5.9.2.2.56 clang-1500.1.0.2.5)
-// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name MoEngageInApps
-// swift-module-flags-ignorable: -enable-bare-slash-regex
+// swift-compiler-version: Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)
+// swift-module-flags: -target arm64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-bare-slash-regex -module-name MoEngageInApps
 import AVFoundation
 import DeveloperToolsSupport
 import Foundation
@@ -38,6 +37,12 @@ import _SwiftConcurrencyShims
 }
 extension MoEngageInApps.MoEngageInAppVideoWidget : MoEngageInApps.MoEngageInAppWidgetResizingCallbackListnerDelegate {
   @_Concurrency.MainActor(unsafe) @objc dynamic public func resized(to displaySize: MoEngageInApps.MoEngageInAppDisplaySize, in container: MoEngageInApps.MoEngageInAppContainer, xScale: CoreFoundation.CGFloat, yScale: CoreFoundation.CGFloat)
+}
+@objc @objcMembers public class MoEngageInAppResolution : ObjectiveC.NSObject {
+  @objc final public let height: Swift.Float
+  @objc final public let width: Swift.Float
+  @objc public init?(withPayload payload: [Swift.AnyHashable : Any]?, sdkInstance: MoEngageCore.MoEngageSDKInstance)
+  @objc deinit
 }
 @objc extension MoEngageInApps.MoEngageInAppStatsManager {
   @objc dynamic public func syncBatch(shouldSendJWT: Swift.Bool, batchData: MoEngageInApps.MoEngageInAppBatchData, WithCompletion completion: @escaping (Swift.Bool) -> Swift.Void)
@@ -110,6 +115,22 @@ extension MoEngageInApps.MoEngageInAppUtils {
   @objc final public let campaignContent: Swift.String
   @objc final public let autoDismissInterval: Swift.Int
   @objc public init(campaignContent: Swift.String, autoDismissInterval: Swift.Int, campaign_id: Swift.String, campaign_name: Swift.String, expiry_time: Foundation.NSDate, isDraft: Swift.Bool, campaignContext: [Swift.String : Any])
+  @objc deinit
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers public class MoEngageInAppWidgetAlignmentUtil : ObjectiveC.NSObject {
+  @objc public static func getWidgetAlignment(fromStringValue strValue: Swift.String) -> MoEngageInApps.MoEngageInAppWidgetAlignment
+  @objc public static func getStringValue(for alignment: MoEngageInApps.MoEngageInAppWidgetAlignment) -> Swift.String?
+  @objc deinit
+}
+@objc public protocol MoEngageInAppFocusDataSource {
+  @objc weak var primaryFocusView: UIKit.UIView? { get set }
+}
+@objc public protocol MoEngageInAppViewDataSource {
+  @objc weak var inAppPayload: MoEngageInApps.MoEngageInAppViewPayload? { get set }
+}
+@objc @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objcMembers final public class MoEngageInAppTemplateAlignmentUtil : ObjectiveC.NSObject {
+  @objc public static func getTemplateAlignment(fromStringValue strValue: Swift.String) -> MoEngageInApps.MoEngageInAppTemplateAlignment
+  @objc public static func getStringValue(for alignment: MoEngageInApps.MoEngageInAppTemplateAlignment) -> Swift.String?
   @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class MoEngageInAppFileStorageHandler : ObjectiveC.NSObject {
@@ -198,9 +219,7 @@ extension MoEngageInApps.MoEngageInAppUtils {
 }
 @_inheritsConvenienceInitializers @_hasMissingDesignatedInitializers @objc public class MoEngageSDKInApp : ObjectiveC.NSObject {
   @objc public static let sharedInstance: MoEngageInApps.MoEngageSDKInApp
-  @available(tvOS, unavailable)
   @objc public func showInApp()
-  @available(tvOS, unavailable)
   @objc public func showInApp(forAppId appId: Swift.String? = nil)
   @available(tvOS, unavailable)
   @objc public func showNudge()

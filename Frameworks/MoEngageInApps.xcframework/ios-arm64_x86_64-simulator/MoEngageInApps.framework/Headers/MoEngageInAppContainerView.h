@@ -12,7 +12,12 @@
 
 @protocol MoEngageInAppWidgetResizingDelegate;
 @protocol MoEngageInAppWidgetResizingCallbackListnerDelegate;
+@protocol MoEngageInAppViewDataSource;
 typedef NS_ENUM(NSUInteger, MoEngageNudgeDisplayPosition);
+
+#if TARGET_OS_TV
+@protocol MoEngageInAppFocusDataSource;
+#endif
 
 @interface MoEngageInAppContainerView : UIView
 
@@ -22,6 +27,10 @@ typedef NS_ENUM(NSUInteger, MoEngageNudgeDisplayPosition);
 @property(nonatomic, assign) CGPoint            endPosition;
 @property(nonatomic, assign) MoEngageInAppTemplateType  templateType;
 @property(nonatomic, weak) id <MoEngageInAppWidgetResizingDelegate> resizeDelegate;
+@property(nonatomic, weak) id<MoEngageInAppViewDataSource>  dataSource;
+#if TARGET_OS_TV
+@property(nonatomic, weak) id<MoEngageInAppFocusDataSource>  focusSource;
+#endif
 
 -(instancetype)initWithContainerInfo:(MoEngageInAppContainer*)container andCampaignID:(NSString*)campaignID;
 -(void)updateContainerFrameinContainerView:(UIView*)view_container WithStartPos:(CGPoint)startPos andtemplateType:(MoEngageInAppTemplateType)templateType;
@@ -35,7 +44,9 @@ typedef NS_ENUM(NSUInteger, MoEngageNudgeDisplayPosition);
 @property(nonatomic, strong) NSHashTable<id <MoEngageInAppWidgetResizingCallbackListnerDelegate>>* resizeListners;
 
 -(instancetype)initNativeContainerWithInAppPayload:(MoEngageInAppViewPayload*)payload;
+#if !TARGET_OS_TV
 -(instancetype)initHTMLContainerWithInAppPayload:(MoEngageInAppViewPayload*)payload;
+#endif
 -(void)addInAppViewToAppScreenWithCompletionBlock:(void(^)(BOOL inAppAdded))completionBlock;
 -(void)removeInAppWithCompletionBlock:(void(^)(BOOL inAppDismissed))completionBlock;
 @end

@@ -43,9 +43,7 @@
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void(^MOInAppTemplateRequestCompletionBlock)(MoEngageInAppViewPayload* _Nullable campaignPayload);
-#if !TARGET_OS_TV
 typedef void(^MOInAppViewCompletionBlock)(MoEngageInAppPrimaryContainerView* _Nullable inAppView, MoEngageInAppViewPayload* _Nullable campaignPayload);
-#endif
 
 typedef MoEngageNudgePosition(^nonIntrusiveInAppCompletion)(void);
 
@@ -65,8 +63,8 @@ typedef MoEngageNudgePosition(^nonIntrusiveInAppCompletion)(void);
 @property(nonatomic, strong) MoEngageTriggerEvaluatorManager* triggerEvaluator;
 
 
-@property(nonatomic, strong) NSMutableArray<nonIntrusiveInAppCompletion>* cachedNudgePosition;
 #if !TARGET_OS_TV
+@property(nonatomic, strong) NSMutableArray<nonIntrusiveInAppCompletion>* cachedNudgePosition;
 @property(nonatomic, strong) NSHashTable<MoEngageInAppPrimaryContainerView*>* nudgeViewsArray;
 #endif
 
@@ -108,9 +106,7 @@ typedef MoEngageNudgePosition(^nonIntrusiveInAppCompletion)(void);
 
 #pragma mark- Show In-App Pop
 
-#if !TARGET_OS_TV
 -(void)showInApp;
-#endif
 -(void)blockInAppInViewController:(UIViewController* _Nonnull)viewcontroller;
 
 #pragma mark- Nudge Campaign
@@ -132,18 +128,16 @@ typedef MoEngageNudgePosition(^nonIntrusiveInAppCompletion)(void);
 -(void)disableInApps;
 
 #pragma mark- Action Handler
-#if !TARGET_OS_TV
 -(MoEngageInAppActionHandler*)getActionHandler;
-#endif
 
 #pragma mark- Fetch InApp Method
 -(void)fetchInAppWithCampaignMeta:(MoEngageInAppCampaignMeta*)campaignMeta forPreview:(BOOL)forPreviewFlow withTriggerInfo:(NSDictionary* _Nullable)triggerInfoDict withCompletionBlock:(MOInAppTemplateRequestCompletionBlock)completionBlock;
 
 #pragma mark- InApp Creation Methods
-#if !TARGET_OS_TV
 -(void)createInAppWithTemplatePayload:(MoEngageInAppViewPayload*)templatePayload  withCompletionBlock:(void (^_Nullable)(void))completionBlock;
 -(void)createNativeInAppViewWithTemplatePayload:(MoEngageInAppViewPayload*)templatePayload withCompletionBlock:(void (^_Nullable)(void))completionBlock;
 -(void)createNativeInAppViewWithPayload:(MoEngageInAppViewPayload*)templatePayload andCompletionBlock:(MOInAppViewCompletionBlock)completionBlock;
+#if !TARGET_OS_TV
 -(void)attachNudgeView:(MoEngageInAppPrimaryContainerView*)nudgeView withPayload:(MoEngageInAppViewPayload*)payload;
 #endif
 

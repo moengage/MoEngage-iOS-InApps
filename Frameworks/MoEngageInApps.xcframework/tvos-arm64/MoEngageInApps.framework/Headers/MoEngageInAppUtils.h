@@ -76,23 +76,19 @@ NS_ASSUME_NONNULL_BEGIN
 +(CGSize)getDeviceScreenSize;
 
 
-#if !TARGET_OS_TV
 +(CGRect)getFrameWithWidgetObj:(MoEngageInAppContainer*)widgetObj inContainer:(UIView*)container withStartPosition:(CGPoint)startPosition;
 +(CGPoint)setEndPositionForWidget:(MoEngageInAppContainer*)widgetObj withframe:(CGRect)widgetFrame;
 +(CGFloat)getHeightForText:(NSString *)text havingWidth:(CGFloat)widthValue andFont:(UIFont *)font;
 +(CGFloat)getOptmisedImageHeightFromImage:(UIImage *)imageFromServer forWidth:(float)width;
-#endif
 +(BOOL)doesDeviceHaveNotch API_AVAILABLE(ios(11.0));
 +(MoEngageInAppTemplateType)getTemplateTypeForTemplateStr:(NSString*)templateStr;
 +(MoEngageInAppType)getInAppType:(NSString*)inAppTypeStr;
 +(MoEngageInAppOrientationType)getSupportedOrientationType:(NSArray*)supportedOrientation;
 +(MoEngageWidgetActionType)getActionTypeForStrVal:(NSString*)strVal;
 
-#if !TARGET_OS_TV
 +(id)getValueFromWidget:(UIView*)view;
 +(UIView*)getWidgetForID:(NSInteger)widgetID fromView:(UIView*)superView;
 +(void)openShareSheetWithContentToShare:(NSString*)contentToShare;
-#endif
 +(void)raiseMandatoryParamsMissingException;
 +(void)raiseInAppSizeExceededException;
 +(void)raiseInAppImageDownloadFailureException;

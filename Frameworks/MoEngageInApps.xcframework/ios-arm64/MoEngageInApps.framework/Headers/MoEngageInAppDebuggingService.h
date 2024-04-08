@@ -20,8 +20,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 +(instancetype)sharedInstance;
-#if !TARGET_OS_TV
 -(void)previewGeneralInAppForCID:(NSString*)cid forInstanceID:(NSString* _Nullable)instanceID;
+#if !TARGET_OS_TV
 -(void)previewEmbeddedInAppForCID:(NSString*)cid forInstanceID:(NSString* _Nullable)instanceID;
 #endif
 

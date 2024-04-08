@@ -34,12 +34,11 @@ FOUNDATION_EXPORT const unsigned char MoEngageInAppsVersionString[];
 #import <MoEngageInApps/MoEngageInAppContainer.h>
 #import <MoEngageInApps/MoEngageInAppViewPayload.h>
 #import <MoEngageInApps/MoEngageInAppWidgetAction.h>
-#if !TARGET_OS_TV
 #import <MoEngageInApps/MoEngageInAppContainerView.h>
-#import <MoEngageInApps/MoEngageInAppContainerView.h>
-#endif
 #import <MoEngageInApps/MoEngageInAppController.h>
 #import <MoEngageInApps/MoEngageInAppHandler.h>
 #import <MoEngageInApps/MoEngageInAppDataManager.h>
 #import <MoEngageInApps/MoEngageInAppAssetsManager.h>
 #import <MoEngageInApps/MoEngageInAppStatsManager.h>
+#import <MoEngageInApps/MoEngageInAppWidgetStyle.h>
+#import <MoEngageInApps/MoEngageInAppViewPayload.h>
