@@ -16,12 +16,11 @@ Pod::Spec.new do |s|
   s.tvos.deployment_target = '11.0'
 
   s.source       = { 
-    :git => 'https://github.com/moengage/MoEngage-iOS-InApps.git', 
-    :tag => 'inapp-' + s.version.to_s 
+    :http => "https://github.com/moengage/MoEngage-iOS-InApps/releases/download/#{s.version}/MoEngageInApps.xcframework.zip", 
+    :sha256 => 'e58a9e779c104eff69fbfa90b74478c5a45bbc734c982ba961d4af5578bafdb1'
   }
 
-  s.ios.vendored_frameworks = 'Frameworks/MoEngageInApps.xcframework'
-  s.tvos.vendored_frameworks = 'Frameworks/MoEngageInApps.xcframework'
+  s.vendored_frameworks = 'MoEngageInApps.xcframework'
   s.requires_arc = true
   s.frameworks = 'Foundation', 'UIKit', 'CoreGraphics'
   s.dependency 'MoEngage-iOS-SDK', '>= 9.17.1', '< 9.18.0'
