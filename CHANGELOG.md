@@ -2,7 +2,7 @@
 =====================
 ## Change Log:
 
-### Version 5.03.0 *(18th April 2024)*
+### Version 6.00.0 *(18th April 2024)*
 -------------------------------------------
 * Added support to provide optional deep link callback to MoEngageInAppNativeDelegate protocol via MoEngageInAppConfig.
 * BugFix - Fixed type name collision
