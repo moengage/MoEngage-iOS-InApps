@@ -9,7 +9,7 @@
 #import <MoEngageInApps/MoEngageModelObject.h>
 
 /// MoEngageInAppActionType defines the action type performed by the inApp click
-typedef enum : NSUInteger {
+typedef enum MoEngageInAppActionType: NSUInteger {
     NavigationAction,
     CustomAction
 } MoEngageInAppActionType;

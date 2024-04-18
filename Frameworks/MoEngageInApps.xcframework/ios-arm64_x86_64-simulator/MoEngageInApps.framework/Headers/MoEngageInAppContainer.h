@@ -11,7 +11,7 @@
 
 @class MoEngageInAppWidget;
 
-typedef enum NSUInteger{
+typedef enum MoEngageInAppAxisType: NSUInteger{
     Horizontal,
     Vertical,
     Neutral
