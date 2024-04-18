@@ -11,7 +11,7 @@
 #import <UIKit/UIKit.h>
 
 /// Use this file to add utils that is used in Objective-C and in Swift
-typedef enum : NSUInteger{
+typedef enum MoEngageInAppTemplateType: NSUInteger{
     TEMPLATE_FULL_SCREEN,
     TEMPLATE_POP_UP,
     TEMPLATE_SELF_HANDLED,
@@ -19,13 +19,13 @@ typedef enum : NSUInteger{
     TEMPLATE_UNKNOWN
 }MoEngageInAppTemplateType;
 
-typedef enum : NSUInteger{
+typedef enum MoEngageInAppType: NSUInteger{
     INAPP_NATIVE,
     INAPP_HTML,
     INAPP_INVALID
 }MoEngageInAppType;
 
-typedef enum : NSUInteger{
+typedef enum MoEngageInAppSDKCampaignType: NSUInteger{
     SDK_INAPP_TYPE_GENERAL,
     SDK_INAPP_TYPE_TRIGGERED,
     SDK_INAPP_TYPE_NON_INTRUSIVE,
@@ -33,7 +33,7 @@ typedef enum : NSUInteger{
     SDK_INAPP_TYPE_UNKNOWN
 }MoEngageInAppSDKCampaignType;
 
-typedef enum : NSUInteger{
+typedef enum MoEngageInAppOrientationType: NSUInteger{
     INAPP_ORIENTATION_PORTRAIT,
     INAPP_ORIENTATION_LANDSCAPE,
     INAPP_ORIENTATION_BOTH,

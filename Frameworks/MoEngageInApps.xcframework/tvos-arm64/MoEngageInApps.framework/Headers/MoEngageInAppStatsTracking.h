@@ -10,7 +10,7 @@
 /*
  InAppStatType
  */
-typedef enum : NSUInteger{
+typedef enum MoEngageInAppStatType: NSUInteger{
     STAT_UNKNOWN,
     STAT_ATTEMPTED,
     STAT_PRIORITY_HIGH_PRIORITY_CAMPAIGN_AVAILABLE,
