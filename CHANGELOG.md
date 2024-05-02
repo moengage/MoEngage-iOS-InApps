@@ -1,6 +1,9 @@
 # MoEngageInApps
 =====================
 ## Change Log:
+### Version 6.00.1 *(02nd May 2024)*
+-------------------------------------------
+* BugFix - Fixed non-Intrusive InApp breaking with tabbar
 
 ### Version 6.00.0 *(18th April 2024)*
 -------------------------------------------
