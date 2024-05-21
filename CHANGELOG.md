@@ -1,6 +1,10 @@
 # MoEngageInApps
 =====================
 ## Change Log:
+### Version 6.00.2 *(21st May 2024)*
+-------------------------------------------
+* BugFix - Fixed SwiftUI reference crash on iOS 12.
+
 ### Version 6.00.1 *(02nd May 2024)*
 -------------------------------------------
 * BugFix - Fixed non-Intrusive InApp breaking with tabbar
