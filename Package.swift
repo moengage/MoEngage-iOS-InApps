@@ -3,8 +3,8 @@
 
 import PackageDescription
 
-let version = "6.00.2"
-let checksum = "e58a9e779c104eff69fbfa90b74478c5a45bbc734c982ba961d4af5578bafdb1"
+let version = "6.00.3"
+let checksum = "e7819a44d299e965982fb82f843df63694b6d9eddb6132d735fe577ce5c81365"
 let package = Package(
     name: "MoEngageInApps",
     platforms: [.iOS(.v11), .tvOS(.v11)],

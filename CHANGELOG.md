@@ -1,6 +1,10 @@
 # MoEngageInApps
 =====================
 ## Change Log:
+### Version 6.00.3 *(12th June 2024)*
+-------------------------------------------
+* BugFix - InApp touch directs to the parent controller.
+
 ### Version 6.00.2 *(21st May 2024)*
 -------------------------------------------
 * BugFix - Fixed SwiftUI reference crash on iOS 12.
